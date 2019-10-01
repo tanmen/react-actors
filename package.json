@@ -1,0 +1,50 @@
+{
+  "name": "reactor",
+  "version": "0.0.1",
+  "description": "It is UI components collection that can be used in React.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -c tslint.json src/**/*.ts",
+    "prepublish": "yarn build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanmen/reactor.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": {
+    "name": "tanmen"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tanmen/reactor/issues"
+  },
+  "homepage": "https://github.com/tanmen/reactor#readme",
+  "dependencies": {
+    "react": "^16.10.1",
+    "styled-components": "^5.0.0-beta.9"
+  },
+  "files": [
+    "./bin/*",
+    "./lib/*"
+  ],
+  "typings": "./lib/index.d.ts",
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@storybook/addon-actions": "^5.2.1",
+    "@storybook/addon-links": "^5.2.1",
+    "@storybook/addons": "^5.2.1",
+    "@storybook/react": "^5.2.1",
+    "@types/node": "^12.7.9",
+    "babel-loader": "^8.0.6",
+    "react-docgen-typescript-loader": "^3.3.0",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
+  }
+}
