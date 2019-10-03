@@ -1,18 +1,18 @@
 {
-  "name": "reactor",
-  "version": "0.0.1",
-  "description": "It is UI components collection that can be used in React.",
+  "name": "react-actors",
+  "version": "0.0.4",
+  "description": "This is UI components collection that can be used in React.",
   "main": "./lib/index.js",
   "scripts": {
     "build": "tsc",
     "lint": "tslint -c tslint.json src/**/*.ts",
     "prepublish": "yarn build",
     "storybook": "start-storybook -p 6006",
-    "build:storybook": "storybook-to-ghpages --dry-run --out=.out"
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tanmen/reactor.git"
+    "url": "git+https://github.com/tanmen/react-actors.git"
   },
   "keywords": [
     "react"
@@ -22,9 +22,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tanmen/reactor/issues"
+    "url": "https://github.com/tanmen/react-actors/issues"
   },
-  "homepage": "https://github.com/tanmen/reactor#readme",
+  "homepage": "https://github.com/tanmen/react-actors#readme",
   "dependencies": {
     "react": "^16.10.1",
     "styled-components": "^5.0.0-beta.9"
@@ -40,7 +40,6 @@
     "@storybook/addon-links": "^5.2.1",
     "@storybook/addons": "^5.2.1",
     "@storybook/react": "^5.2.1",
-    "@storybook/storybook-deployer": "^2.8.1",
     "@types/node": "^12.7.9",
     "@types/styled-components": "^4.1.19",
     "babel-loader": "^8.0.6",

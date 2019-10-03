@@ -31,8 +31,8 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           BASE_BRANCH: master
           BRANCH: gh-pages
-          FOLDER: .out
-          BUILD_SCRIPT: yarn && yarn build:storybook
+          FOLDER: storybook-static
+          BUILD_SCRIPT: yarn && yarn build-storybook
 
 #  publish-npm:
 #    needs: build
