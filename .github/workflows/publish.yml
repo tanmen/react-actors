@@ -15,7 +15,7 @@ jobs:
           node-version: 12
       - run: yarn
 #      - run: yarn test
-      - run: yarn build
+#      - run: yarn build
 
   publish-storybook:
     needs: build
@@ -31,8 +31,8 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           BASE_BRANCH: master
           BRANCH: gh-pages
-          FOLDER: storybook-static
-          BUILD_SCRIPT: yarn && yarn build-storybook
+          FOLDER: .out
+          BUILD_SCRIPT: yarn && yarn build:storybook
 
 #  publish-npm:
 #    needs: build

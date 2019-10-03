@@ -1,0 +1,3 @@
+interface Components {
+  className?: string
+}

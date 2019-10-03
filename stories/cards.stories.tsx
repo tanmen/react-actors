@@ -1,7 +1,28 @@
 import {storiesOf} from '@storybook/react';
 import * as React from "react";
-import PersonCard from "../src/cards/PersonCard";
+import BasicCard from "../src/cards/BasicCard";
 
 
-storiesOf('Common|layouts', module)
-  .add('PersonCard', () => <PersonCard/>);
+storiesOf('Cards', module)
+  .add('BasicCard', () => <BasicCard
+    icon={{src: "https://placehold.jp/150x150.png"}}
+    name="test"
+    images={[{
+      src: "https://placehold.jp/150x150.png",
+      alt: "test"
+    }, {
+      src: "https://placehold.jp/150x150.png",
+      alt: "test"
+    }, {
+      src: "https://placehold.jp/150x150.png",
+      alt: "test"
+    }, {
+      src: "https://placehold.jp/150x150.png",
+      alt: "test"
+    }, {
+      src: "https://placehold.jp/150x150.png",
+      alt: "test"
+    }, {
+      src: "https://placehold.jp/150x150.png",
+      alt: "test"
+    }]} text="test"/>);

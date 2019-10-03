@@ -8,7 +8,7 @@
     "lint": "tslint -c tslint.json src/**/*.ts",
     "prepublish": "yarn build",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build:storybook": "storybook-to-ghpages --dry-run --out=.out"
   },
   "repository": {
     "type": "git",
@@ -40,7 +40,9 @@
     "@storybook/addon-links": "^5.2.1",
     "@storybook/addons": "^5.2.1",
     "@storybook/react": "^5.2.1",
+    "@storybook/storybook-deployer": "^2.8.1",
     "@types/node": "^12.7.9",
+    "@types/styled-components": "^4.1.19",
     "babel-loader": "^8.0.6",
     "react-docgen-typescript-loader": "^3.3.0",
     "tsconfig-paths-webpack-plugin": "^3.2.0",

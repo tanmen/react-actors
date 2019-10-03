@@ -9,7 +9,7 @@
 			"esnext"
 		],
 
-		"rootDir": "src",
+		"baseUrl": "src",
 		"outDir": "lib",
 
 		"strict": true,
@@ -34,9 +34,9 @@
 		"pretty": true,
 
 		"jsx": "react",
-		"allowSyntheticDefaultImports": true
+		"allowSyntheticDefaultImports": true,
+		"typeRoots": ["node_modules/@types", "types"],
+		"types": ["styled-components", "react", "node"]
 	},
-	"include": [
-		"src/**/*"
-	]
+	"include": ["src/**/*", "types/**/*"]
 }
