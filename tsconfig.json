@@ -36,7 +36,8 @@
 		"jsx": "react",
 		"allowSyntheticDefaultImports": true,
 		"typeRoots": ["node_modules/@types", "types"],
-		"types": ["styled-components", "react", "node"]
+		"types": ["styled-components", "react", "node"],
+		"sourceMap": true
 	},
 	"include": ["src/**/*", "types/**/*"]
 }

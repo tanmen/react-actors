@@ -1,4 +1,4 @@
-import React from "react";
+import React, {FC} from "react";
 import styled, {css} from "styled-components";
 import color from "../themes/color";
 
@@ -9,7 +9,7 @@ interface Props extends Components {
   images: Array<{ src: string, alt?: string }>
 }
 
-const BasicCard = (props: Props) => <Box className={props.className}>
+const BasicCard: FC<Props> = (props) => <Box className={props.className}>
   <Header><Icon src={props.icon.src} alt={props.icon.alt}/>{props.name}</Header>
   <ImgBox count={props.images.length}>{props.images.map(image => <Img src={image.src} alt={image.alt}/>)}</ImgBox>
   <Body>{props.text}</Body>

@@ -34,18 +34,19 @@ jobs:
           FOLDER: storybook-static
           BUILD_SCRIPT: yarn && yarn build-storybook
 
-#  publish-npm:
-#    needs: build
-#    runs-on: ubuntu-latest
-#    steps:
-#      - uses: actions/checkout@v1
-#      - uses: actions/setup-node@v1
-#        with:
-#          node-version: 12
-#          registry-url: https://registry.npmjs.org/
-#      - run: yarn publish
-#        env:
-#          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+  publish-npm:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - run: yarn
+      - run: yarn publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 #
 #  publish-gpr:
 #    needs: build
