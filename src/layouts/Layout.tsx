@@ -1,13 +1,13 @@
 import React, {ReactNode, FC} from 'react';
 import styled from "styled-components";
 
-interface Props extends Components {
+interface Props extends ComponentProps {
   header: ReactNode
   footer?: ReactNode
 }
 
 const Layout: FC<Props> = (props) =>
-  <Body>
+  <Body className={props.className}>
     {props.header}
     {props.children}
     {props.footer}

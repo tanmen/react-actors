@@ -13,6 +13,9 @@ or
 npm install react-actors
 ```
 
+## Storybook
+https://tanmen.github.io/react-actors
+
 ## Usage Example
 ```typescript jsx
 import React from "react";

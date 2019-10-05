@@ -3,4 +3,4 @@ import * as React from "react";
 import {Layout} from "../src/layouts";
 
 storiesOf('Layouts', module)
-  .add('BasicCard', () => <Layout header={<div>Header</div>} footer={<div>footer</div>}>Main</Layout>);
+  .add('Layout', () => <Layout header={<div>Header</div>} footer={<div>footer</div>}>Main</Layout>);
