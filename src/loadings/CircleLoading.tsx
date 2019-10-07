@@ -1,13 +1,14 @@
 import React, {FC} from "react";
 import styled from "styled-components";
 import SquareDisposition from "../dispositions/SquareDisposition";
+import {ComponentProps} from "../../types/ComponentProps";
 
 interface Props extends ComponentProps {
   borderWidth?: number;
 }
 
-const CircleLoading: FC<Props> = ({borderWidth = 3, className}) =>
-  <SquareDisposition className={className}>
+const CircleLoading: FC<Props> = ({borderWidth = 3, className, style}) =>
+  <SquareDisposition className={className} style={style}>
     <Circle borderWidth={borderWidth}/>
   </SquareDisposition>;
 

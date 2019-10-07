@@ -2,6 +2,7 @@ import React, {FC} from "react";
 import styled, {css} from "styled-components";
 import {RoundImage} from "../images";
 import color from "../themes/color";
+import {ComponentProps} from "../../types/ComponentProps";
 
 interface Props extends ComponentProps {
   icon: { src: string, alt?: string }
@@ -79,7 +80,7 @@ object-fit: cover;
 width: 100%;
 height: 100%;
 `;
-const Body = styled.div`
+const Body = styled.p`
 padding: 10px 5px;
 height: 80px;
 `;

@@ -1,5 +1,6 @@
 import React, {ReactNode, FC} from 'react';
 import styled from "styled-components";
+import {ComponentProps} from "../../types/ComponentProps";
 
 interface Props extends ComponentProps {
   header: ReactNode

@@ -1,6 +1,7 @@
 import {select, text} from "@storybook/addon-knobs";
 import {storiesOf} from '@storybook/react';
 import * as React from "react";
+import {ImageCard} from "../src/cards";
 import BasicCard from "../src/cards/BasicCard";
 
 
@@ -31,4 +32,6 @@ storiesOf('Cards', module)
       }
       text={text('text', 'text')}
     />
-  });
+  })
+  .add('ImageCard', () =>
+    <ImageCard src="https://placehold.jp/150x250.png" text={text('text', 'Text')}/>);

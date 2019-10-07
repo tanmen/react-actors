@@ -1,8 +1,9 @@
 import React, {FC} from "react";
 import styled from "styled-components";
+import {ComponentProps} from "../../types/ComponentProps";
 import SquareDisposition from "../dispositions/SquareDisposition";
 
-const SpinnerLoading: FC<ComponentProps> = ({className}) => <SquareDisposition className={className}>
+const LineLoading: FC<ComponentProps> = ({className, style}) => <SquareDisposition className={className} style={style}>
   <Spinner>
     <Rect className="rect-1"/>
     <Rect className="rect-2"/>
@@ -11,7 +12,7 @@ const SpinnerLoading: FC<ComponentProps> = ({className}) => <SquareDisposition c
     <Rect className="rect-5"/>
   </Spinner>
 </SquareDisposition>;
-export default SpinnerLoading;
+export default LineLoading;
 
 const Spinner = styled.div`
 width:100%;

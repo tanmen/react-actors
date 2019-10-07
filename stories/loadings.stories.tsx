@@ -1,14 +1,18 @@
 import {number} from "@storybook/addon-knobs";
 import {storiesOf} from '@storybook/react';
 import * as React from "react";
-import SquareDisposition from "../src/dispositions/SquareDisposition";
-import {CircleLoading, SpinnerLoading} from "../src/loadings";
+import {CenterDisposition} from "../src/dispositions";
+import {CircleLoading, LineLoading} from "../src/loadings";
 
 storiesOf('Loadings', module)
-  .add('SpinnerLoading', () => <SpinnerLoading/>)
-  .add('CircleLoading', () => <div style={{height: '100%'}}>
-    <SquareDisposition>
+  .add('LineLoading', () =>
+    <CenterDisposition style={{height: '100vh'}}>
+      <LineLoading style={{width: '100px'}}/>
+    </CenterDisposition>)
+  .add('CircleLoading', () =>
+    <CenterDisposition style={{height: '100vh'}}>
       <CircleLoading
+        style={{width: '100px'}}
         borderWidth={number('borderWidth', 5)}/>
-    </SquareDisposition>
-  </div>);
+    </CenterDisposition>
+  );

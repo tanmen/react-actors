@@ -1,6 +1,8 @@
-import {addDecorator, configure} from '@storybook/react';
+import {addDecorator, addParameters, configure} from '@storybook/react';
 import {withKnobs} from "@storybook/addon-knobs";
+import {withInfo} from '@storybook/addon-info';
 import {setConsoleOptions} from "@storybook/addon-console";
+import "@storybook/addon-console";
 import "../src/css/reset.css";
 
 // automatically import all files ending in *.stories.js
@@ -10,10 +12,17 @@ function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
 
+addParameters({
+  options: {
+    panelPosition: 'right'
+  }
+});
+
 setConsoleOptions({
   panelExclude: []
 });
 
 addDecorator(withKnobs);
+addDecorator(withInfo);
 
 configure(loadStories, module);
