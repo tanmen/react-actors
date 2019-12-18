@@ -1,7 +1,7 @@
 import {MouseEvent} from "react";
 import {StyleProps} from "../types/StyleProps";
 
-interface ButtonProps extends StyleProps {
+type ButtonProps = {
   disabled?: boolean
   onClick: (event: MouseEvent<HTMLButtonElement>) => any
-}
+} & StyleProps;
