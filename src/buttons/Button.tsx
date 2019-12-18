@@ -5,6 +5,7 @@ import {ButtonProps} from "./props";
 
 const Button: FC<ButtonProps> = (props) => <StyledButton
   className={props.className}
+  style={props.style}
   disabled={props.disabled}
   onClick={props.onClick}
 >{props.children}</StyledButton>;
