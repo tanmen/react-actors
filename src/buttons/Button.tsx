@@ -1,7 +1,7 @@
 import React, {FC} from "react";
 import styled from "styled-components";
 import color from "../themes/color";
-import {ButtonProps} from "./props";
+import {ButtonProps} from "./index";
 
 const Button: FC<ButtonProps> = (props) => <StyledButton
   className={props.className}

@@ -1,8 +1,7 @@
 import React, {FC, MouseEvent, useCallback, useEffect, useRef, useState} from "react";
 import styled from "styled-components";
 import {CircleLoading} from "../loadings";
-import { Button} from "./index";
-import {ButtonProps} from "./props";
+import {Button, ButtonProps} from "./index";
 
 const AsyncButton: FC<ButtonProps> = (props) => {
   const ref = useRef<HTMLDivElement>(null);
