@@ -1,9 +1,9 @@
 import React, {FC} from "react";
 import styled from "styled-components";
-import {ComponentProps} from "../../types/ComponentProps";
+import {StyleProps} from "../types/StyleProps";
 import SquareDisposition from "../dispositions/SquareDisposition";
 
-const LineLoading: FC<ComponentProps> = ({className, style}) => <SquareDisposition className={className} style={style}>
+const LineLoading: FC<StyleProps> = ({className, style}) => <SquareDisposition className={className} style={style}>
   <Spinner>
     <Rect className="rect-1"/>
     <Rect className="rect-2"/>

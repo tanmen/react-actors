@@ -1,10 +1,10 @@
 import React, {FC} from "react";
 import styled from "styled-components";
-import {ComponentProps} from "../../types/ComponentProps";
+import {StyleProps} from "../types/StyleProps";
 import SquareDisposition from "../dispositions/SquareDisposition";
 import Image from "./Image";
 
-interface Props extends ComponentProps {
+interface Props extends StyleProps {
   src: string
   alt?: string
 }

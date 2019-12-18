@@ -3,7 +3,7 @@ import {withKnobs} from "@storybook/addon-knobs";
 import {withInfo} from '@storybook/addon-info';
 import {setConsoleOptions} from "@storybook/addon-console";
 import "@storybook/addon-console";
-import "../src/css/reset.css";
+import "css/reset.css";
 
 // automatically import all files ending in *.stories.js
 const req = require.context('../stories', true, /\.stories\.tsx?$/);

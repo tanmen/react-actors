@@ -1,8 +1,8 @@
 import React, {FC} from "react";
 import styled from "styled-components";
-import {ComponentProps} from "../../types/ComponentProps";
+import {StyleProps} from "../types/StyleProps";
 
-const SquareDisposition: FC<ComponentProps> = ({className, style, children}) => <Box className={className} style={style}>
+const SquareDisposition: FC<StyleProps> = ({className, style, children}) => <Box className={className} style={style}>
   <Content>
     {children}
   </Content>

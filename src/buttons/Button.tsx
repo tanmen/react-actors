@@ -1,9 +1,9 @@
 import React, {FC} from "react";
 import styled from "styled-components";
 import color from "../themes/color";
-import {BaseProps} from "./index";
+import {ButtonProps} from "./props";
 
-const Button: FC<BaseProps> = (props) => <StyledButton
+const Button: FC<ButtonProps> = (props) => <StyledButton
   className={props.className}
   disabled={props.disabled}
   onClick={props.onClick}
@@ -12,15 +12,15 @@ const Button: FC<BaseProps> = (props) => <StyledButton
 export default Button;
 
 const StyledButton = styled.button`
-color: ${color.default.fontPrimary.hex};
+color: ${color.default.primary.font.hex};
 padding: 5px;
-border: 1px solid ${color.default.border.hex};
+border: 1px solid ${color.default.primary.border.hex};
 border-radius: 5px;
 &:disabled {
   color: rgba(
-    ${color.default.fontPrimary.dec[0]},
-    ${color.default.fontPrimary.dec[1]},
-    ${color.default.fontPrimary.dec[2]},
+    ${color.default.primary.font.dec[0]},
+    ${color.default.primary.font.dec[1]},
+    ${color.default.primary.font.dec[2]},
     0.2
   );  
 }

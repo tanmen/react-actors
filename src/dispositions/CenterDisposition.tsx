@@ -1,8 +1,8 @@
 import React, {FC} from "react";
 import styled from "styled-components";
-import {ComponentProps} from "../../types/ComponentProps";
+import {StyleProps} from "../types/StyleProps";
 
-const CenterDisposition: FC<ComponentProps> = ({className, style, children}) =>
+const CenterDisposition: FC<StyleProps> = ({className, style, children}) =>
   <Box className={className}
        style={style}>
     {children}

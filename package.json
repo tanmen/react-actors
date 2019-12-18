@@ -1,6 +1,6 @@
 {
   "name": "react-actors",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "This is UI components collection that can be used in React.",
   "main": "lib/index.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "lint": "tslint -c tslint.json src/**/*.ts",
     "prepublish": "yarn build",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "repository": {
     "type": "git",
@@ -46,6 +47,7 @@
     "@storybook/addon-viewport": "^5.2.1",
     "@storybook/addons": "^5.2.1",
     "@storybook/react": "^5.2.1",
+    "@storybook/storybook-deployer": "^2.8.1",
     "@types/node": "^12.7.9",
     "@types/storybook__addon-info": "^4.1.2",
     "@types/storybook__addon-knobs": "^5.0.4",

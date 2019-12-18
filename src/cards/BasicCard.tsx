@@ -2,9 +2,9 @@ import React, {FC} from "react";
 import styled, {css} from "styled-components";
 import {RoundImage} from "../images";
 import color from "../themes/color";
-import {ComponentProps} from "../../types/ComponentProps";
+import {StyleProps} from "../types/StyleProps";
 
-interface Props extends ComponentProps {
+interface Props extends StyleProps {
   icon: { src: string, alt?: string }
   name: string
   info: string
@@ -26,7 +26,7 @@ const BasicCard: FC<Props> = (props) => <Box className={props.className}>
 export default BasicCard;
 
 const Box = styled.div`
-border: 1px solid ${color.default.border.hex};
+border: 1px solid ${color.default.primary.border.hex};
 border-radius: 5px;
 width: 242px;
 `;

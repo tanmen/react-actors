@@ -1,9 +1,9 @@
 import React, {FC} from "react";
 import styled from "styled-components";
 import {Image} from "../images";
-import {ComponentProps} from "../../types/ComponentProps";
+import {StyleProps} from "../types/StyleProps";
 
-interface Props extends ComponentProps {
+interface Props extends StyleProps {
   src: string;
   text?: string;
 }

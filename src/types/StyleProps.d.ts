@@ -1,6 +1,6 @@
 import {CSSProperties} from "react";
 
-interface ComponentProps {
+interface StyleProps {
   className?: string;
   style?: CSSProperties;
 }
