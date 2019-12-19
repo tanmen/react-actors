@@ -3,9 +3,13 @@ import styled from "styled-components";
 import {CircleLoading} from "../loadings";
 import {Button, ButtonProps} from "./index";
 
-const AsyncButton: FC<ButtonProps> = ({type, onClick = () => {}, disabled, children, style, className}) => {
+interface Props extends ButtonProps{
+  loading?: boolean;
+}
+
+const AsyncButton: FC<Props> = ({loading, type,  onClick = () => {}, disabled, children, style, className}) => {
   const ref = useRef<HTMLDivElement>(null);
-  const [clicked, setClick] = useState(false);
+  const [clicked, setClick] = useState(loading || false);
   const [size, setSize] = useState(0);
   const handleOnClick = useCallback((e: MouseEvent<HTMLButtonElement>) => Promise.resolve(setClick(true))
     .then(() => onClick(e))
@@ -18,6 +22,9 @@ const AsyncButton: FC<ButtonProps> = ({type, onClick = () => {}, disabled, child
   useEffect(() => {
     setSize(ref.current ? ref.current.clientHeight : 0);
   }, [ref]);
+  useEffect(() => {
+    setClick(loading || false);
+  }, [loading]);
 
   return <Button type={type} onClick={handleOnClick} disabled={disabled || clicked} style={style} className={className}>
     <Content>
