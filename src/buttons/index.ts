@@ -5,6 +5,7 @@ export {default as AsyncButton} from "./AsyncButton";
 export {default as Button} from "./Button";
 
 export type ButtonProps = {
-  disabled?: boolean
-  onClick: (event: MouseEvent<HTMLButtonElement>) => any
+  type?: 'submit' | 'reset' | 'button';
+  disabled?: boolean;
+  onClick?: (event: MouseEvent<HTMLButtonElement>) => any;
 } & StyleProps;

@@ -3,25 +3,25 @@ import styled from "styled-components";
 import {CircleLoading} from "../loadings";
 import {Button, ButtonProps} from "./index";
 
-const AsyncButton: FC<ButtonProps> = (props) => {
+const AsyncButton: FC<ButtonProps> = ({type, onClick = () => {}, disabled, children, style, className}) => {
   const ref = useRef<HTMLDivElement>(null);
   const [clicked, setClick] = useState(false);
   const [size, setSize] = useState(0);
   const handleOnClick = useCallback((e: MouseEvent<HTMLButtonElement>) => Promise.resolve(setClick(true))
-    .then(() => props.onClick(e))
+    .then(() => onClick(e))
     .catch((err) => {
       console.error(err);
       setClick(false);
     })
-    .then(() => setClick(false)), [props.onClick, setClick]);
+    .then(() => setClick(false)), [onClick, setClick]);
 
   useEffect(() => {
     setSize(ref.current ? ref.current.clientHeight : 0);
   }, [ref]);
 
-  return <Button onClick={handleOnClick} disabled={props.disabled || clicked}>
+  return <Button type={type} onClick={handleOnClick} disabled={disabled || clicked} style={style} className={className}>
     <Content>
-      <Body disabled={clicked}>{props.children}</Body>
+      <Body disabled={clicked}>{children}</Body>
       <LoadingBox ref={ref} size={size}>
         {clicked ? <CircleLoading/> : null}
       </LoadingBox>
@@ -37,14 +37,14 @@ position: relative;
 const Body = styled.p<{ disabled: boolean }>`
 opacity: ${({disabled}) => disabled ? 0 : 1};
 `;
-const LoadingBox = styled.div<{size: number}>`
+const LoadingBox = styled.div<{ size: number }>`
 position: absolute;
 top: 0;
 right: 0;
 bottom: 0;
 left: 0;
-width: ${({size}) => size !== 0 ? `${size}px`: 'auto'};
-height: ${({size}) => size !== 0 ? `${size}px`: 'auto'};
+width: ${({size}) => size !== 0 ? `${size}px` : 'auto'};
+height: ${({size}) => size !== 0 ? `${size}px` : 'auto'};
 margin: 0 auto;
 `;
 

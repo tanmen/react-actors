@@ -3,12 +3,14 @@ import styled from "styled-components";
 import color from "../themes/color";
 import {ButtonProps} from "./index";
 
-const Button: FC<ButtonProps> = (props) => <StyledButton
-  className={props.className}
-  style={props.style}
-  disabled={props.disabled}
-  onClick={props.onClick}
->{props.children}</StyledButton>;
+const Button: FC<ButtonProps> = ({className, type = 'button', style, disabled, onClick, children}) =>
+  <StyledButton
+    className={className}
+    type={type}
+    style={style}
+    disabled={disabled}
+    onClick={onClick}
+  >{children}</StyledButton>;
 
 export default Button;
 
