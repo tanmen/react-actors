@@ -3,11 +3,11 @@ import styled from "styled-components";
 import {CircleLoading} from "../loadings";
 import {Button, ButtonProps} from "./index";
 
-interface Props extends ButtonProps{
+interface Props extends ButtonProps {
   loading?: boolean;
 }
 
-const AsyncButton: FC<Props> = ({loading, type,  onClick = () => {}, disabled, children, style, className}) => {
+const AsyncButton: FC<Props> = ({loading, onClick = () => {}, disabled, children, ...props}) => {
   const ref = useRef<HTMLDivElement>(null);
   const [clicked, setClick] = useState(loading || false);
   const [size, setSize] = useState(0);
@@ -26,7 +26,7 @@ const AsyncButton: FC<Props> = ({loading, type,  onClick = () => {}, disabled, c
     setClick(loading || false);
   }, [loading]);
 
-  return <Button type={type} onClick={handleOnClick} disabled={disabled || clicked} style={style} className={className}>
+  return <Button {...props} onClick={handleOnClick} disabled={disabled || clicked} >
     <Content>
       <Body disabled={clicked}>{children}</Body>
       <LoadingBox ref={ref} size={size}>

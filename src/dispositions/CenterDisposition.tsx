@@ -3,8 +3,7 @@ import styled from "styled-components";
 import {StyleProps} from "../types/StyleProps";
 
 const CenterDisposition: FC<StyleProps> = ({className, style, children}) =>
-  <Box className={className}
-       style={style}>
+  <Box className={className} style={style}>
     {children}
   </Box>;
 

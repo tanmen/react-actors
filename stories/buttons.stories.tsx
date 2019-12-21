@@ -1,22 +1,34 @@
 import {action} from "@storybook/addon-actions";
-import {boolean, text} from "@storybook/addon-knobs";
+import {boolean, select, text} from "@storybook/addon-knobs";
 import {storiesOf} from '@storybook/react';
 import * as React from "react";
-import {AsyncButton, Button} from "../src/buttons";
+import {AsyncButton, Button, ColorType, SizeType} from "../src/buttons";
 
+const size = () => select('size', {Normal: SizeType.Normal, Large: SizeType.Large, Small: SizeType.Small}, SizeType.Normal);
+const color = () => select('color', {
+  Primary: ColorType.Primary,
+  Secondary: ColorType.Secondary,
+  Success: ColorType.Success
+}, ColorType.Primary);
+const disabled =() => boolean('disabled', false);
 storiesOf('Buttons', module)
   .add('Button', () =>
-    <Button disabled={boolean('disabled', false)}
-            onClick={action('onClick')}>
+    <Button
+      size={size()}
+      color={color()}
+      disabled={disabled()}
+      onClick={action('onClick')}>
       {text('text', 'Button')}
     </Button>)
   .add('AsyncButton', () =>
     <AsyncButton
-      disabled={boolean('disabled', false)}
+      size={size()}
+      color={color()}
+      disabled={disabled()}
       onClick={() => new Promise(resolve => {
         setTimeout(() => {
           resolve('onClick')
         }, 1000)
       })}>
-      {text('text', 'Button')}
+      {text('text', 'AsyncButton')}
     </AsyncButton>);

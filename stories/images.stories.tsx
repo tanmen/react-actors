@@ -16,7 +16,8 @@ storiesOf('Images', module)
   .add('Image', () =>
     <CenterDisposition style={{height: '100vh'}}>
       <Image
-        style={{width: '150px'}}
+        width={150}
+        height={150}
         src={text('src', "https://example.com/test")}
         empty={text('empty', "https://placehold.jp/150x150.png?text=EmptyImage")}
       />

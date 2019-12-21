@@ -5,12 +5,15 @@ import SquareDisposition from "../dispositions/SquareDisposition";
 import Image from "./Image";
 
 interface Props extends StyleProps {
-  src: string
-  alt?: string
+  src: string;
+  alt?: string;
+  empty?: string;
+  width?: string | number;
+  height?: string | number;
 }
 
-const RoundImage: FC<Props> = ({src, alt, className, style}) => <SquareDisposition className={className} style={style}>
-  <Img src={src} alt={alt}/>
+const RoundImage: FC<Props> = ({ className, style, ...props}) => <SquareDisposition className={className} style={style}>
+  <Img {...props}/>
 </SquareDisposition>;
 
 export default RoundImage;

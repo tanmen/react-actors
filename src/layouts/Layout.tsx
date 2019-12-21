@@ -1,4 +1,4 @@
-import React, {ReactNode, FC} from 'react';
+import React, {FC, ReactNode} from 'react';
 import styled from "styled-components";
 import {StyleProps} from "../types/StyleProps";
 
@@ -7,11 +7,13 @@ interface Props extends StyleProps {
   footer?: ReactNode
 }
 
-const Layout: FC<Props> = (props) =>
-  <Body className={props.className}>
-    {props.header}
-    {props.children}
-    {props.footer}
+const Layout: FC<Props> = ({header, children, footer = <Empty/>, className, style}) =>
+  <Body className={className} style={style}>
+    {header}
+    <div>
+      {children}
+    </div>
+    {footer}
   </Body>;
 export default Layout;
 
@@ -21,4 +23,9 @@ grid-template-rows: auto 1fr auto;
 grid-row-gap: 10px;
 align-items: flex-start;
 min-height: 100vh;
+`;
+
+const Empty = styled.div`
+display: none;
+content: '';
 `;
