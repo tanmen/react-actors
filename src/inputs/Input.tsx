@@ -1,5 +1,5 @@
 import Color from "color-js/color";
-import React, {FC, InputHTMLAttributes} from "react";
+import React, {FC, InputHTMLAttributes, RefObject} from "react";
 import styled from "styled-components";
 import {ColorType} from "../types/ColorType";
 import {ModeType} from "../types/ModeType";
@@ -8,6 +8,7 @@ import {validate} from "../utils/validater";
 interface Original {
   color?: ColorType;
   mode?: ModeType;
+  ref?: RefObject<HTMLInputElement>;
 }
 
 type Props = Original & InputHTMLAttributes<HTMLInputElement>;
