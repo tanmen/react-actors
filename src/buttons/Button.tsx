@@ -52,7 +52,7 @@ const Css = {
 const StyledButton = styled.button<{ size: SizeType, colorType: ColorType }>`
 padding: .375rem .75rem;
 border-radius: .25rem;
-font-weight: 400;
+font-weight: 700;
 transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 &:disabled {
   opacity: .6;
