@@ -1,5 +1,5 @@
 import Color from "color-js/color";
-import React, {FC, InputHTMLAttributes, RefObject} from "react";
+import React, {FC, InputHTMLAttributes, Ref} from "react";
 import styled from "styled-components";
 import {ColorType} from "../types/ColorType";
 import {ModeType} from "../types/ModeType";
@@ -8,10 +8,9 @@ import {validate} from "../utils/validater";
 interface Original {
   color?: ColorType;
   mode?: ModeType;
-  ref?: RefObject<HTMLInputElement>;
 }
 
-type Props = Original & InputHTMLAttributes<HTMLInputElement>;
+type Props = Original & InputHTMLAttributes<HTMLInputElement> & { ref?: Ref<HTMLInputElement>; };
 
 const Input: FC<Props> = ({
                             color = ColorType.Primary,
@@ -38,9 +37,9 @@ border-radius: .25rem;
 transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 &:focus {
   outline: 0;
-  border-color: ${validate<Required<Original>>((theme, {color}) => 
-    Color(theme.type[color].border).setLightness(0.75).toCSS())};
+  border-color: ${validate<Required<Original>>((theme, {color}) =>
+  Color(theme.type[color].border).setLightness(0.75).toCSS())};
   box-shadow: 0 0 0 .2rem ${validate<Required<Original>>((theme, {color}) =>
-    Color(theme.type[color].border).setAlpha(0.25).toCSS())};
+  Color(theme.type[color].border).setAlpha(0.25).toCSS())};
 }
 `;
