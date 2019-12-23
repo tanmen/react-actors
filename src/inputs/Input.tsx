@@ -8,16 +8,21 @@ import {validate} from "../utils/validater";
 interface Original {
   color?: ColorType;
   mode?: ModeType;
+  /**
+   * ref
+   */
+  register?: Ref<HTMLInputElement>;
 }
 
-type Props = Original & InputHTMLAttributes<HTMLInputElement> & { ref?: Ref<HTMLInputElement>; };
+type Props = Original & InputHTMLAttributes<HTMLInputElement>;
 
 const Input: FC<Props> = ({
                             color = ColorType.Primary,
                             mode = ModeType.Light,
+                            register,
                             ...props
                           }) =>
-  <SInput {...props} color={color} mode={mode}/>;
+  <SInput {...props} ref={register} color={color} mode={mode}/>;
 
 export default Input;
 
