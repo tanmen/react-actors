@@ -44,6 +44,9 @@ const Css = {
       box-shadow: 0 0 0 0.2rem ${validate(
     (theme) => Color(theme.type[type].border).lightenByRatio(0.2).setAlpha(0.5).toCSS())};
     }
+    & * {
+      color: ${validate((theme) => theme.type[type].font)};
+    }
   `,
 };
 const StyledButton = styled.button<{ size: SizeType, colorType: ColorType }>`
