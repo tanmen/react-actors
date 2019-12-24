@@ -32,20 +32,20 @@ export default Input;
 const Css = {
   size: {
     default: css`
-      height: calc(1.5em + .75rem + 2px);
+      height: calc(1rem + .75rem + 2px);
       padding: .375rem .75rem;
       font-size: 1rem;
       border-radius: .25rem;
     `,
     small: css`
-      height: calc(1.3125em + .50rem + 2px);
+      height: calc(.875rem + .50rem + 2px);
       padding: .25rem .5rem;
       font-size: .875rem;
       line-height: 1.5;
       border-radius: .2rem;
     `,
     large: css`
-      height: calc(1.875em + .50rem + 2px);
+      height: calc(1.25rem + 1rem + 2px);
       padding: .5rem 1rem;
       font-size: 1.25rem;
       line-height: 1.5;
