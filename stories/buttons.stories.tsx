@@ -2,8 +2,9 @@ import {action} from "@storybook/addon-actions";
 import {boolean, select, text} from "@storybook/addon-knobs";
 import {storiesOf} from '@storybook/react';
 import * as React from "react";
-import {AsyncButton, Button, SizeType} from "../src/buttons";
+import {AsyncButton, Button} from "../src/buttons";
 import ThemeProvider from "../src/providers/ThemeProvider";
+import {SizeType} from "../src/types/SizeType";
 import {color} from "./data/color";
 
 const size = () => select('size', {Normal: SizeType.Normal, Large: SizeType.Large, Small: SizeType.Small},

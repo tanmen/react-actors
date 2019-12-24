@@ -1,10 +1,7 @@
 import {MouseEvent} from "react";
 import {ColorType} from "../types/ColorType";
+import {SizeType} from "../types/SizeType";
 import {StyleProps} from "../types/StyleProps";
-
-export enum SizeType {
-  Large, Normal, Small
-}
 
 export {default as AsyncButton} from "./AsyncButton";
 export {default as Button} from "./Button";

@@ -3,8 +3,9 @@ import React, {FC} from "react";
 import styled, {css} from "styled-components";
 import {Theme} from "../providers/ThemeProvider";
 import {ColorType} from "../types/ColorType";
+import {SizeType} from "../types/SizeType";
 import {validate} from "../utils/validater";
-import {ButtonProps, SizeType} from "./index";
+import {ButtonProps} from "./index";
 
 const Button: FC<ButtonProps> = ({className, color = ColorType.Primary, size = SizeType.Normal, type = 'button', style, disabled, onClick, children}) =>
   <StyledButton
@@ -21,6 +22,10 @@ export default Button;
 
 const Css = {
   size: {
+    default: css`
+      padding: .375rem .75rem;
+      border-radius: .25rem;
+    `,
     small: css`
       padding: .25rem .5rem;
       font-size: .875rem;
@@ -50,8 +55,6 @@ const Css = {
   `,
 };
 const StyledButton = styled.button<{ size: SizeType, colorType: ColorType }>`
-padding: .375rem .75rem;
-border-radius: .25rem;
 font-weight: 700;
 transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 &:disabled {
@@ -62,7 +65,6 @@ transition: color .15s ease-in-out, background-color .15s ease-in-out, border-co
   outline: 0 #fff;
   box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
 }
-${({size}) => size === SizeType.Small && Css.size.small}
-${({size}) => size === SizeType.Large && Css.size.large}
+${({size}) => Css.size[size]}
 ${({colorType}) => Css.color(colorType)}
 `;
