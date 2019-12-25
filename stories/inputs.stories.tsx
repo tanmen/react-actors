@@ -1,4 +1,4 @@
-import {select} from "@storybook/addon-knobs";
+import {boolean, select} from "@storybook/addon-knobs";
 import {storiesOf} from '@storybook/react';
 import React from "react";
 import Input from "../src/inputs/Input";
@@ -13,7 +13,7 @@ const size = () => select('size', {Normal: SizeType.Normal, Large: SizeType.Larg
   SizeType.Normal);
 storiesOf('Inputs', module)
   .add('Input', () => <ThemeProvider>
-    <Input color={color()} mode={mode()} size={size()}/>
+    <Input color={color()} mode={mode()} size={size()} disabled={boolean('disabled', false)}/>
   </ThemeProvider>);
 storiesOf('Inputs/Group', module)
   .add('Doll', () =>

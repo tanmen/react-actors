@@ -71,5 +71,9 @@ transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   box-shadow: 0 0 0 .2rem ${validate<Required<Original>>((theme, {color}) =>
   Color(theme.type[color].border).setAlpha(0.25).toCSS())};
 }
+&:disabled {
+  background-color: ${validate<Required<Original>>(
+  (theme, {mode}) => Color(theme.mode[mode].font).setLightness(0.9).toCSS())};
+}
 ${({sizeType}) => Css.size[sizeType]}
 `;
