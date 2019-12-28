@@ -14,7 +14,7 @@ interface Props extends StyleProps {
 
 const BasicCard: FC<Props> = (props) => <Box className={props.className}>
   <Header>
-    <Icon src={props.icon.src} alt={props.icon.alt}/>
+    <RoundImage width={30} height={30} src={props.icon.src} alt={props.icon.alt}/>
     <Title>{props.name}</Title>
     <Info>{props.info}</Info>
   </Header>
@@ -37,10 +37,6 @@ grid-template-columns: auto 1fr auto;
 grid-template-rows: 1fr;
 gap: 5px;
 align-items: center;
-`;
-const Icon = styled(RoundImage)`
-height: 30px;
-width: 30px;
 `;
 const Title = styled.p`
 font-size: 15px;

@@ -8,6 +8,8 @@ storiesOf('Images', module)
   .add('RoundImage', () =>
     <CenterDisposition style={{height: '100vh'}}>
       <RoundImage
+        width={150}
+        height={150}
         style={{width: '150px'}}
         src={text('src', "https://placehold.jp/150x150.png")}
       />

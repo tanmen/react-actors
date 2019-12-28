@@ -1,16 +1,14 @@
 import React, {FC} from "react";
 import styled from "styled-components";
-import {Image} from "../images";
-import {StyleProps} from "../types/StyleProps";
+import Image, {Props as ImageProps} from "../images/Image";
 
-interface Props extends StyleProps {
-  src: string;
+interface Props extends ImageProps {
   text?: string;
 }
 
-const ImageCard: FC<Props> = ({src, text, className}) => {
+const ImageCard: FC<Props> = ({ text, className, ...props}) => {
   return <Box className={className}>
-    <Image src={src}/>
+    <Image {...props}/>
     {text ? <Text>{text}</Text> : null}
   </Box>;
 };

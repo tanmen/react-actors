@@ -34,4 +34,4 @@ storiesOf('Cards', module)
     />
   })
   .add('ImageCard', () =>
-    <ImageCard src="https://placehold.jp/150x250.png" text={text('text', 'Text')}/>);
+    <ImageCard width={150} height={250} src="https://placehold.jp/150x250.png" text={text('text', 'Text')}/>);
