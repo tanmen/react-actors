@@ -1,4 +1,4 @@
-import React, {FC, useCallback, useState} from "react";
+import React, {useCallback, useState} from "react";
 import styled from "styled-components";
 import Input from "../inputs/Input";
 
@@ -14,7 +14,7 @@ interface Props<D extends Data = Data> {
   onChange?(text: string): Promise<unknown> | unknown;
 }
 
-const SearchBox: FC<Props> = ({data, onSelect, onChange = (_text: string) => {}}) => {
+const SearchBox = <D extends Data = Data>({data, onSelect, onChange = (_text: string) => {}}: Props<D>) => {
   const [inputFocus, setInputFocus] = useState(false);
   const [dropFocus, setDropFocus] = useState(false);
   const [inputTimeout, setInputTimeout] = useState<NodeJS.Timeout | null>(null);
@@ -34,7 +34,8 @@ const SearchBox: FC<Props> = ({data, onSelect, onChange = (_text: string) => {}}
     setDropFocus(false);
     onSelect(datum);
   }, [onSelect]);
-  const onKeyUp = useCallback((event, datum) => [13, 32].includes(event.keyCode) && handleOnSelect(datum), [handleOnSelect]);
+  const onKeyUp = useCallback((event, datum) => [13, 32].includes(event.keyCode) && handleOnSelect(datum),
+    [handleOnSelect]);
 
   return <>
     <Input
@@ -54,6 +55,7 @@ const SearchBox: FC<Props> = ({data, onSelect, onChange = (_text: string) => {}}
     </DropdownZone>
   </>;
 };
+
 export default SearchBox;
 
 const DropdownZone = styled.div`
