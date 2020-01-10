@@ -1,12 +1,18 @@
 import React, {useCallback, useState} from "react";
 import styled from "styled-components";
 import Input from "../inputs/Input";
+import {ModeType} from "../types/ModeType";
+import {validate} from "../utils/validater";
 
 interface Data {
   text: string;
 }
 
-interface Props<D extends Data = Data> {
+interface ThemeProps {
+  mode?: ModeType;
+}
+
+interface Props<D extends Data> extends ThemeProps {
   data: D[];
 
   onSelect(data: D): Promise<unknown> | unknown;
@@ -14,7 +20,7 @@ interface Props<D extends Data = Data> {
   onChange?(text: string): Promise<unknown> | unknown;
 }
 
-const SearchBox = <D extends Data = Data>({data, onSelect, onChange = (_text: string) => {}}: Props<D>) => {
+const SearchBox = <D extends Data = Data>({data, onSelect, onChange = (_text: string) => {}, mode  = ModeType.Light}: Props<D>) => {
   const [inputFocus, setInputFocus] = useState(false);
   const [dropFocus, setDropFocus] = useState(false);
   const [inputTimeout, setInputTimeout] = useState<NodeJS.Timeout | null>(null);
@@ -44,7 +50,7 @@ const SearchBox = <D extends Data = Data>({data, onSelect, onChange = (_text: st
       onBlur={onInputBlur}
     />
     <DropdownZone>
-      {(inputFocus || dropFocus) && <Drop onFocus={onDropFocus} onBlur={onDropBlur}>
+      {(inputFocus || dropFocus) && <Drop mode={mode} onFocus={onDropFocus} onBlur={onDropBlur}>
         {data.map((datum, index) => <Item
           key={index}
           tabIndex={0}
@@ -62,14 +68,16 @@ const DropdownZone = styled.div`
 position: relative;
 `;
 
-const Drop = styled.div`
+const Drop = styled.div<ThemeProps>`
 position: absolute;
 right: 0;
 left: 0;
+z-index: 1000;
 margin: .125rem 0;
 padding: .5rem .5rem;
-border: 1px solid #090909;
+border: 1px solid ${validate<Required<ThemeProps>>((theme, {mode}) => theme.mode[mode].border)};
 border-radius: .25rem;
+background-color: ${validate<Required<ThemeProps>>((theme, {mode}) => theme.mode[mode].background)};
 `;
 
 const Item = styled.a`
