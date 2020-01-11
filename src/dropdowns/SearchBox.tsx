@@ -29,8 +29,11 @@ const SearchBox = <D extends Data = Data>({value, data, onSelect, onChange = (_t
   const [text, setText] = useState(value);
 
   useEffect(() => {
-    setText(value)
+    setText(value);
   }, [value]);
+  useEffect(() => {
+    onChange(text || '');
+  }, [text]);
 
   const onInputFocus = useCallback(() => {
     setInputFocus(true);
@@ -52,11 +55,7 @@ const SearchBox = <D extends Data = Data>({value, data, onSelect, onChange = (_t
   return <>
     <Input
       value={text || ''}
-      onChange={useCallback(e => {
-        const value = e.target.value;
-        onChange(value);
-        setText(value);
-      }, [onChange])}
+      onChange={useCallback(e => setText(e.target.value), [])}
       onFocus={onInputFocus}
       onBlur={onInputBlur}
     />
