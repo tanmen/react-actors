@@ -1,4 +1,4 @@
-import React, {useCallback, useState} from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import styled from "styled-components";
 import Input from "../inputs/Input";
 import {ModeType} from "../types/ModeType";
@@ -13,6 +13,7 @@ interface ThemeProps {
 }
 
 interface Props<D extends Data> extends ThemeProps {
+  value?: string;
   data: D[];
 
   onSelect(data: D): Promise<unknown> | unknown;
@@ -20,11 +21,16 @@ interface Props<D extends Data> extends ThemeProps {
   onChange?(text: string): Promise<unknown> | unknown;
 }
 
-const SearchBox = <D extends Data = Data>({data, onSelect, onChange = (_text: string) => {}, mode  = ModeType.Light}: Props<D>) => {
+const SearchBox = <D extends Data = Data>({value, data, onSelect, onChange = (_text: string) => {}, mode = ModeType.Light}: Props<D>) => {
   const [inputFocus, setInputFocus] = useState(false);
   const [dropFocus, setDropFocus] = useState(false);
   const [inputTimeout, setInputTimeout] = useState<NodeJS.Timeout | null>(null);
   const [dropTimeout, setDropTimeout] = useState<NodeJS.Timeout | null>(null);
+  const [text, setText] = useState(value);
+
+  useEffect(() => {
+    setText(value)
+  }, [value]);
 
   const onInputFocus = useCallback(() => {
     setInputFocus(true);
@@ -45,7 +51,12 @@ const SearchBox = <D extends Data = Data>({data, onSelect, onChange = (_text: st
 
   return <>
     <Input
-      onChange={e => onChange(e.target.value)}
+      value={text}
+      onChange={useCallback(e => {
+        const value = e.target.value;
+        onChange(value);
+        setText(value);
+      }, [onChange])}
       onFocus={onInputFocus}
       onBlur={onInputBlur}
     />
