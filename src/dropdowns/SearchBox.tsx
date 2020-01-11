@@ -51,7 +51,7 @@ const SearchBox = <D extends Data = Data>({value, data, onSelect, onChange = (_t
 
   return <>
     <Input
-      value={text}
+      value={text || ''}
       onChange={useCallback(e => {
         const value = e.target.value;
         onChange(value);
