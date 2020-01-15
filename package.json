@@ -1,6 +1,6 @@
 {
   "name": "react-actors",
-  "version": "0.1.19",
+  "version": "0.1.20",
   "description": "This is UI components collection that can be used in React.",
   "main": "lib/index.js",
   "scripts": {

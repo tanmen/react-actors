@@ -12,7 +12,7 @@ interface ThemeProps {
   mode?: ModeType;
 }
 
-interface Props<D extends Data> extends ThemeProps {
+export interface Props<D extends Data> extends ThemeProps {
   value?: string;
   data: D[];
 
