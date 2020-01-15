@@ -52,9 +52,8 @@ const SearchBox = <D extends Data = Data>({value, data, onSelect, onChange = (_t
   const onKeyUp = useCallback((event, datum) => [13, 32].includes(event.keyCode) && handleOnSelect(datum),
     [handleOnSelect]);
 
-  return <>
+  return <div {...props}>
     <Input
-      {...props}
       value={text || ''}
       onChange={useCallback(e => setText(e.target.value), [])}
       onFocus={onInputFocus}
@@ -70,7 +69,7 @@ const SearchBox = <D extends Data = Data>({value, data, onSelect, onChange = (_t
         >{datum.text}</Item>)}
       </Drop>}
     </DropdownZone>
-  </>;
+  </div>;
 };
 
 export default SearchBox;
