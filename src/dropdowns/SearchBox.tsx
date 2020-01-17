@@ -13,24 +13,24 @@ interface ThemeProps {
 }
 
 export interface Props<D extends Data> extends ThemeProps {
-  value?: string;
   data: D[];
+  defaultValue?: string;
 
   onSelect(data: D): Promise<unknown> | unknown;
 
   onChange?(text: string): Promise<unknown> | unknown;
 }
 
-const SearchBox = <D extends Data = Data>({value, data, onSelect, onChange = (_text: string) => {}, mode = ModeType.Light, ...props}: Props<D>) => {
+const SearchBox = <D extends Data = Data>({data, defaultValue, onSelect, onChange = (_text: string) => {}, mode = ModeType.Light, ...props}: Props<D>) => {
   const [inputFocus, setInputFocus] = useState(false);
   const [dropFocus, setDropFocus] = useState(false);
   const [inputTimeout, setInputTimeout] = useState<NodeJS.Timeout | null>(null);
   const [dropTimeout, setDropTimeout] = useState<NodeJS.Timeout | null>(null);
-  const [text, setText] = useState(value);
+  const [text, setText] = useState('');
 
   useEffect(() => {
-    setText(value);
-  }, [value]);
+    defaultValue && setText(defaultValue);
+  }, [defaultValue]);
   useEffect(() => {
     onChange(text || '');
   }, [text]);

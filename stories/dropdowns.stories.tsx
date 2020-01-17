@@ -23,8 +23,8 @@ storiesOf('Dropdowns/Search', module)
   ];
   return <ThemeProvider>
     <div style={{display: 'flex'}}>
-      <SearchBox value={text('value', '')} data={data} onSelect={action('onSelect')}/>
-      <SearchBox value={text('value', '')} data={data} onSelect={action('onSelect')}/>
+      <SearchBox data={data} onSelect={action('onSelect')}/>
+      <SearchBox data={data} onSelect={action('onSelect')}/>
     </div>
   </ThemeProvider>;
 });
