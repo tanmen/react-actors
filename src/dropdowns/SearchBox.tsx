@@ -1,6 +1,7 @@
 import React, {useCallback, useEffect, useState} from "react";
 import styled from "styled-components";
 import Input from "../inputs/Input";
+import CircleLoading from "../loadings/CircleLoading";
 import {ModeType} from "../types/ModeType";
 import {validate} from "../utils/validater";
 
@@ -61,12 +62,12 @@ const SearchBox = <D extends Data = Data>({data, defaultValue, onSelect, onChang
     />
     <DropdownZone>
       {(inputFocus || dropFocus) && <Drop mode={mode} onFocus={onDropFocus} onBlur={onDropBlur}>
-        {data.map((datum, index) => <Item
+        {data.length ? data.map((datum, index) => <Item
           key={index}
           tabIndex={0}
           onClick={() => handleOnSelect(datum)}
           onKeyUp={(e) => onKeyUp(e, datum)}
-        >{datum.text}</Item>)}
+        >{datum.text}</Item>) : <Loading><CircleLoading style={{ width: '1em'}}/></Loading>}
       </Drop>}
     </DropdownZone>
   </div>;
@@ -93,4 +94,9 @@ background-color: ${validate<Required<ThemeProps>>((theme, {mode}) => theme.mode
 const Item = styled.a`
 display: block;
 padding: .25rem .25rem;
+`;
+
+const Loading = styled.div`
+display: flex;
+justify-content: center;
 `;

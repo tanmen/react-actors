@@ -13,7 +13,7 @@ storiesOf('Dropdowns/Search', module)
       {text: 'test3'}
     ];
     return <ThemeProvider>
-      <SearchBox value={text('value', '')} data={data} onSelect={action('onSelect')}/>
+      <SearchBox defaultValue={text('value', '')} data={data} onSelect={action('onSelect')}/>
     </ThemeProvider>;
   }).add('Flex', () => {
   const data = [
