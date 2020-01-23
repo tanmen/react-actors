@@ -45,7 +45,7 @@ display: flex;
 margin-right: -1px;
 background-color: #e9ecef;
 border: 1px solid #ced4da;
-border-radius: .25rem 0 0 .25rem;
+border-radius: .25rem;
 &:not(:first-child) {
   border-left: none;
   border-top-left-radius: 0;

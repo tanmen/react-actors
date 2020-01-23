@@ -38,4 +38,13 @@ storiesOf('Inputs/Group', module)
         </Prepend>
         <Input type="number"/>
       </InputGroup>
-    </ThemeProvider>);
+    </ThemeProvider>)
+  .add('Percent', () =>
+  <ThemeProvider>
+    <InputGroup>
+      <Input type="number"/>
+      <Prepend>
+        <PrependText>%</PrependText>
+      </Prepend>
+    </InputGroup>
+  </ThemeProvider>);
