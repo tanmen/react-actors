@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useState} from "react";
+import React, {useCallback, useState} from "react";
 import styled from "styled-components";
 import Input from "../inputs/Input";
 import CircleLoading from "../loadings/CircleLoading";
@@ -14,6 +14,7 @@ interface ThemeProps {
 }
 
 export interface Props<D extends Data> extends ThemeProps {
+  value?: string;
   data: D[];
   defaultValue?: string;
 
@@ -22,19 +23,11 @@ export interface Props<D extends Data> extends ThemeProps {
   onChange?(text: string): Promise<unknown> | unknown;
 }
 
-const SearchBox = <D extends Data = Data>({data, defaultValue, onSelect, onChange = (_text: string) => {}, mode = ModeType.Light, ...props}: Props<D>) => {
+const SearchBox = <D extends Data = Data>({value = '', data, defaultValue, onSelect, onChange = (_text: string) => {}, mode = ModeType.Light, ...props}: Props<D>) => {
   const [inputFocus, setInputFocus] = useState(false);
   const [dropFocus, setDropFocus] = useState(false);
   const [inputTimeout, setInputTimeout] = useState<NodeJS.Timeout | null>(null);
   const [dropTimeout, setDropTimeout] = useState<NodeJS.Timeout | null>(null);
-  const [text, setText] = useState('');
-
-  useEffect(() => {
-    defaultValue && setText(defaultValue);
-  }, [defaultValue]);
-  useEffect(() => {
-    onChange(text || '');
-  }, [text]);
 
   const onInputFocus = useCallback(() => {
     setInputFocus(true);
@@ -55,8 +48,8 @@ const SearchBox = <D extends Data = Data>({data, defaultValue, onSelect, onChang
 
   return <div {...props}>
     <Input
-      value={text || ''}
-      onChange={useCallback(e => setText(e.target.value), [])}
+      value={value || ''}
+      onChange={useCallback(e => onChange(e.target.value), [onChange])}
       onFocus={onInputFocus}
       onBlur={onInputBlur}
     />
@@ -67,7 +60,7 @@ const SearchBox = <D extends Data = Data>({data, defaultValue, onSelect, onChang
           tabIndex={0}
           onClick={() => handleOnSelect(datum)}
           onKeyUp={(e) => onKeyUp(e, datum)}
-        >{datum.text}</Item>) : <Loading><CircleLoading style={{ width: '1em'}}/></Loading>}
+        >{datum.text}</Item>) : <Loading><CircleLoading style={{width: '1em'}}/></Loading>}
       </Drop>}
     </DropdownZone>
   </div>;
