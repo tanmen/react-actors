@@ -10,7 +10,9 @@
     "semantic-release": "semantic-release",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook": "storybook-to-ghpages",
+    "test": "yarn typecheck",
+    "typecheck": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
