@@ -1,4 +1,5 @@
 # ReactActors
+[![npm downloads](https://img.shields.io/npm/dt/react-actors)](https://www.npmjs.com/package/react-hook-form)
 This is UI components collection that can be used in React.
 
 ## Information
