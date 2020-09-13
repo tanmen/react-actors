@@ -1,3 +1,2 @@
-export enum SizeType {
-  Normal= 'default', Large = 'large', Small = 'small'
-}
+export type SizeType =
+  'normal'| 'large'| 'small'

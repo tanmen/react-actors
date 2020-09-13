@@ -1,6 +1,6 @@
 import {CSSProperties} from "react";
 
-export interface StyleProps {
+export type StyleProps<T extends object = {}> =  {
   className?: string;
   style?: CSSProperties;
-}
+} & T;

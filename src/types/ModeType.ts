@@ -1,3 +1,1 @@
-export enum ModeType {
-  Light = 'light', Dark = 'dark'
-}
+export type ModeType = 'light' | 'dark';

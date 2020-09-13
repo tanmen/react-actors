@@ -1,2 +1,1 @@
-export {default as RoundImage} from './RoundImage';
-export {default as Image} from './Image';
+export {Image} from './Image';

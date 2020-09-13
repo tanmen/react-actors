@@ -1,5 +1,7 @@
+import {InterpolationWithTheme} from "@emotion/core";
+import {ThemeProvider as StyledThemeProvider} from "emotion-theming";
 import React, {FC} from "react";
-import {ThemeProvider as StyledThemeProvider} from "styled-components";
+import {GlobalCss} from "../styles/GlobalCss";
 
 interface Mode {
   light: ThemeColor;
@@ -73,8 +75,9 @@ export const INITIAL_THEME: Theme = {
   }
 };
 
-const ThemeProvider: FC<{ theme?: Theme; }> = ({theme = INITIAL_THEME, children}) =>
+const ThemeProvider: FC<{ theme?: Theme; global?: InterpolationWithTheme<any> }> = ({theme = INITIAL_THEME, global, children}) =>
   <StyledThemeProvider theme={theme}>
+    <GlobalCss styles={global}/>
     {children}
   </StyledThemeProvider>;
 

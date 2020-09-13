@@ -1,5 +1,5 @@
+import styled from "@emotion/styled";
 import React, {FC, useEffect, useState} from "react";
-import styled from "styled-components";
 import {SkeletonLoading} from "../loadings";
 import {StyleProps} from "../types/StyleProps";
 
@@ -11,7 +11,7 @@ export interface Props extends StyleProps {
   height: string | number;
 }
 
-const Image: FC<Props> = ({src, alt, empty, width, height, className, style}) => {
+export const Image: FC<Props> = ({src, alt, empty, width, height, className, style}) => {
   const [error, setError] = useState(false);
   const [load, setLoad] = useState(true);
 
@@ -38,8 +38,6 @@ const Image: FC<Props> = ({src, alt, empty, width, height, className, style}) =>
     />
   </Box>
 };
-
-export default Image;
 
 const Box = styled.div<{ width?: string | number, height?: string | number; }>`
 width: ${({width = 'auto'}) => typeof width === 'number' ? `${width}px` : width};

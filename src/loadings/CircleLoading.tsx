@@ -1,40 +1,40 @@
+import {keyframes} from "@emotion/core";
+import styled from "@emotion/styled";
 import React, {FC} from "react";
-import styled from "styled-components";
-import SquareDisposition from "../dispositions/SquareDisposition";
 import {StyleProps} from "../types/StyleProps";
 
-interface Props extends StyleProps {
-  borderWidth?: number;
-}
+export const CircleLoading: FC<StyleProps> = ({className, style}) =>
+  <RingBox className={className} style={style}>
+    {[...Array(4)].map(((_, index) => <Ring key={index} delay={-0.45 + index * 0.15}/>))}
+  </RingBox>;
 
-const CircleLoading: FC<Props> = ({borderWidth = 3, className, style}) =>
-  <SquareDisposition className={className} style={style}>
-    <Circle borderWidth={borderWidth}/>
-  </SquareDisposition>;
-
-export default CircleLoading;
-
-const Circle = styled.div<{ borderWidth: number }>`
-position: relative;
-border-top: ${({borderWidth}) => borderWidth}px solid rgba(0,0,0, 0.2);
-border-right: ${({borderWidth}) => borderWidth}px solid rgba(0,0,0, 0.2);
-border-bottom: ${({borderWidth}) => borderWidth}px solid #000;
-border-left: ${({borderWidth}) => borderWidth}px solid rgba(0,0,0, 0.2);
-transform: translateZ(0);
-animation: circle-load 0.5s infinite linear;
-
-&,
-&:after {
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-}
-@keyframes circle-load {
-  0% {
+const animation = keyframes`
+0% {
     transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+}
+100% {
+  transform: rotate(360deg);
 }
 `;
+
+const RingBox = styled.div`
+display: inline-block;
+position: relative;
+width: 1em;
+height: 1em;
+`;
+
+const Ring = styled.div<{delay: number}>`
+box-sizing: border-box;
+display: block;
+position: absolute;
+width: .8em;
+height: .8em;
+margin: .1em;
+border: .1em solid;
+border-radius: 50%;
+animation: ${animation} 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+border-color: #fff transparent transparent transparent;
+animation-delay: ${({delay}) => delay}s;
+`;
+

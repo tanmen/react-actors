@@ -1,11 +1,11 @@
+import {keyframes} from "@emotion/core";
+import styled from "@emotion/styled";
 import React, {FC} from "react";
-import styled, {keyframes} from "styled-components";
 import {StyleProps} from "../types/StyleProps";
 
-const SkeletonLoading: FC<StyleProps> = (props) =>
+export const SkeletonLoading: FC<StyleProps> = (props) =>
   <Skeleton {...props}/>;
 
-export default SkeletonLoading;
 
 const animation = keyframes`
   0% {transform: translateX(-100%)}

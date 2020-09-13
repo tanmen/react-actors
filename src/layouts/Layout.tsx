@@ -1,5 +1,5 @@
+import styled from "@emotion/styled";
 import React, {FC, ReactNode} from 'react';
-import styled from "styled-components";
 import {StyleProps} from "../types/StyleProps";
 
 interface Props extends StyleProps {

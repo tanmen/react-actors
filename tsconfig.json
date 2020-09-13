@@ -33,11 +33,13 @@
 
 		"pretty": true,
 
+		"esModuleInterop": true,
 		"jsx": "react",
 		"allowSyntheticDefaultImports": true,
 		"typeRoots": ["node_modules/@types", "types"],
-		"types": ["styled-components", "react", "node"],
+		"types": ["@emotion/core", "react", "node"],
 		"sourceMap": true
 	},
-	"include": ["src/**/*", "types/**/*"]
+	"include": ["src/**/*", "types/**/*"],
+	"exclude": ["src/**/*.stories.tsx"]
 }
