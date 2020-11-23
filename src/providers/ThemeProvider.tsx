@@ -1,73 +1,106 @@
 import {InterpolationWithTheme} from "@emotion/core";
-import {ThemeProvider as StyledThemeProvider} from "emotion-theming";
+import {ThemeProvider as StyledThemeProvider} from "@emotion/react";
 import React, {FC} from "react";
 import {GlobalCss} from "../styles/GlobalCss";
+import {ColorType} from "../types/ColorType";
+import {ModeType} from "../types/ModeType";
 
-interface Mode {
-  light: ThemeColor;
-  dark: ThemeColor;
-}
+export const ThemeContext = React.createContext<ModeType>('light');
 
-interface ThemeColor {
+export type ThemeProp = {
   font: string;
   border: string;
   background: string;
-}
+};
 
-interface Type {
-  primary: ThemeColor;
-  secondary: ThemeColor;
-  success: ThemeColor;
-  danger: ThemeColor;
-  warning: ThemeColor;
-  info: ThemeColor;
-}
+export type ThemeColor = {
+  [key in ModeType]: ThemeProp;
+};
 
-export interface Theme {
-  mode: Mode;
-  type: Type;
-}
+export type Theme = {
+  [key in ColorType]: ThemeColor;
+};
 
 export const INITIAL_THEME: Theme = {
-  mode: {
+  normal: {
+    dark: {
+      font: '#aaa',
+      background: '#202020',
+      border: '#404040'
+    },
     light: {
       font: '#212529',
       background: '#fff',
       border: '#ced4da'
-    },
-    dark: {
-      font: '#fff',
-      background: '#343a40',
-      border: '#343a40'
     }
   },
-  type: {
-    primary: {
+  primary: {
+    dark: {
       font: '#fff',
       border: '#007bff',
       background: '#007bff'
     },
-    secondary: {
+    light: {
       font: '#fff',
-      border: '#6c757d',
-      background: '#6c757d'
+      border: '#007bff',
+      background: '#007bff'
+    }
+  },
+  secondary: {
+    dark: {
+      font: '#f8f9fa',
+      border: '#404040',
+      background: '#303030'
     },
-    success: {
+    light: {
+      font: '#495057',
+      border: '#ced4da',
+      background: '#e9ecef'
+    }
+  },
+  success: {
+    dark: {
       font: '#fff',
       border: '#28a745',
       background: '#28a745'
     },
-    danger: {
+    light: {
+      font: '#fff',
+      border: '#28a745',
+      background: '#28a745'
+    }
+  },
+  danger: {
+    dark: {
       font: '#fff',
       border: '#dc3545',
       background: '#dc3545'
     },
-    warning: {
+    light: {
+      font: '#fff',
+      border: '#dc3545',
+      background: '#dc3545'
+    }
+  },
+  warning: {
+    dark: {
       font: '#212529',
       border: '#ffc107',
       background: '#ffc107'
     },
-    info: {
+    light: {
+      font: '#212529',
+      border: '#ffc107',
+      background: '#ffc107'
+    }
+  },
+  info: {
+    dark: {
+      font: '#fff',
+      border: '#17a2b8',
+      background: '#17a2b8'
+    },
+    light: {
       font: '#fff',
       border: '#17a2b8',
       background: '#17a2b8'
@@ -75,10 +108,12 @@ export const INITIAL_THEME: Theme = {
   }
 };
 
-const ThemeProvider: FC<{ theme?: Theme; global?: InterpolationWithTheme<any> }> = ({theme = INITIAL_THEME, global, children}) =>
+const ThemeProvider: FC<{ theme?: Theme; global?: InterpolationWithTheme<any>; mode?: ModeType }> = ({theme = INITIAL_THEME, global, mode = 'light', children}) =>
   <StyledThemeProvider theme={theme}>
-    <GlobalCss styles={global}/>
-    {children}
+    <ThemeContext.Provider value={mode}>
+      <GlobalCss styles={global}/>
+      {children}
+    </ThemeContext.Provider>
   </StyledThemeProvider>;
 
 export default ThemeProvider;

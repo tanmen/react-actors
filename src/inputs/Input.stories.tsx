@@ -1,7 +1,6 @@
-import {Story} from '@storybook/react/types-6-0';
-import React from 'react';
-import ThemeProvider from "../providers/ThemeProvider";
-import Input from "./Input";
+import {Story} from "@storybook/react/types-6-0";
+import React from "react";
+import Input, {Props} from "./Input";
 
 export default {
   title: 'Input/Input',
@@ -13,6 +12,7 @@ export default {
   }
 };
 
-const Template: Story = (args) => <ThemeProvider><Input {...args}/></ThemeProvider>;
+const Template: Story<Props> = ({...args}) => <Input {...args}/>;
 
 export const Normal = Template.bind({});
+

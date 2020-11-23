@@ -1,16 +1,16 @@
 import {css} from "@emotion/core";
 import styled from "@emotion/styled";
-import Color from "color-js/color";
+import classnames from "classnames";
 import React, {FC, InputHTMLAttributes, Ref} from "react";
-import {ModeType} from "../types/ModeType";
+import {useTheme} from "../hooks/useTheme";
+import {ThemeProp} from "../providers/ThemeProvider";
 import {SizeStyles} from "../types/SizeStyles";
 import {SizeType} from "../types/SizeType";
 import {extractSizeStyle} from "../utils/extractors/extractSizeStyle";
-import {isLight} from "../utils/mode";
-import {validate} from "../utils/validater";
+import {classname} from "./InputGroup";
+import Color from "color-js/color";
 
-interface Original {
-  mode?: ModeType;
+export interface Props extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {
   size?: SizeType;
   /**
    * ref
@@ -18,19 +18,19 @@ interface Original {
   register?: Ref<HTMLInputElement>;
 }
 
-type Props = Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> & Original;
-
 const Input: FC<Props> = ({
-                            mode = 'light',
+                            className,
                             size = 'normal',
                             register,
                             ...props
-                          }) =>
-  <SInput {...props} ref={register} mode={mode} sizeType={size}/>;
+                          }) => {
+  const theme = useTheme('normal');
+  return <SInput {...props} className={classnames('actors-input', className)} ref={register} sizeType={size} theme={theme}/>;
+};
 
 export default Input;
 
-const styles: SizeStyles = {
+export const styles: SizeStyles = {
   normal: css`
       height: calc(1rem + .75rem + 2px);
       padding: .375rem .5rem;
@@ -53,29 +53,30 @@ const styles: SizeStyles = {
     `,
 };
 
-const SInput = styled.input<{ mode: ModeType, sizeType: SizeType }>`
+const SInput = styled.input<{ sizeType: SizeType; theme: ThemeProp; }>(({theme: {font, background, border}}) => css`
 display: block;
 width: 100%;
 font-weight: 400;
 line-height: 1.5;
-color: ${validate<Required<Original>>((theme, {mode}) => theme.mode[mode].font)};
-background-color: ${validate<Required<Original>>((theme, {mode}) => theme.mode[mode].background)};
+color: ${font};
+background-color: ${background};
 background-clip: padding-box;
-border: 1px solid ${validate<Required<Original>>((theme, {mode}) => theme.mode[mode].border)};
+border: 1px solid ${border};
 transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 &:focus {
   outline: 0;
-  border-color: ${validate<Required<Original>>((theme, {mode}) =>
-  isLight(mode) ? Color(theme.mode.light.border).setLightness(0.75).toCSS()
-    : Color(theme.mode.dark.border).setLightness(0.25).toCSS())};
-  box-shadow: 0 0 0 .2rem ${validate<Required<Original>>((theme, {mode}) =>
-  Color(theme.mode[mode].border).setAlpha(0.25).toCSS())};
+  border-color: ${border};
+  box-shadow: 0 0 0 .2rem ${Color(border).setAlpha(0.5).toCSS()};
 }
 &:disabled {
-  background-color: ${validate<Required<Original>>(
-  (theme, {mode}) => isLight(mode) ? Color(theme.mode.light.font).setLightness(0.9).toCSS()
-    : Color(theme.mode.dark.font).setLightness(0.3).toCSS())};
+  background-color: ${border};
   cursor: not-allowed;
 }
-${extractSizeStyle(styles)}
-`;
+.${classname} > &:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.${classname} > &:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}`, extractSizeStyle(styles));

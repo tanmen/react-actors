@@ -10,9 +10,9 @@ interface Props extends StyleProps {
 const Layout: FC<Props> = ({header, children, footer = <Empty/>, className, style}) =>
   <Body className={className} style={style}>
     {header}
-    <div>
+    <main>
       {children}
-    </div>
+    </main>
     {footer}
   </Body>;
 export default Layout;

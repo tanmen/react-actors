@@ -1,14 +1,13 @@
 import {Story} from '@storybook/react/types-6-0';
 import React from 'react';
-import ThemeProvider from "../providers/ThemeProvider";
-import {Image} from "./Image";
+import {Image, Props} from "./Image";
 
 export default {
   title: 'Image',
   component: Image,
 };
 
-const Template: Story = (args) => <ThemeProvider><Image {...args}/></ThemeProvider>;
+const Template: Story<Props> = (args) => <Image {...args}/>;
 
 export const Normal = Template.bind({});
 Normal.args = {
