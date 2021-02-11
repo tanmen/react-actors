@@ -34,7 +34,10 @@
   },
   "files": [
     "lib",
-    "src"
+    "src",
+    "package.json",
+    "yarn.lock",
+    "CHANGELOG.md"
   ],
   "devDependencies": {
     "@babel/core": "^7.11.6",
