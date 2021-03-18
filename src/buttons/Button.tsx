@@ -15,9 +15,10 @@ type ButtonProps = {
   disabled?: boolean;
   size?: SizeType;
   color?: ColorType;
+  className?: string;
   onClick?: (event: MouseEvent<HTMLButtonElement>) => Promise<any> | any;
 };
-export const Button: FC<ButtonProps> = ({children, color = 'primary', size = 'normal', disabled, type = 'button', onClick}) => {
+export const Button: FC<ButtonProps> = ({children, color = 'primary', size = 'normal', disabled, type = 'button', className, onClick}) => {
   const theme = useTheme(color);
   const [loading, setLoading] = useState(false);
   const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
@@ -30,7 +31,7 @@ export const Button: FC<ButtonProps> = ({children, color = 'primary', size = 'no
       reaction.finally(() => setLoading(false));
     }
   };
-  return <Style theme={theme} sizeType={size} type={type} disabled={disabled} onClick={handleClick}>
+  return <Style className={className} theme={theme} sizeType={size} type={type} disabled={disabled} onClick={handleClick}>
     <Box>
       {loading && <Loading/>}
       <Content disabled={loading}>{children}</Content>
