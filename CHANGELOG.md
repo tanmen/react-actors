@@ -1,3 +1,10 @@
+# [0.3.0](https://github.com/tanmen/react-actors/compare/v0.2.0...v0.3.0) (2021-03-18)
+
+
+### Features
+
+* Merge pull request [#13](https://github.com/tanmen/react-actors/issues/13) from tanmen/dependabot/npm_and_yarn/elliptic-6.5.4 ([549a6ce](https://github.com/tanmen/react-actors/commit/549a6cef6e4f276b760ecb3e14427d5b06c81d35))
+
 # [0.2.0](https://github.com/tanmen/react-actors/compare/v0.1.29...v0.2.0) (2021-03-18)
 
 
