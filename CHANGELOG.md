@@ -1,3 +1,10 @@
+## [0.3.1](https://github.com/tanmen/react-actors/compare/v0.3.0...v0.3.1) (2021-03-18)
+
+
+### Bug Fixes
+
+* add textarea ([06e821e](https://github.com/tanmen/react-actors/commit/06e821ecc1fc0bb4e027d8ba5cb27fdc53ae3e92))
+
 # [0.3.0](https://github.com/tanmen/react-actors/compare/v0.2.0...v0.3.0) (2021-03-18)
 
 
