@@ -1,3 +1,10 @@
+# [0.2.0](https://github.com/tanmen/react-actors/compare/v0.1.29...v0.2.0) (2021-03-18)
+
+
+### Features
+
+* add classname to Button ([ffabb1a](https://github.com/tanmen/react-actors/commit/ffabb1a24ad00f4a46d92b6a962be061c0467def))
+
 ## [0.1.29](https://github.com/tanmen/react-actors/compare/v0.1.28...v0.1.29) (2021-02-11)
 
 
