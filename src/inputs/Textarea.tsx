@@ -13,12 +13,12 @@ export type TextareaProps = {
   /**
    * ref
    */
-  register?: Ref<HTMLInputElement>;
+  register?: Ref<HTMLTextAreaElement>;
 } & Omit<TextareaHTMLAttributes<HTMLTextAreaElement>, 'size'>
 
-export const Textarea: FC<TextareaProps> = ({rows = 3, size = "normal", ...props}) => {
+export const Textarea: FC<TextareaProps> = ({rows = 3, size = "normal", register, ...props}) => {
   const theme = useTheme('normal');
-  return <StyledTextarea rows={rows} sizeType={size} theme={theme} {...props}/>;
+  return <StyledTextarea rows={rows} sizeType={size} theme={theme} ref={register} {...props}/>;
 };
 
 const styles: SizeStyles = {
