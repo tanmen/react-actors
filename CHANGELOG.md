@@ -1,3 +1,10 @@
+## [0.3.2](https://github.com/tanmen/react-actors/compare/v0.3.1...v0.3.2) (2021-03-20)
+
+
+### Bug Fixes
+
+* ref throws for textarea ([55d5a8f](https://github.com/tanmen/react-actors/commit/55d5a8f733e33e3bdb6c7fa337bfafcb73030198))
+
 ## [0.3.1](https://github.com/tanmen/react-actors/compare/v0.3.0...v0.3.1) (2021-03-18)
 
 
