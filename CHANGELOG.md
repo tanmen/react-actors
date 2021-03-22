@@ -1,3 +1,10 @@
+## [0.3.5](https://github.com/tanmen/react-actors/compare/v0.3.4...v0.3.5) (2021-03-22)
+
+
+### Bug Fixes
+
+* remove self package ([173016a](https://github.com/tanmen/react-actors/commit/173016aed3c777b306ffa349b8691e6abebd741c))
+
 ## [0.3.4](https://github.com/tanmen/react-actors/compare/v0.3.3...v0.3.4) (2021-03-22)
 
 
