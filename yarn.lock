@@ -11037,19 +11037,6 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-actors@^0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/react-actors/-/react-actors-0.3.3.tgz#ebbaa62dcae82b5ae523c0406b7f9d66f5295872"
-  integrity sha512-sAarD2EgJ9zl4G6usFIOynrCrS/9q2e36I0J07ZWsXvbPm+zOG8TmaRjf9MuIji1QGPx5s8A7AdtBRlx60L1NQ==
-  dependencies:
-    "@emotion/core" "^10.0.35"
-    "@emotion/react" "^11.1.1"
-    "@emotion/styled" "^10.0.27"
-    classnames "^2.2.6"
-    color-js "^1.0.5"
-    react-use "^15.3.4"
-    ress "^3.0.0"
-
 react-color@^2.17.0:
   version "2.18.1"
   resolved "https://registry.yarnpkg.com/react-color/-/react-color-2.18.1.tgz#2cda8cc8e06a9e2c52ad391a30ddad31972472f4"
