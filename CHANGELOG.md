@@ -1,3 +1,10 @@
+## [0.3.3](https://github.com/tanmen/react-actors/compare/v0.3.2...v0.3.3) (2021-03-22)
+
+
+### Bug Fixes
+
+* add select box ([5407060](https://github.com/tanmen/react-actors/commit/5407060b7e5a394ea182b631154014233ed9e42b))
+
 ## [0.3.2](https://github.com/tanmen/react-actors/compare/v0.3.1...v0.3.2) (2021-03-20)
 
 
