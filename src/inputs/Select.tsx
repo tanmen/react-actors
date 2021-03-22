@@ -10,7 +10,7 @@ import {SizeType} from "../types/SizeType";
 import {extractSizeStyle} from "../utils/extractors/extractSizeStyle";
 import {classname} from "./InputGroup";
 
-export interface Props extends Omit<InputHTMLAttributes<HTMLSelectElement>, 'size'> {
+interface Props extends Omit<InputHTMLAttributes<HTMLSelectElement>, 'size'> {
   size?: SizeType;
   /**
    * ref
@@ -18,7 +18,7 @@ export interface Props extends Omit<InputHTMLAttributes<HTMLSelectElement>, 'siz
   register?: Ref<HTMLSelectElement>;
 }
 
-const Select: FC<Props> = ({
+export const Select: FC<Props> = ({
                              className,
                              size = 'normal',
                              register,
@@ -32,9 +32,7 @@ const Select: FC<Props> = ({
   </SSelect>;
 };
 
-export default Select;
-
-export const styles: SizeStyles = {
+const styles: SizeStyles = {
   normal: css`
     height: calc(1rem + 1.25rem + 2px);
     padding: .375rem .75rem;
