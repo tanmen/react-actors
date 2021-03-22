@@ -1,3 +1,10 @@
+## [0.3.4](https://github.com/tanmen/react-actors/compare/v0.3.3...v0.3.4) (2021-03-22)
+
+
+### Bug Fixes
+
+* export select ([c16098e](https://github.com/tanmen/react-actors/commit/c16098e22d43fb967519b58ab032436fc896e006))
+
 ## [0.3.3](https://github.com/tanmen/react-actors/compare/v0.3.2...v0.3.3) (2021-03-22)
 
 
