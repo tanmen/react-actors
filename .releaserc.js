@@ -9,6 +9,8 @@ module.exports = {
     ["@semantic-release/git", {
       "assets": ["CHANGELOG.md"],
     }],
-    '@semantic-release/npm'
+    ['@semantic-release/npm', {
+      "pkgRoot": "lib"
+    }]
   ],
 };

@@ -35,8 +35,20 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+      - name: Cache node modules
+        id: cache
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}
+      - run: yarn install --frozen-lockfile
+        if: steps.cache.outputs.cache-hit != 'true'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.PACKAGE_TOKEN }}
       - name: Build
-        run: yarn && yarn build-storybook
+        run: yarn build-storybook
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -64,6 +76,7 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PACKAGE_TOKEN }}
+      - run: yarn build
       - run: yarn semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
