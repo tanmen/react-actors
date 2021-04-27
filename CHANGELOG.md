@@ -1,3 +1,18 @@
+# [0.4.0](https://github.com/tanmen/react-actors/compare/v0.3.7...v0.4.0) (2021-04-27)
+
+
+### Bug Fixes
+
+* Add index.ts to directories that do not have index.ts ([cfe3e26](https://github.com/tanmen/react-actors/commit/cfe3e26c3b8eb3f75a200f957fc1a705e469df02))
+* add more directory to index ([dd8c818](https://github.com/tanmen/react-actors/commit/dd8c8185e0bafa964c02c6f7aff8d65af459fe88))
+* publish workflow ([55e07a8](https://github.com/tanmen/react-actors/commit/55e07a86ee16fff687906b114aa4a1401bbba9bb))
+* remove ColorTable ([2a463ac](https://github.com/tanmen/react-actors/commit/2a463ace63a94928559f988d665392e7c2ec9b49))
+
+
+### Features
+
+* remove layout ([1972a96](https://github.com/tanmen/react-actors/commit/1972a96f507838b63145f7284a579b5c8160695c))
+
 ## [0.3.7](https://github.com/tanmen/react-actors/compare/v0.3.6...v0.3.7) (2021-04-27)
 
 
