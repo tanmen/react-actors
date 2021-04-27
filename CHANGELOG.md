@@ -1,3 +1,10 @@
+## [0.3.7](https://github.com/tanmen/react-actors/compare/v0.3.6...v0.3.7) (2021-04-27)
+
+
+### Bug Fixes
+
+* update libraries ([ffb7787](https://github.com/tanmen/react-actors/commit/ffb77878e0520d26c19ab0eb3295470cb55974e6))
+
 ## [0.3.6](https://github.com/tanmen/react-actors/compare/v0.3.5...v0.3.6) (2021-04-27)
 
 
