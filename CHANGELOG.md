@@ -1,3 +1,10 @@
+## [0.3.6](https://github.com/tanmen/react-actors/compare/v0.3.5...v0.3.6) (2021-04-27)
+
+
+### Bug Fixes
+
+* change in publish flow ([aba0bde](https://github.com/tanmen/react-actors/commit/aba0bde1cf8f82743510faa8270a498ef2b8357d))
+
 ## [0.3.5](https://github.com/tanmen/react-actors/compare/v0.3.4...v0.3.5) (2021-03-22)
 
 
