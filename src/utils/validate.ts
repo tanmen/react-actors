@@ -1,4 +1,4 @@
-import {Theme} from "../providers/ThemeProvider";
+import {Theme} from "../providers";
 
 export const validate = <T = {}>(result: (theme: Theme, args: T) => string) =>
   ({theme: them, ...arg}: { theme: Theme } & any) => {
