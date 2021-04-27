@@ -1,5 +1,4 @@
-import {InterpolationWithTheme} from "@emotion/core";
-import {ThemeProvider as StyledThemeProvider} from "@emotion/react";
+import {GlobalProps, ThemeProvider as StyledThemeProvider} from "@emotion/react";
 import React, {FC} from "react";
 import {GlobalCss} from "../styles/GlobalCss";
 import {ColorType} from "../types/ColorType";
@@ -108,7 +107,7 @@ export const INITIAL_THEME: Theme = {
   }
 };
 
-const ThemeProvider: FC<{ theme?: Theme; global?: InterpolationWithTheme<any>; mode?: ModeType }> = ({theme = INITIAL_THEME, global, mode = 'light', children}) =>
+const ThemeProvider: FC<{ theme?: Theme; global?: GlobalProps['styles']; mode?: ModeType }> = ({theme = INITIAL_THEME, global, mode = 'light', children}) =>
   <StyledThemeProvider theme={theme}>
     <ThemeContext.Provider value={mode}>
       <GlobalCss styles={global}/>

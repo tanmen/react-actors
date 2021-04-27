@@ -25,13 +25,12 @@
   "bugs": "https://github.com/tanmen/react-actors/issues",
   "homepage": "https://github.com/tanmen/react-actors#readme",
   "dependencies": {
-    "@emotion/core": "^10.0.35",
-    "@emotion/react": "^11.1.1",
-    "@emotion/styled": "^10.0.27",
-    "classnames": "^2.2.6",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.3.0",
+    "classnames": "^2.3.1",
     "color-js": "^1.0.5",
-    "react-use": "^15.3.4",
-    "ress": "^3.0.0"
+    "react-use": "^17.2.4",
+    "ress": "^4.0.0"
   },
   "files": [
     "*"

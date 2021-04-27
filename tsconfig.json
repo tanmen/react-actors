@@ -37,7 +37,7 @@
 		"jsx": "react",
 		"allowSyntheticDefaultImports": true,
 		"typeRoots": ["node_modules/@types", "types"],
-		"types": ["@emotion/core", "react", "node"],
+		"types": ["@emotion/react", "react", "node"],
 		"sourceMap": true
 	},
 	"include": ["src/**/*", "types/**/*"],

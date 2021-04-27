@@ -1,7 +1,7 @@
-import {Global, GlobalProps} from "@emotion/core";
+import {Global, GlobalProps} from "@emotion/react";
 import React, {FC} from "react";
 import 'ress/dist/ress.min.css';
 
-export const GlobalCss: FC<GlobalProps<any>> = ({styles}) => <Global styles={styles}/>;
+export const GlobalCss: FC<GlobalProps> = ({styles}) => <Global styles={styles}/>;
 
 
