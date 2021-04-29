@@ -1,29 +1,29 @@
 {
   "name": "react-actors",
   "version": "0.0.1",
-  "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
+  "main": "index.js",
+  "typings": "index.d.ts",
   "repository": "git@github.com:tanmen/react-actors.git",
   "author": "tanmen <yt.prog@gmail.com>",
   "license": "MIT",
+  "homepage": "https://github.com/tanmen/react-actors#readme",
+  "files": ["*"],
+  "keywords": [
+    "react",
+    "ui",
+    "component"
+  ],
   "scripts": {
     "build": "tsc",
     "lint": "tslint -c tslint.json src/**/*.ts",
-    "presemantic-release": "yarn build && cp package.json lib",
+    "presemantic-release": "yarn build && cp package.json lib && cp README.md lib && cp LICENSE lib",
     "semantic-release": "semantic-release",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages",
     "test": "yarn typecheck",
     "typecheck": "tsc --noEmit",
     "postinstall": "typesync && yarn check --integrity || yarn install --ignore-scripts && yarn-deduplicate"
   },
-  "keywords": [
-    "react",
-    "ui"
-  ],
-  "bugs": "https://github.com/tanmen/react-actors/issues",
-  "homepage": "https://github.com/tanmen/react-actors#readme",
   "dependencies": {
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.3.0",
@@ -32,9 +32,10 @@
     "react-use": "^17.2.4",
     "ress": "^4.0.0"
   },
-  "files": [
-    "*"
-  ],
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@semantic-release/changelog": "^5.0.1",
@@ -57,6 +58,7 @@
     "@types/semantic-release": "^17.2.0",
     "babel-loader": "^8.1.0",
     "cp": "^0.2.0",
+    "husky": "^6.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-is": "^17.0.2",
@@ -64,9 +66,5 @@
     "typescript": "^4.0.2",
     "typesync": "^0.8.0",
     "yarn-deduplicate": "^3.1.0"
-  },
-  "peerDependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
   }
 }
