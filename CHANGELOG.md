@@ -1,3 +1,10 @@
+## [0.4.2](https://github.com/tanmen/react-actors/compare/v0.4.1...v0.4.2) (2021-04-29)
+
+
+### Bug Fixes
+
+* add readme ([93f6f71](https://github.com/tanmen/react-actors/commit/93f6f717fa120ee11876153b9533a4968ee6d9b0))
+
 ## [0.4.1](https://github.com/tanmen/react-actors/compare/v0.4.0...v0.4.1) (2021-04-27)
 
 
