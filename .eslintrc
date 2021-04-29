@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "react-app",
+    "react-app/jest"
+  ],
+  "plugins": ["unused-imports"],
+  "reportUnusedDisableDirectives": true
+}
