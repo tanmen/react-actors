@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  build:
+  Test:
     runs-on: ubuntu-latest
     services:
       snapshot:
@@ -41,8 +41,8 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
 
-  publish-storybook:
-    needs: build
+  PublishStorybook:
+    needs: Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -69,8 +69,8 @@ jobs:
           branch: gh-pages
           folder: storybook-static
 
-  publish:
-    needs: build
+  Publish:
+    needs: Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
