@@ -1,3 +1,10 @@
+## [0.4.4](https://github.com/tanmen/react-actors/compare/v0.4.3...v0.4.4) (2021-04-30)
+
+
+### Bug Fixes
+
+* **workflow:** husky setting ([488922a](https://github.com/tanmen/react-actors/commit/488922a45851687cc7dca8cbe7e3411bbe3851af))
+
 ## [0.4.3](https://github.com/tanmen/react-actors/compare/v0.4.2...v0.4.3) (2021-04-30)
 
 
