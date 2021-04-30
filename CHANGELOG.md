@@ -1,3 +1,10 @@
+## [0.4.3](https://github.com/tanmen/react-actors/compare/v0.4.2...v0.4.3) (2021-04-30)
+
+
+### Bug Fixes
+
+* **README:** change the wrong URL ([17fcd48](https://github.com/tanmen/react-actors/commit/17fcd48a30dc7142b9df8ab7a7635839dd70483a))
+
 ## [0.4.2](https://github.com/tanmen/react-actors/compare/v0.4.1...v0.4.2) (2021-04-29)
 
 
