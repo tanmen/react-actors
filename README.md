@@ -2,6 +2,7 @@
 [![npm](https://img.shields.io/npm/v/react-actors)](https://www.npmjs.com/package/react-hook-form)
 [![npm downloads](https://img.shields.io/npm/dt/react-actors)](https://www.npmjs.com/package/react-actors)
 [![npm bundle size](https://img.shields.io/bundlephobia/min/react-actors)](https://www.npmjs.com/package/react-actors)
+[![FOSSA Status](https://app.fossa.com/api/projects/custom%2B25020%2Fgithub.com%2Ftanmen%2Freact-actors.svg?type=shield)](https://app.fossa.com/projects/custom%2B25020%2Fgithub.com%2Ftanmen%2Freact-actors?ref=badge_shield)
 
 This is UI components collection that can be used in React.
 
@@ -25,4 +26,5 @@ https://tanmen.github.io/react-actors
 import React from "react";
 ```
 
-
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/custom%2B25020%2Fgithub.com%2Ftanmen%2Freact-actors.svg?type=large)](https://app.fossa.com/projects/custom%2B25020%2Fgithub.com%2Ftanmen%2Freact-actors?ref=badge_large)
