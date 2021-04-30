@@ -1,3 +1,10 @@
+## [0.4.5](https://github.com/tanmen/react-actors/compare/v0.4.4...v0.4.5) (2021-04-30)
+
+
+### Bug Fixes
+
+* **readme:** add license ([aa39598](https://github.com/tanmen/react-actors/commit/aa39598174a41bbf7ba868adb4b216951660bf68))
+
 ## [0.4.4](https://github.com/tanmen/react-actors/compare/v0.4.3...v0.4.4) (2021-04-30)
 
 
