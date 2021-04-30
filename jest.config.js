@@ -1,4 +1,8 @@
 module.exports = {
+  collectCoverageFrom: [
+    "src/**/*.[jt]s?(x)",
+    "!src/**/*\.{screenshot,test,spec,stories}.[jt]s?(x)"
+  ],
   testEnvironment: "node",
   globalSetup: "react-screenshot-test/global-setup",
   globalTeardown: "react-screenshot-test/global-teardown",
