@@ -40,6 +40,10 @@ jobs:
         uses: codecov/codecov-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+      - name: Check license
+        uses: fossas/fossa-action@v1
+        with:
+          api-key: ${{ secrets.FOSSA_API_KEY }}
 
   PublishStorybook:
     needs: Test
@@ -95,17 +99,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-  CheckLicense:
-    needs: Test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - name: Install modules only production
-        run: yarn install --production --ignore-scripts
-      - name: Check license
-        uses: fossas/fossa-action@v1
-        with:
-          api-key: ${{ secrets.FOSSA_API_KEY }}
