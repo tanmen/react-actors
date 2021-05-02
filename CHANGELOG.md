@@ -1,3 +1,10 @@
+## [0.4.9](https://github.com/tanmen/react-actors/compare/v0.4.8...v0.4.9) (2021-05-02)
+
+
+### Bug Fixes
+
+* **component:** remove export default ([be266d8](https://github.com/tanmen/react-actors/commit/be266d8517094ab8aafb9b7f49a1a95033970ee4))
+
 ## [0.4.8](https://github.com/tanmen/react-actors/compare/v0.4.7...v0.4.8) (2021-05-02)
 
 
