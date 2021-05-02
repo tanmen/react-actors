@@ -1,3 +1,10 @@
+## [0.4.6](https://github.com/tanmen/react-actors/compare/v0.4.5...v0.4.6) (2021-05-02)
+
+
+### Bug Fixes
+
+* **component:** add aspect component ([b61f57d](https://github.com/tanmen/react-actors/commit/b61f57d63a27c18562c243b24c2666625c968a6f))
+
 ## [0.4.5](https://github.com/tanmen/react-actors/compare/v0.4.4...v0.4.5) (2021-04-30)
 
 
