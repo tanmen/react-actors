@@ -26,8 +26,8 @@ export const AspectText: FC<AspectTextProps> = ({ratio = 100, className, childre
     }
   }, [ref.current?.clientHeight, _ratio]);
 
-  return <Box className={className}>
-    <Text ref={ref} fontSize={fontSize}>
+  return <Box>
+    <Text ref={ref} className={className} fontSize={fontSize}>
       {children}
     </Text>
   </Box>;
