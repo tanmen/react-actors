@@ -107,12 +107,10 @@ export const INITIAL_THEME: Theme = {
   }
 };
 
-const ThemeProvider: FC<{ theme?: Theme; global?: GlobalProps['styles']; mode?: ModeType }> = ({theme = INITIAL_THEME, global, mode = 'light', children}) =>
+export const ThemeProvider: FC<{ theme?: Theme; global?: GlobalProps['styles']; mode?: ModeType }> = ({theme = INITIAL_THEME, global, mode = 'light', children}) =>
   <StyledThemeProvider theme={theme}>
     <ThemeContext.Provider value={mode}>
       <GlobalCss styles={global}/>
       {children}
     </ThemeContext.Provider>
   </StyledThemeProvider>;
-
-export default ThemeProvider;
