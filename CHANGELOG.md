@@ -1,3 +1,10 @@
+## [0.4.13](https://github.com/tanmen/react-actors/compare/v0.4.12...v0.4.13) (2021-05-02)
+
+
+### Bug Fixes
+
+* **component:** fix className in AspectText ([c7895b3](https://github.com/tanmen/react-actors/commit/c7895b37debc1f1c764ed505e9765854021c2860))
+
 ## [0.4.12](https://github.com/tanmen/react-actors/compare/v0.4.11...v0.4.12) (2021-05-02)
 
 
