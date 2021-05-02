@@ -1,3 +1,10 @@
+## [0.4.7](https://github.com/tanmen/react-actors/compare/v0.4.6...v0.4.7) (2021-05-02)
+
+
+### Bug Fixes
+
+* **readme:** fix link address ([5c6117d](https://github.com/tanmen/react-actors/commit/5c6117d9da848488e567c2ea23e4c8b7764122a2))
+
 ## [0.4.6](https://github.com/tanmen/react-actors/compare/v0.4.5...v0.4.6) (2021-05-02)
 
 
