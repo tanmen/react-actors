@@ -1,3 +1,10 @@
+## [0.4.8](https://github.com/tanmen/react-actors/compare/v0.4.7...v0.4.8) (2021-05-02)
+
+
+### Bug Fixes
+
+* **component:** add AspectText component ([e279f10](https://github.com/tanmen/react-actors/commit/e279f103701f546e942e794b79945cca02d35b5b))
+
 ## [0.4.7](https://github.com/tanmen/react-actors/compare/v0.4.6...v0.4.7) (2021-05-02)
 
 
