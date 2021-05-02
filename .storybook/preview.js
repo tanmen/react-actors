@@ -1,4 +1,4 @@
-import ThemeProvider from "../src/providers/ThemeProvider";
+import {ThemeProvider} from "../src/providers";
 import React from "react";
 
 export const parameters = {

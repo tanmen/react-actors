@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import React from "react";
 import {ReactScreenshotTest} from "react-screenshot-test";
-import ThemeProvider from "../providers/ThemeProvider";
+import {ThemeProvider} from "../providers";
 import {Button} from "./Button";
 
 const Center = styled.div`
