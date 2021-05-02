@@ -1,3 +1,10 @@
+## [0.4.11](https://github.com/tanmen/react-actors/compare/v0.4.10...v0.4.11) (2021-05-02)
+
+
+### Bug Fixes
+
+* **component:** fix circle dependencies ([d13ba55](https://github.com/tanmen/react-actors/commit/d13ba55c37990129e5056af068fc793d29d6b767))
+
 ## [0.4.10](https://github.com/tanmen/react-actors/compare/v0.4.9...v0.4.10) (2021-05-02)
 
 
