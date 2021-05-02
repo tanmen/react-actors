@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 import classnames from 'classnames';
 import React, {FC} from "react";
-import {useTheme} from "../hooks/useTheme";
-import {ThemeProp} from "../providers/ThemeProvider";
+import {useTheme} from "../hooks";
+import {ThemeProp} from "../providers";
 import {StyleProps} from "../types/StyleProps";
 import Color from "color-js/color";
 

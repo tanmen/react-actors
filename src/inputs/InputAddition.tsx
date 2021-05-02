@@ -7,8 +7,8 @@ import {ThemeProp} from "../providers";
 import {SizeType} from "../types/SizeType";
 import {StyleProps} from "../types/StyleProps";
 import {extractSizeStyle} from "../utils/extractors/extractSizeStyle";
-import {inputStyles} from "./Input";
 import {classname} from "./InputGroup";
+import {inputStyles} from "./styles";
 
 export type InputAdditionProps = {
   size?: SizeType;
