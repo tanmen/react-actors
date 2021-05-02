@@ -2,15 +2,15 @@ import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import classnames from "classnames";
 import React, {FC, InputHTMLAttributes, Ref} from "react";
-import {useTheme} from "../hooks/useTheme";
-import {ThemeProp} from "../providers/ThemeProvider";
+import {useTheme} from "../hooks";
+import {ThemeProp} from "../providers";
 import {SizeStyles} from "../types/SizeStyles";
 import {SizeType} from "../types/SizeType";
 import {extractSizeStyle} from "../utils/extractors/extractSizeStyle";
 import {classname} from "./InputGroup";
 import Color from "color-js/color";
 
-export interface Props extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {
+export interface InputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {
   size?: SizeType;
   /**
    * ref
@@ -18,7 +18,7 @@ export interface Props extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size
   register?: Ref<HTMLInputElement>;
 }
 
-export const Input: FC<Props> = ({
+export const Input: FC<InputProps> = ({
                             className,
                             size = 'normal',
                             register,
@@ -29,7 +29,7 @@ export const Input: FC<Props> = ({
 };
 
 
-export const styles: SizeStyles = {
+export const inputStyles: SizeStyles = {
   normal: css`
       height: calc(1rem + .75rem + 2px);
       padding: .375rem .5rem;
@@ -78,4 +78,4 @@ transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 .${classname} > &:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-}`, extractSizeStyle(styles));
+}`, extractSizeStyle(inputStyles));

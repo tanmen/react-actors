@@ -2,19 +2,19 @@ import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import classnames from "classnames";
 import React, {FC} from "react";
-import {useTheme} from "../hooks/useTheme";
-import {ThemeProp} from "../providers/ThemeProvider";
+import {useTheme} from "../hooks";
+import {ThemeProp} from "../providers";
 import {SizeType} from "../types/SizeType";
 import {StyleProps} from "../types/StyleProps";
 import {extractSizeStyle} from "../utils/extractors/extractSizeStyle";
-import {styles} from "./Input";
+import {inputStyles} from "./Input";
 import {classname} from "./InputGroup";
 
-export type Props = {
+export type InputAdditionProps = {
   size?: SizeType;
 } & StyleProps;
 
-export const InputAddition: FC<Props> = ({size = 'normal', className, style, children}) => {
+export const InputAddition: FC<InputAdditionProps> = ({size = 'normal', className, style, children}) => {
   const theme = useTheme('secondary');
   return <Style sizeType={size} className={classnames('actors-input', className)} style={style} theme={theme}>{children}</Style>;
 };
@@ -39,5 +39,5 @@ border: 1px solid ${border};
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-`, extractSizeStyle(styles));
+`, extractSizeStyle(inputStyles));
 
