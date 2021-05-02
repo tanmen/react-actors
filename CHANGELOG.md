@@ -1,3 +1,10 @@
+## [0.4.10](https://github.com/tanmen/react-actors/compare/v0.4.9...v0.4.10) (2021-05-02)
+
+
+### Bug Fixes
+
+* **component:** fixed export name batting ([05ae0b6](https://github.com/tanmen/react-actors/commit/05ae0b60908c80055d39eb296f62c02c81f014db))
+
 ## [0.4.9](https://github.com/tanmen/react-actors/compare/v0.4.8...v0.4.9) (2021-05-02)
 
 
