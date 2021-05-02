@@ -1,3 +1,4 @@
+export * from './aspects';
 export * from './buttons';
 export * from './hooks';
 export * from './images';
