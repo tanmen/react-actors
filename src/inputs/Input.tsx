@@ -18,7 +18,7 @@ export interface Props extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size
   register?: Ref<HTMLInputElement>;
 }
 
-const Input: FC<Props> = ({
+export const Input: FC<Props> = ({
                             className,
                             size = 'normal',
                             register,
@@ -28,7 +28,6 @@ const Input: FC<Props> = ({
   return <SInput {...props} className={classnames('actors-input', className)} ref={register} sizeType={size} theme={theme}/>;
 };
 
-export default Input;
 
 export const styles: SizeStyles = {
   normal: css`

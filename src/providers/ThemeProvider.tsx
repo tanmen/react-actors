@@ -1,6 +1,6 @@
 import {GlobalProps, ThemeProvider as StyledThemeProvider} from "@emotion/react";
 import React, {FC} from "react";
-import {GlobalCss} from "../styles/GlobalCss";
+import {GlobalCss} from "../styles";
 import {ColorType} from "../types/ColorType";
 import {ModeType} from "../types/ModeType";
 
