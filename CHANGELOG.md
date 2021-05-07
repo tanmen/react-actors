@@ -1,3 +1,10 @@
+## [0.4.18](https://github.com/tanmen/react-actors/compare/v0.4.17...v0.4.18) (2021-05-07)
+
+
+### Bug Fixes
+
+* **Button:** add word-break rule ([439cff0](https://github.com/tanmen/react-actors/commit/439cff0612c0073578f6b0ab700093925a33710a))
+
 ## [0.4.17](https://github.com/tanmen/react-actors/compare/v0.4.16...v0.4.17) (2021-05-07)
 
 
