@@ -1,3 +1,10 @@
+## [0.4.14](https://github.com/tanmen/react-actors/compare/v0.4.13...v0.4.14) (2021-05-07)
+
+
+### Bug Fixes
+
+* **AspectText:** changed to dynamically change against height ([ff55237](https://github.com/tanmen/react-actors/commit/ff552375c21c708b93180155615343184e3b693e))
+
 ## [0.4.13](https://github.com/tanmen/react-actors/compare/v0.4.12...v0.4.13) (2021-05-02)
 
 
