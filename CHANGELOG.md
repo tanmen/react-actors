@@ -1,3 +1,10 @@
+## [0.4.16](https://github.com/tanmen/react-actors/compare/v0.4.15...v0.4.16) (2021-05-07)
+
+
+### Bug Fixes
+
+* **AspectText:** remove console.log ([79794c2](https://github.com/tanmen/react-actors/commit/79794c20f2f5af36689016917bc1198d634e91f4))
+
 ## [0.4.15](https://github.com/tanmen/react-actors/compare/v0.4.14...v0.4.15) (2021-05-07)
 
 
