@@ -30,7 +30,6 @@ export const AspectText: FC<AspectTextProps> = ({ratio = 100, className, textSty
 
   useEffect(() => {
     if (height) {
-      console.log(height);
       setFontSize(height * (_ratio / 100));
     }
   }, [height, _ratio]);
