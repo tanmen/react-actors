@@ -1,3 +1,10 @@
+## [0.4.15](https://github.com/tanmen/react-actors/compare/v0.4.14...v0.4.15) (2021-05-07)
+
+
+### Bug Fixes
+
+* **AspectText:** changed the target of css to outer to take padding into account ([f0f0b1d](https://github.com/tanmen/react-actors/commit/f0f0b1da2d27bdbe3bea05c23512ecbe796577ac))
+
 ## [0.4.14](https://github.com/tanmen/react-actors/compare/v0.4.13...v0.4.14) (2021-05-07)
 
 
