@@ -1,6 +1,7 @@
 import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import React, {FC, useEffect, useRef, useState} from "react";
+import {useResizeObserver} from "../hooks/useResizeObserver";
 
 export type AspectTextProps = {
   ratio?: number
@@ -17,14 +18,17 @@ export type AspectTextProps = {
  */
 export const AspectText: FC<AspectTextProps> = ({ratio = 100, className, children}) => {
   const ref = useRef<HTMLParagraphElement>(null);
+  const [height, setHeight] = useState<number | null>();
   const [fontSize, setFontSize] = useState<number | null>(null);
   const _ratio = ratio > 100 ? 100 : ratio < 0 ? 0 : ratio;
 
+  useResizeObserver((elm) => setHeight(elm.clientHeight), ref);
+
   useEffect(() => {
-    if (ref.current) {
-      setFontSize(ref.current.clientHeight * (_ratio / 100));
+    if (height) {
+      setFontSize(height * (_ratio / 100));
     }
-  }, [ref.current?.clientHeight, _ratio]);
+  }, [height, _ratio]);
 
   return <Box>
     <Text ref={ref} className={className} fontSize={fontSize}>

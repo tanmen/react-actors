@@ -19,11 +19,11 @@ export const Styled: Story<AspectTextProps & {children?: string}> = (args) => <d
   <StyledAspectText {...args}/>
 </div>;
 Styled.args = {
-  ratio: 70,
+  ratio: 50,
   children: 'Text'
 }
 
 const StyledAspectText = styled(AspectText)`
-  border: 1em solid #000066;
-  padding: 5em 0;
+  border: 10px solid #000066;
+  padding: 50px 0;
 `
