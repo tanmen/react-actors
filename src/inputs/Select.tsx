@@ -5,12 +5,12 @@ import Color from "color-js";
 import React, {FC, InputHTMLAttributes, Ref} from "react";
 import {useTheme} from "../hooks";
 import {ThemeProp} from "../providers";
-import {SizeStyles} from "../types/SizeStyles";
 import {SizeType} from "../types/SizeType";
 import {extractSizeStyle} from "../utils/extractors/extractSizeStyle";
 import {classname} from "./InputGroup";
+import {inputStyles} from "./styles";
 
-interface Props extends Omit<InputHTMLAttributes<HTMLSelectElement>, 'size'> {
+export interface SelectProps extends Omit<InputHTMLAttributes<HTMLSelectElement>, 'size'> {
   size?: SizeType;
   /**
    * ref
@@ -18,48 +18,19 @@ interface Props extends Omit<InputHTMLAttributes<HTMLSelectElement>, 'size'> {
   register?: Ref<HTMLSelectElement>;
 }
 
-export const Select: FC<Props> = ({
-                             className,
-                             size = 'normal',
-                             register,
-                             children,
-                             ...props
-                           }) => {
-  const theme = useTheme('normal');
-  return <SSelect {...props} className={classnames('actors-input', className)} ref={register} sizeType={size}
-                  theme={theme}>
-    {children}
-  </SSelect>;
-};
-
-const styles: SizeStyles = {
-  normal: css`
-    height: calc(1rem + 1.25rem + 2px);
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    border-radius: .25rem;
-  `,
-  small: css`
-    height: calc(.875rem + 1rem + 2px);
-    padding: .25rem .5rem;
-    font-size: .875rem;
-    line-height: 1.5;
-    border-radius: .2rem;
-  `,
-  large: css`
-    height: calc(1.25rem + 1.5rem + 2px);
-    padding: .5rem 1rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    border-radius: .3rem;
-  `,
-};
+export const Select: FC<SelectProps> =
+  ({className, size = 'normal', register, children, ...props}) => {
+    const theme = useTheme('normal');
+    return <SSelect {...props} className={classnames('actors-input', className)} ref={register} sizeType={size}
+                    theme={theme}>
+      {children}
+    </SSelect>;
+  };
 
 const SSelect = styled.select<{ sizeType: SizeType; theme: ThemeProp; }>(({theme: {font, background, border}}) => css`
   display: block;
   width: 100%;
   font-weight: 400;
-  line-height: 1.5;
   color: ${font};
   background-color: ${background};
   background-clip: padding-box;
@@ -85,4 +56,4 @@ const SSelect = styled.select<{ sizeType: SizeType; theme: ThemeProp; }>(({theme
   .${classname} > &:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-  }`, extractSizeStyle(styles));
+  }`, extractSizeStyle(inputStyles));
