@@ -1,3 +1,10 @@
+## [0.4.17](https://github.com/tanmen/react-actors/compare/v0.4.16...v0.4.17) (2021-05-07)
+
+
+### Bug Fixes
+
+* **Select:** standardize the size ([229beb2](https://github.com/tanmen/react-actors/commit/229beb247cd20fefab5c06cb3c0543189690b49f))
+
 ## [0.4.16](https://github.com/tanmen/react-actors/compare/v0.4.15...v0.4.16) (2021-05-07)
 
 
