@@ -1,3 +1,10 @@
+## [0.4.21](https://github.com/tanmen/react-actors/compare/v0.4.20...v0.4.21) (2021-05-08)
+
+
+### Bug Fixes
+
+* **AspectText:** solved the problem of it getting too big when the size is less than the base size ([82cd285](https://github.com/tanmen/react-actors/commit/82cd285e449ae8fded51a2ac0ccb912a2c59a769))
+
 ## [0.4.20](https://github.com/tanmen/react-actors/compare/v0.4.19...v0.4.20) (2021-05-08)
 
 
