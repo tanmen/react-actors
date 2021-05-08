@@ -1,6 +1,6 @@
 import {Story} from '@storybook/react/types-6-0';
 import React from 'react';
-import ThemeProvider from "../providers/ThemeProvider";
+import {ThemeProvider} from "../providers/ThemeProvider";
 import {CircleLoading} from "./CircleLoading";
 
 export default {

@@ -1,6 +1,6 @@
 import {Story} from '@storybook/react/types-6-0';
 import React from 'react';
-import ThemeProvider from "../providers/ThemeProvider";
+import {ThemeProvider} from "../providers/ThemeProvider";
 import {InputAddition} from "./InputAddition";
 
 export default {
