@@ -15,15 +15,16 @@ const animation = keyframes`
 const Skeleton = styled.div`
 width: 100%;
 height: 100%;
-background: #d9d9d9;
+background: rgba(255, 255, 255, 0.13);
 position: relative;
 overflow: hidden;
+
 &::before {
   content: '';
   display: block;
   height: 100%;
   width: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
   position: absolute;
   top: 0;
   left: 0;
