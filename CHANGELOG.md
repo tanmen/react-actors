@@ -1,3 +1,10 @@
+## [0.4.20](https://github.com/tanmen/react-actors/compare/v0.4.19...v0.4.20) (2021-05-08)
+
+
+### Bug Fixes
+
+* **SkeletonLoading:** color of the skeleton loading was made crisp ([e9f21d3](https://github.com/tanmen/react-actors/commit/e9f21d39782ae1d23b361c1cebb5496f59c0822f))
+
 ## [0.4.19](https://github.com/tanmen/react-actors/compare/v0.4.18...v0.4.19) (2021-05-08)
 
 
