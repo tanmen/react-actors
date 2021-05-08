@@ -17,7 +17,7 @@ export type AspectTextProps = {
  * @returns {JSX.Element}
  * @constructor
  */
-export const AspectText: FC<AspectTextProps> = ({ratio = 100, className, textStyle,children}) => {
+export const AspectText: FC<AspectTextProps> = ({ratio = 100, className, textStyle, children}) => {
   const ref = useRef<HTMLParagraphElement>(null);
   const [height, setHeight] = useState<number | null>();
   const [fontSize, setFontSize] = useState<number | null>(null);
@@ -47,5 +47,8 @@ const Box = styled.div`
 `;
 
 const Text = styled.p<{ fontSize: number | null }>`
-  ${({fontSize}) => fontSize && css`font-size: ${fontSize}px`};
+  ${({fontSize}) => fontSize
+          ? css`font-size: ${fontSize}px;`
+          : css`display: none;`
+  }
 `;
