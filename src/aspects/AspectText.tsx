@@ -46,7 +46,7 @@ const Box = styled.div`
   height: 100%;
 `;
 
-const Text = styled.p<{ fontSize: number | null }>`
+const Text = styled.div<{ fontSize: number | null }>`
   ${({fontSize}) => fontSize
           ? css`font-size: ${fontSize}px;`
           : css`display: none;`
