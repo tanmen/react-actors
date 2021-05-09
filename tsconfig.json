@@ -41,5 +41,5 @@
 		"sourceMap": true
 	},
 	"include": ["src/**/*", "types/**/*"],
-	"exclude": ["src/**/*.stories.tsx"]
+	"exclude": ["src/**/*.stories.tsx", "src/**/*.screenshot.tsx", "src/**/__screenshots__"]
 }
