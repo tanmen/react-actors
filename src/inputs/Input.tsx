@@ -1,7 +1,7 @@
 import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import classnames from "classnames";
-import React, {FC, InputHTMLAttributes, Ref} from "react";
+import React, {FC, forwardRef, InputHTMLAttributes, Ref} from "react";
 import {useTheme} from "../hooks";
 import {ThemeProp} from "../providers";
 import {SizeType} from "../types/SizeType";
@@ -12,16 +12,12 @@ import {inputStyles} from "./styles";
 
 export interface InputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {
   size?: SizeType;
-  /**
-   * ref
-   */
-  register?: Ref<HTMLInputElement>;
 }
 
-export const Input: FC<InputProps> = ({className, size = 'normal', register, ...props}) => {
+export const Input: FC<InputProps> = forwardRef<HTMLInputElement, InputProps>(({className, size = 'normal', register, ...props}, ref) => {
   const theme = useTheme('normal');
-  return <SInput {...props} className={classnames('actors-input', className)} ref={register} sizeType={size} theme={theme}/>;
-};
+  return <SInput {...props} className={classnames('actors-input', className)} ref={ref} sizeType={size} theme={theme}/>;
+});
 
 const SInput = styled.input<{ sizeType: SizeType; theme: ThemeProp; }>(({theme: {font, background, border}}) => css`
 display: block;
