@@ -1,7 +1,7 @@
 import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import classnames from "classnames";
-import React, {FC, forwardRef, InputHTMLAttributes, Ref} from "react";
+import React, {FC, forwardRef, InputHTMLAttributes} from "react";
 import {useTheme} from "../hooks";
 import {ThemeProp} from "../providers";
 import {SizeType} from "../types/SizeType";
@@ -14,7 +14,7 @@ export interface InputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 
   size?: SizeType;
 }
 
-export const Input: FC<InputProps> = forwardRef<HTMLInputElement, InputProps>(({className, size = 'normal', register, ...props}, ref) => {
+export const Input: FC<InputProps> = forwardRef<HTMLInputElement, InputProps>(({className, size = 'normal', ...props}, ref) => {
   const theme = useTheme('normal');
   return <SInput {...props} className={classnames('actors-input', className)} ref={ref} sizeType={size} theme={theme}/>;
 });
