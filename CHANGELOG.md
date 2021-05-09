@@ -1,3 +1,10 @@
+## [0.4.22](https://github.com/tanmen/react-actors/compare/v0.4.21...v0.4.22) (2021-05-09)
+
+
+### Bug Fixes
+
+* **AspectText:** change element p to div ([22ec40e](https://github.com/tanmen/react-actors/commit/22ec40ed088f6a276bcfc264f47750057ccea1c1))
+
 ## [0.4.21](https://github.com/tanmen/react-actors/compare/v0.4.20...v0.4.21) (2021-05-08)
 
 
