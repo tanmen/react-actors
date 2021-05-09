@@ -1,3 +1,11 @@
+## [0.4.24](https://github.com/tanmen/react-actors/compare/v0.4.23...v0.4.24) (2021-05-09)
+
+
+### Bug Fixes
+
+* **Select:** changed the format from registering refs in register to forwarding refs ([1fe28d9](https://github.com/tanmen/react-actors/commit/1fe28d90eb437b6204e6c350e5b0562c52b6801f))
+* **Textarea:** changed the format from registering refs in register to forwarding refs ([019ab53](https://github.com/tanmen/react-actors/commit/019ab53a4cfef84ef17fbbd2e59ed829cf3e5790))
+
 ## [0.4.23](https://github.com/tanmen/react-actors/compare/v0.4.22...v0.4.23) (2021-05-09)
 
 
