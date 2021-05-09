@@ -1,7 +1,7 @@
 import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import Color from "color-js";
-import React, {FC, Ref, TextareaHTMLAttributes} from "react";
+import React, {FC, forwardRef, TextareaHTMLAttributes} from "react";
 import {useTheme} from "../hooks/useTheme";
 import {ThemeProp} from "../providers/ThemeProvider";
 import {SizeStyles} from "../types/SizeStyles";
@@ -10,16 +10,13 @@ import {extractSizeStyle} from "../utils/extractors/extractSizeStyle";
 
 export type TextareaProps = {
   size?: SizeType;
-  /**
-   * ref
-   */
-  register?: Ref<HTMLTextAreaElement>;
 } & Omit<TextareaHTMLAttributes<HTMLTextAreaElement>, 'size'>
 
-export const Textarea: FC<TextareaProps> = ({rows = 3, size = "normal", register, ...props}) => {
-  const theme = useTheme('normal');
-  return <StyledTextarea rows={rows} sizeType={size} theme={theme} ref={register} {...props}/>;
-};
+export const Textarea: FC<TextareaProps> = forwardRef<HTMLTextAreaElement, TextareaProps>(
+  ({rows = 3, size = "normal", ...props}, ref) => {
+    const theme = useTheme('normal');
+    return <StyledTextarea rows={rows} sizeType={size} theme={theme} ref={ref} {...props}/>;
+  });
 
 const styles: SizeStyles = {
   normal: css`
@@ -41,26 +38,28 @@ const styles: SizeStyles = {
   `,
 };
 
-const StyledTextarea = styled.textarea<{ sizeType: SizeType; theme: ThemeProp; }>(({theme: {font, background, border}}) =>css`
-  display: block;
-  width: 100%;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: ${font};
-  background-color: ${background};
-  background-clip: padding-box;
-  border: 1px solid ${border};
-  border-radius: .25rem;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+const StyledTextarea = styled.textarea<{ sizeType: SizeType; theme: ThemeProp; }>(
+  ({theme: {font, background, border}}) => css`
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: ${font};
+    background-color: ${background};
+    background-clip: padding-box;
+    border: 1px solid ${border};
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
-  &:focus {
-    outline: 0;
-    border-color: ${border};
-    box-shadow: 0 0 0 .2rem ${Color(border).setAlpha(0.5).toCSS()};
-  }
-  &:disabled {
-    background-color: ${border};
-    cursor: not-allowed;
-  }
-`, extractSizeStyle(styles));
+    &:focus {
+      outline: 0;
+      border-color: ${border};
+      box-shadow: 0 0 0 .2rem ${Color(border).setAlpha(0.5).toCSS()};
+    }
+
+    &:disabled {
+      background-color: ${border};
+      cursor: not-allowed;
+    }
+  `, extractSizeStyle(styles));
