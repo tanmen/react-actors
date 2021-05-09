@@ -1,3 +1,12 @@
+## [0.4.23](https://github.com/tanmen/react-actors/compare/v0.4.22...v0.4.23) (2021-05-09)
+
+
+### Bug Fixes
+
+* **Input:** changed the format from registering refs in register to forwarding refs ([7972027](https://github.com/tanmen/react-actors/commit/79720271eae758c06564f91c2a4a200b745f81bd))
+* **Input:** fix type error ([2360b68](https://github.com/tanmen/react-actors/commit/2360b687a280e3dbeb308dac58e0e6a6fd4199da))
+* **Typescript:** fix build target ([e9ccec5](https://github.com/tanmen/react-actors/commit/e9ccec5291686f9585a6719c2960bbd8aae88cf4))
+
 ## [0.4.22](https://github.com/tanmen/react-actors/compare/v0.4.21...v0.4.22) (2021-05-09)
 
 
