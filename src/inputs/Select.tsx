@@ -2,7 +2,7 @@ import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import classnames from "classnames";
 import Color from "color-js";
-import React, {FC, InputHTMLAttributes, Ref} from "react";
+import React, {FC, forwardRef, InputHTMLAttributes} from "react";
 import {useTheme} from "../hooks";
 import {ThemeProp} from "../providers";
 import {SizeType} from "../types/SizeType";
@@ -12,20 +12,16 @@ import {inputStyles} from "./styles";
 
 export interface SelectProps extends Omit<InputHTMLAttributes<HTMLSelectElement>, 'size'> {
   size?: SizeType;
-  /**
-   * ref
-   */
-  register?: Ref<HTMLSelectElement>;
 }
 
 export const Select: FC<SelectProps> =
-  ({className, size = 'normal', register, children, ...props}) => {
+  forwardRef<HTMLSelectElement, SelectProps>(({className, size = 'normal', children, ...props}, ref) => {
     const theme = useTheme('normal');
-    return <SSelect {...props} className={classnames('actors-input', className)} ref={register} sizeType={size}
+    return <SSelect {...props} className={classnames('actors-input', className)} ref={ref} sizeType={size}
                     theme={theme}>
       {children}
     </SSelect>;
-  };
+  });
 
 const SSelect = styled.select<{ sizeType: SizeType; theme: ThemeProp; }>(({theme: {font, background, border}}) => css`
   display: block;
