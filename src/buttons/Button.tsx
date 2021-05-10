@@ -1,7 +1,7 @@
 import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import Color from "color-js";
-import React, {FC, MouseEvent, useState} from "react";
+import React, {FC, MouseEvent, useEffect, useState} from "react";
 import {useTheme} from "../hooks/useTheme";
 import {LineLoading} from "../loadings";
 import {ThemeProp} from "../providers/ThemeProvider";
@@ -13,28 +13,34 @@ import {extractSizeStyle} from "../utils/extractors/extractSizeStyle";
 type ButtonProps = {
   type?: 'submit' | 'reset' | 'button';
   disabled?: boolean;
+  loading?: boolean;
   size?: SizeType;
   color?: ColorType;
   className?: string;
   onClick?: (event: MouseEvent<HTMLButtonElement>) => Promise<any> | any;
 };
-export const Button: FC<ButtonProps> = ({children, color = 'primary', size = 'normal', disabled, type = 'button', className, onClick}) => {
+export const Button: FC<ButtonProps> = ({children, loading,color = 'primary', size = 'normal', disabled, type = 'button', className, onClick}) => {
   const theme = useTheme(color);
-  const [loading, setLoading] = useState(false);
+  const [_loading, setLoading] = useState(false);
   const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
     if (!onClick) {
       return;
     }
     const reaction = onClick(event);
-    if (reaction instanceof Promise) {
+    if (reaction instanceof Promise && loading === undefined) {
       setLoading(true);
       reaction.finally(() => setLoading(false));
     }
   };
+
+  useEffect(() => {
+    setLoading(loading || false);
+  }, [loading])
+
   return <Style className={className} theme={theme} sizeType={size} type={type} disabled={disabled} onClick={handleClick}>
     <Box>
-      {loading && <Loading/>}
-      <Content disabled={loading}>{children}</Content>
+      {_loading && <Loading/>}
+      <Content disabled={_loading}>{children}</Content>
     </Box>
   </Style>;
 };
