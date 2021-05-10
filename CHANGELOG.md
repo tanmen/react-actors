@@ -1,3 +1,10 @@
+## [0.4.25](https://github.com/tanmen/react-actors/compare/v0.4.24...v0.4.25) (2021-05-10)
+
+
+### Bug Fixes
+
+* **Button:** can control the loading state ([a6878ee](https://github.com/tanmen/react-actors/commit/a6878ee62ae48cbcd7834633af70aa6501a2c40c))
+
 ## [0.4.24](https://github.com/tanmen/react-actors/compare/v0.4.23...v0.4.24) (2021-05-09)
 
 
