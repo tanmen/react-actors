@@ -18,6 +18,7 @@ export const InputGroup: FC<InputGroupProps> = ({className, style, error, childr
 };
 
 const Group = styled.div<{ theme: ThemeProp }>`
+width: 100%;
 display: flex;
 border-radius: .25rem;
 &.error {
