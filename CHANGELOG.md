@@ -1,3 +1,10 @@
+## [0.4.26](https://github.com/tanmen/react-actors/compare/v0.4.25...v0.4.26) (2021-05-11)
+
+
+### Bug Fixes
+
+* **InputGroup:** add width: 100% ([7573dff](https://github.com/tanmen/react-actors/commit/7573dffe2285814ce95aef6762d903f799c48dde))
+
 ## [0.4.25](https://github.com/tanmen/react-actors/compare/v0.4.24...v0.4.25) (2021-05-10)
 
 
