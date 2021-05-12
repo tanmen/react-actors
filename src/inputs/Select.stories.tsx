@@ -1,5 +1,6 @@
 import {Story} from "@storybook/react/types-6-0";
 import React from "react";
+import {Input} from "./Input";
 import {Select, SelectProps} from "./Select";
 
 export default {
@@ -12,11 +13,14 @@ export default {
   }
 };
 
-const Template: Story<SelectProps> = ({...args}) => <Select {...args}>
-  <option value="A">A</option>
-  <option value="B">B</option>
-  <option value="C">C</option>
-</Select>;
+const Template: Story<SelectProps> = ({...args}) => <>
+  <Select {...args}>
+    <option value="JP">gpt</option>
+    <option value="US">United State</option>
+    <option value="Other">Other</option>
+  </Select>
+  <Input/>
+</>;
 
 export const Normal = Template.bind({});
 

@@ -1,6 +1,6 @@
 import {Story} from "@storybook/react/types-6-0";
 import React from "react";
-import Input, {Props} from "./Input";
+import {Input, InputProps} from "./Input";
 
 export default {
   title: 'Input/Input',
@@ -12,7 +12,7 @@ export default {
   }
 };
 
-const Template: Story<Props> = ({...args}) => <Input {...args}/>;
+const Template: Story<InputProps> = ({...args}) => <Input {...args}/>;
 
 export const Normal = Template.bind({});
 

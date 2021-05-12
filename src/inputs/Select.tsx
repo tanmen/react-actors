@@ -5,6 +5,7 @@ import Color from "color-js";
 import React, {FC, forwardRef, InputHTMLAttributes} from "react";
 import {useTheme} from "../hooks";
 import {ThemeProp} from "../providers";
+import {SizeStyles} from "../types/SizeStyles";
 import {SizeType} from "../types/SizeType";
 import {extractSizeStyle} from "../utils/extractors/extractSizeStyle";
 import {classname} from "./InputGroup";
@@ -23,11 +24,24 @@ export const Select: FC<SelectProps> =
     </SSelect>;
   });
 
+const selectStyles: SizeStyles = {
+  normal: css`
+    padding: .25rem 1.75rem .25rem .75rem;
+  `,
+  small: css`
+    padding: .25rem 1.75rem .25rem .5rem;
+  `,
+  large: css`
+    padding: .5rem 1.75rem .5rem 1rem;
+  `,
+};
+
 const SSelect = styled.select<{ sizeType: SizeType; theme: ThemeProp; }>(({theme: {font, background, border}}) => css`
   display: block;
   width: 100%;
   font-weight: 400;
   color: ${font};
+  line-height: 1.5;
   background-color: ${background};
   background-clip: padding-box;
   border: 1px solid ${border};
@@ -52,4 +66,4 @@ const SSelect = styled.select<{ sizeType: SizeType; theme: ThemeProp; }>(({theme
   .${classname} > &:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-  }`, extractSizeStyle(inputStyles));
+  }`, extractSizeStyle(inputStyles), extractSizeStyle(selectStyles));
