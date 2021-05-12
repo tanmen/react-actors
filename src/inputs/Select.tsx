@@ -24,24 +24,6 @@ export const Select: FC<SelectProps> =
     </SSelect>;
   });
 
-const selectStyles: SizeStyles = {
-  normal: css`
-    padding-top: .275rem;
-    padding-right: 1.75rem;
-    padding-bottom: .275rem;
-  `,
-  small: css`
-    padding-top: .25rem;
-    padding-right: 1.75rem;
-    padding-bottom: .25rem;
-  `,
-  large: css`
-    padding-top: .5rem;
-    padding-right: 1.75rem;
-    padding-bottom: .5rem;
-  `,
-};
-
 const SSelect = styled.select<{ sizeType: SizeType; theme: ThemeProp; }>(({theme: {font, background, border}}) => css`
   display: block;
   width: 100%;
@@ -72,4 +54,4 @@ const SSelect = styled.select<{ sizeType: SizeType; theme: ThemeProp; }>(({theme
   .${classname} > &:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-  }`, extractSizeStyle(inputStyles), extractSizeStyle(selectStyles));
+  }`, extractSizeStyle(inputStyles), css`padding-right: 1.75rem;`);
