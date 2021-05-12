@@ -26,13 +26,19 @@ export const Select: FC<SelectProps> =
 
 const selectStyles: SizeStyles = {
   normal: css`
-    padding: .25rem 1.75rem .25rem .75rem;
+    padding-top: .275rem;
+    padding-right: 1.75rem;
+    padding-bottom: .275rem;
   `,
   small: css`
-    padding: .25rem 1.75rem .25rem .5rem;
+    padding-top: .25rem;
+    padding-right: 1.75rem;
+    padding-bottom: .25rem;
   `,
   large: css`
-    padding: .5rem 1.75rem .5rem 1rem;
+    padding-top: .5rem;
+    padding-right: 1.75rem;
+    padding-bottom: .5rem;
   `,
 };
 
