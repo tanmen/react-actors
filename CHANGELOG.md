@@ -1,3 +1,10 @@
+## [0.4.28](https://github.com/tanmen/react-actors/compare/v0.4.27...v0.4.28) (2021-05-12)
+
+
+### Bug Fixes
+
+* **Select:** fix append padding ([ca31cfe](https://github.com/tanmen/react-actors/commit/ca31cfe5f80b0b202944e1f4e4a3bae3ff1b500e))
+
 ## [0.4.27](https://github.com/tanmen/react-actors/compare/v0.4.26...v0.4.27) (2021-05-12)
 
 
