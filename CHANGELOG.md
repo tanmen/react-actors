@@ -1,3 +1,10 @@
+## [0.4.27](https://github.com/tanmen/react-actors/compare/v0.4.26...v0.4.27) (2021-05-12)
+
+
+### Bug Fixes
+
+* **Select:** remove height ([09b9b3d](https://github.com/tanmen/react-actors/commit/09b9b3d1965b4901cb70c11397b4f94d6a65c644))
+
 ## [0.4.26](https://github.com/tanmen/react-actors/compare/v0.4.25...v0.4.26) (2021-05-11)
 
 
