@@ -5,7 +5,6 @@ import Color from "color-js";
 import React, {FC, forwardRef, InputHTMLAttributes} from "react";
 import {useTheme} from "../hooks";
 import {ThemeProp} from "../providers";
-import {SizeStyles} from "../types/SizeStyles";
 import {SizeType} from "../types/SizeType";
 import {extractSizeStyle} from "../utils/extractors/extractSizeStyle";
 import {classname} from "./InputGroup";
