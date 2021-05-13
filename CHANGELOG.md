@@ -1,3 +1,11 @@
+## [0.4.29](https://github.com/tanmen/react-actors/compare/v0.4.28...v0.4.29) (2021-05-13)
+
+
+### Bug Fixes
+
+* **Select:** fix padding ([6a1076c](https://github.com/tanmen/react-actors/commit/6a1076c75d1120bb84230497552006866b77cf2c))
+* **Select:** remove import ([42c04d5](https://github.com/tanmen/react-actors/commit/42c04d58be9e7bec4b911361a0b8eae995c00833))
+
 ## [0.4.28](https://github.com/tanmen/react-actors/compare/v0.4.27...v0.4.28) (2021-05-12)
 
 
