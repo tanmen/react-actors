@@ -1,3 +1,10 @@
+## [0.4.30](https://github.com/tanmen/react-actors/compare/v0.4.29...v0.4.30) (2021-06-22)
+
+
+### Bug Fixes
+
+* **Button:** add display flex to inline style ([309bd2c](https://github.com/tanmen/react-actors/commit/309bd2cbb2aa31e5da13e26a9c435fb0631433c9))
+
 ## [0.4.29](https://github.com/tanmen/react-actors/compare/v0.4.28...v0.4.29) (2021-05-13)
 
 
