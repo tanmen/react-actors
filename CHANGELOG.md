@@ -1,3 +1,11 @@
+## [0.4.31](https://github.com/tanmen/react-actors/compare/v0.4.30...v0.4.31) (2021-06-22)
+
+
+### Bug Fixes
+
+* **AspectText:** remove AspectText ([170bf76](https://github.com/tanmen/react-actors/commit/170bf76bd97b58899e5bf9b698e15b4fd2067398))
+* **Button:** remove inline display flex ([70d0de6](https://github.com/tanmen/react-actors/commit/70d0de685451edaa6d6f46c50886fb63786ea924))
+
 ## [0.4.30](https://github.com/tanmen/react-actors/compare/v0.4.29...v0.4.30) (2021-06-22)
 
 
