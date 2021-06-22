@@ -95,8 +95,6 @@ font-size: 1.25em;
 `;
 
 const Content = styled.p<{ disabled?: boolean; }>`
-display: flex;
-align-items: center;
 opacity: ${({disabled}) => disabled ? 0 : 1};
 transition: opacity .15s ease-in-out;
 `;
