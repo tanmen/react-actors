@@ -4,7 +4,7 @@ import React, {FC, useEffect} from "react";
 
 export type ModalBackgroundProps = {
   className?: string
-  onClose: () => {}
+  onClose: () => unknown
 }
 
 export const ModalBackground: FC<ModalBackgroundProps> = ({children, className, onClose}) => {

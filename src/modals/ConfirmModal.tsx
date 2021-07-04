@@ -9,8 +9,8 @@ import {Modal} from "./Modal";
 export type ConfirmModalProps = {
   title?: ReactNode;
   text: ReactNode;
-  onOK: () => {};
-  onClose: () => {};
+  onOK: () => unknown;
+  onClose: () => unknown;
 }
 
 export const ConfirmModal: FC<ConfirmModalProps> = ({title, text, onOK,onClose}) => {

@@ -5,7 +5,7 @@ import {ThemeProp} from "../providers";
 import {ModalBackground} from "./ModalBackground";
 
 export type ModalProps = {
-  onClose: () => {}
+  onClose: () => unknown
 }
 
 export const Modal: FC<ModalProps> = ({children, onClose}) => {
