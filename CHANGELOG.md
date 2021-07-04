@@ -1,3 +1,11 @@
+## [0.4.32](https://github.com/tanmen/react-actors/compare/v0.4.31...v0.4.32) (2021-07-04)
+
+
+### Bug Fixes
+
+* **hooks:** add more hooks ([710ca16](https://github.com/tanmen/react-actors/commit/710ca168a2aafa0136fba861f612dacd6713299a))
+* **modal:** add Modals ([541706b](https://github.com/tanmen/react-actors/commit/541706b5ad85f1f2ebd7236aef7c7f8aeef2e4cd))
+
 ## [0.4.31](https://github.com/tanmen/react-actors/compare/v0.4.30...v0.4.31) (2021-06-22)
 
 
