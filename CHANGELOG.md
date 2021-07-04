@@ -1,3 +1,10 @@
+## [0.4.33](https://github.com/tanmen/react-actors/compare/v0.4.32...v0.4.33) (2021-07-04)
+
+
+### Bug Fixes
+
+* **modal:** fix function return for type ([a6fecc5](https://github.com/tanmen/react-actors/commit/a6fecc50c55d2afd55dea13cfeabefdf2bb59dcf))
+
 ## [0.4.32](https://github.com/tanmen/react-actors/compare/v0.4.31...v0.4.32) (2021-07-04)
 
 
