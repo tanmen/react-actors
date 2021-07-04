@@ -30,6 +30,7 @@
   "dependencies": {
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.3.0",
+    "body-scroll-lock": "^4.0.0-beta.0",
     "classnames": "^2.3.1",
     "color-js": "^1.0.5",
     "react-use": "^17.2.4",
@@ -54,6 +55,7 @@
     "@storybook/react": "^6.1.2",
     "@storybook/theming": "^6.1.2",
     "@types/babel__core": "^7.1.14",
+    "@types/body-scroll-lock": "^2.6.1",
     "@types/classnames": "^2.2.11",
     "@types/eslint": "^7.2.10",
     "@types/jest": "^26.0.23",
