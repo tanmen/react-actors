@@ -1,3 +1,10 @@
+## [0.4.34](https://github.com/tanmen/react-actors/compare/v0.4.33...v0.4.34) (2021-07-06)
+
+
+### Bug Fixes
+
+* **modal:** add force props ([b78c43d](https://github.com/tanmen/react-actors/commit/b78c43d2e7aba664b89e5afaf9928d69b5cfff67))
+
 ## [0.4.33](https://github.com/tanmen/react-actors/compare/v0.4.32...v0.4.33) (2021-07-04)
 
 
