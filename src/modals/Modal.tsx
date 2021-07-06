@@ -1,16 +1,20 @@
 import styled from "@emotion/styled";
-import React, {FC} from "react";
+import React, {FC, SyntheticEvent} from "react";
 import {useTheme} from "../hooks";
 import {ThemeProp} from "../providers";
 import {ModalBackground} from "./ModalBackground";
 
 export type ModalProps = {
-  onClose: () => unknown
+  /**
+   * Whether to continue to force visible
+   */
+  force?: boolean
+  onClose: (event: SyntheticEvent) => unknown
 }
 
-export const Modal: FC<ModalProps> = ({children, onClose}) => {
+export const Modal: FC<ModalProps> = ({force, children, onClose}) => {
   const theme = useTheme('normal');
-  return <ModalBackground onClose={onClose}>
+  return <ModalBackground onClose={(e) => !force && onClose(e)}>
     <Content theme={theme}>
       {children}
     </Content>

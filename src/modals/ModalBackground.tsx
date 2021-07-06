@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
 import {disableBodyScroll, enableBodyScroll} from "body-scroll-lock";
-import React, {FC, useEffect} from "react";
+import React, {FC, SyntheticEvent, useEffect} from "react";
 
 export type ModalBackgroundProps = {
   className?: string
-  onClose: () => unknown
+  onClose: (event: SyntheticEvent) => unknown
 }
 
 export const ModalBackground: FC<ModalBackgroundProps> = ({children, className, onClose}) => {
