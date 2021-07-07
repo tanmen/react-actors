@@ -1,3 +1,10 @@
+## [0.4.35](https://github.com/tanmen/react-actors/compare/v0.4.34...v0.4.35) (2021-07-07)
+
+
+### Bug Fixes
+
+* **utils:** allow handle event no args ([b51dd6a](https://github.com/tanmen/react-actors/commit/b51dd6a93d4f1969854d0722a472b505e243d4b2))
+
 ## [0.4.34](https://github.com/tanmen/react-actors/compare/v0.4.33...v0.4.34) (2021-07-06)
 
 
