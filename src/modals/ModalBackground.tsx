@@ -31,4 +31,5 @@ const Background = styled.div`
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000000;
 `

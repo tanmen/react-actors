@@ -25,4 +25,5 @@ const Content = styled.div<{ theme: ThemeProp; }>`
   border-radius: .25rem;
   background-color: ${({theme: {background}}) => background};
   color: ${({theme: {font}}) => font};
+  z-index: 1000001;
 `;
