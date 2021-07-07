@@ -1,3 +1,10 @@
+## [0.4.36](https://github.com/tanmen/react-actors/compare/v0.4.35...v0.4.36) (2021-07-07)
+
+
+### Bug Fixes
+
+* **modal:** add z-index ([1179806](https://github.com/tanmen/react-actors/commit/11798063f0f064e5e821ac5c77d161fd24a68a40))
+
 ## [0.4.35](https://github.com/tanmen/react-actors/compare/v0.4.34...v0.4.35) (2021-07-07)
 
 
