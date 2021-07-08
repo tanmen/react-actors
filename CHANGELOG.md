@@ -1,3 +1,10 @@
+## [0.4.37](https://github.com/tanmen/react-actors/compare/v0.4.36...v0.4.37) (2021-07-08)
+
+
+### Bug Fixes
+
+* **Inputs:** add error props ([0950ce3](https://github.com/tanmen/react-actors/commit/0950ce309c9866404e309a9c31c27ddcd971e502))
+
 ## [0.4.36](https://github.com/tanmen/react-actors/compare/v0.4.35...v0.4.36) (2021-07-07)
 
 
