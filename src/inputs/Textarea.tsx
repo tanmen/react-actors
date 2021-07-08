@@ -10,12 +10,20 @@ import {extractSizeStyle} from "../utils/extractors/extractSizeStyle";
 
 export type TextareaProps = {
   size?: SizeType;
+  error?: boolean;
 } & Omit<TextareaHTMLAttributes<HTMLTextAreaElement>, 'size'>
 
 export const Textarea: FC<TextareaProps> = forwardRef<HTMLTextAreaElement, TextareaProps>(
-  ({rows = 3, size = "normal", ...props}, ref) => {
+  ({rows = 3, size = "normal", error, ...props}, ref) => {
     const theme = useTheme('normal');
-    return <StyledTextarea rows={rows} sizeType={size} theme={theme} ref={ref} {...props}/>;
+    const errorTheme = useTheme('danger');
+    return <StyledTextarea
+      rows={rows}
+      sizeType={size}
+      error={error}
+      theme={theme}
+      errorTheme={errorTheme}
+      ref={ref} {...props}/>;
   });
 
 const styles: SizeStyles = {
@@ -38,8 +46,8 @@ const styles: SizeStyles = {
   `,
 };
 
-const StyledTextarea = styled.textarea<{ sizeType: SizeType; theme: ThemeProp; }>(
-  ({theme: {font, background, border}}) => css`
+const StyledTextarea = styled.textarea<{ sizeType: SizeType; error?: boolean; theme: ThemeProp; errorTheme: ThemeProp; }>(
+  ({theme: {font, background, border}, errorTheme, error}) => css`
     display: block;
     width: 100%;
     padding: .375rem .75rem;
@@ -48,18 +56,18 @@ const StyledTextarea = styled.textarea<{ sizeType: SizeType; theme: ThemeProp; }
     color: ${font};
     background-color: ${background};
     background-clip: padding-box;
-    border: 1px solid ${border};
+    border: 1px solid ${error ? errorTheme.border : border};
     border-radius: .25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
     &:focus {
       outline: 0;
-      border-color: ${border};
-      box-shadow: 0 0 0 .2rem ${Color(border).setAlpha(0.5).toCSS()};
+      border-color: ${error ? errorTheme.border : border};
+      box-shadow: 0 0 0 .2rem ${Color(error ? errorTheme.border : border).setAlpha(0.5).toCSS()};
     }
 
     &:disabled {
-      background-color: ${border};
+      background-color: ${error ? errorTheme.border : border};
       cursor: not-allowed;
     }
   `, extractSizeStyle(styles));

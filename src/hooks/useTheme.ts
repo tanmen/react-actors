@@ -1,6 +1,6 @@
 import {useTheme as useEmotionTheme} from '@emotion/react';
 import {useContext} from "react";
-import {Theme, ThemeContext, ThemeProp} from "../providers/ThemeProvider";
+import {Theme, ThemeContext, ThemeProp} from "../providers";
 import {ColorType} from "../types/ColorType";
 
 export const useTheme = (type: ColorType): ThemeProp => {
