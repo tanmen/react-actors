@@ -1,3 +1,10 @@
+## [0.4.39](https://github.com/tanmen/react-actors/compare/v0.4.38...v0.4.39) (2021-08-13)
+
+
+### Bug Fixes
+
+* **modal:** prevented submit events from firing ([c9a43ac](https://github.com/tanmen/react-actors/commit/c9a43ac61a54149ee521c45685a7ad0668881219))
+
 ## [0.4.38](https://github.com/tanmen/react-actors/compare/v0.4.37...v0.4.38) (2021-08-13)
 
 
