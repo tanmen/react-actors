@@ -1,3 +1,10 @@
+## [0.4.38](https://github.com/tanmen/react-actors/compare/v0.4.37...v0.4.38) (2021-08-13)
+
+
+### Bug Fixes
+
+* **modal:** remove click events by default ([b898942](https://github.com/tanmen/react-actors/commit/b8989423daaa176c4cf0146cfb99e2988a609f00))
+
 ## [0.4.37](https://github.com/tanmen/react-actors/compare/v0.4.36...v0.4.37) (2021-07-08)
 
 
