@@ -29,7 +29,7 @@
     "esModuleInterop": true,
     "jsx": "react",
     "allowSyntheticDefaultImports": true,
-    "sourceRoot": "src",
+    "sourceRoot": "/react-actors/src",
     "sourceMap": true
   },
   "include": ["src"],
