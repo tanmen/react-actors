@@ -12,7 +12,7 @@ jobs:
       snapshot:
         image: fwouts/chrome-screenshot:1.2.0
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version-file: '.node-version'
@@ -42,7 +42,7 @@ jobs:
     needs: Test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version-file: '.node-version'
@@ -63,7 +63,7 @@ jobs:
     needs: Test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version-file: '.node-version'
