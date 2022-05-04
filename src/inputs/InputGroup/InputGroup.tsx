@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import classnames from 'classnames';
-import React, {FC} from "react";
+import React, {FC, ReactNode} from "react";
 import {useTheme} from "../../hooks";
 import {ThemeProp} from "../../providers";
 import {StyleProps} from "../../types";
@@ -10,6 +10,7 @@ export const classname = 'actors-input-group';
 
 export interface InputGroupProps extends StyleProps {
   error?: boolean;
+  children?: ReactNode;
 }
 
 export const InputGroup: FC<InputGroupProps> = ({className, style, error, children}) => {

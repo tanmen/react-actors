@@ -1,7 +1,7 @@
 import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import classnames from "classnames";
-import React, {FC} from "react";
+import React, {FC, ReactNode} from "react";
 import {useTheme} from "../../hooks";
 import {ThemeProp} from "../../providers";
 import {SizeType, StyleProps} from "../../types";
@@ -11,6 +11,7 @@ import {inputStyles} from "../styles";
 
 export type InputAdditionProps = {
   size?: SizeType;
+  children?: ReactNode;
 } & StyleProps;
 
 export const InputAddition: FC<InputAdditionProps> = ({size = 'normal', className, style, children}) => {

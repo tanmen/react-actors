@@ -7,7 +7,7 @@ import {useTheme} from "../../hooks";
 import {ThemeProp} from "../../providers";
 import {SizeType} from "../../types";
 import {extractSizeStyle} from "../../utils";
-import {classname} from "../InputGroup/InputGroup";
+import {classname} from "../InputGroup";
 import {inputStyles} from "../styles";
 
 export interface SelectProps extends Omit<InputHTMLAttributes<HTMLSelectElement>, 'size'> {

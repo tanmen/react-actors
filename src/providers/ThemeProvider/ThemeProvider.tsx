@@ -1,5 +1,5 @@
 import {GlobalProps, ThemeProvider as StyledThemeProvider} from "@emotion/react";
-import React, {FC} from "react";
+import React, {FC, ReactNode} from "react";
 import 'ress/dist/ress.min.css';
 import {GlobalCss} from "../../styles";
 import {ColorType, ModeType} from "../../types";
@@ -107,7 +107,7 @@ export const INITIAL_THEME: Theme = {
   }
 };
 
-export const ThemeProvider: FC<{ theme?: Theme; global?: GlobalProps['styles']; mode?: ModeType }> =
+export const ThemeProvider: FC<{ theme?: Theme; global?: GlobalProps['styles']; mode?: ModeType, children: ReactNode }> =
   ({theme = INITIAL_THEME, global, mode = 'light', children}) =>
     <StyledThemeProvider theme={theme}>
       <ThemeContext.Provider value={mode}>

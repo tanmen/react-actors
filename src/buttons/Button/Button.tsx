@@ -1,7 +1,7 @@
 import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import Color from "color-js";
-import React, {FC, MouseEvent, useEffect, useState} from "react";
+import React, {FC, MouseEvent, ReactNode, useEffect, useState} from "react";
 import {useTheme} from "../../hooks";
 import {LineLoading} from "../../loadings";
 import {ThemeProp} from "../../providers";
@@ -9,6 +9,7 @@ import {ColorType, SizeStyles, SizeType} from "../../types";
 import {extractSizeStyle} from "../../utils";
 
 type ButtonProps = {
+  children?: ReactNode,
   type?: 'submit' | 'reset' | 'button';
   disabled?: boolean;
   loading?: boolean;
