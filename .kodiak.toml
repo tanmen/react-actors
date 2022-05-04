@@ -1,8 +1,5 @@
 version = 1
 
-[approve]
-auto_approve_usernames = ["dependabot-preview"]
-
 [merge.automerge_dependencies]
 versions = ["major", "minor", "patch"]
 usernames = ["dependabot"]
