@@ -1,25 +1,62 @@
-name: Node.js Package
-
+name: CI/CD
 on:
   push:
     branches: [ main ]
   pull_request: {}
-
+env:
 jobs:
-  Test:
+  Install:
     runs-on: ubuntu-latest
-    services:
-      snapshot:
-        image: fwouts/chrome-screenshot:1.2.0
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
           node-version-file: '.node-version'
-          cache: 'yarn'
-      - run: yarn install --frozen-lockfile
+          cache: yarn
+      - name: Install modules
+        run: yarn install --frozen-lockfile
+  Build:
+    runs-on: ubuntu-latest
+    needs: [Install]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version-file: '.node-version'
+          cache: yarn
+      - name: Install modules
+        run: yarn install --frozen-lockfile
       - name: Build
         run: yarn build
+      - name: Storybook Build
+  StorybookBuild:
+    runs-on: ubuntu-latest
+    needs: [ Install ]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version-file: '.node-version'
+          cache: yarn
+      - name: Install modules
+        run: yarn install --frozen-lockfile
+      - name: Build
+        run: yarn build-storybook
+  Test:
+    runs-on: ubuntu-latest
+    needs: [ Install ]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version-file: '.node-version'
+          cache: yarn
+      - name: Install modules
+        run: yarn install --frozen-lockfile
       - name: Test
         id: test
         run: yarn test --coverage --json --outputFile=result.json --testLocationInResults
@@ -29,13 +66,27 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-
+  IntegrationTest:
+    runs-on: ubuntu-latest
+    needs: [ Install ]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version-file: '.node-version'
+          cache: yarn
+      - name: Install modules
+        run: yarn install --frozen-lockfile
+      - name: Test
+        id: test
+        run: yarn test:integration
   LisenceScan:
     if: ${{ github.event_name != 'pull_request' }}
-    needs: Test
+    needs: [ Test, Build ]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -50,45 +101,47 @@ jobs:
         uses: fossas/fossa-action@v1
         with:
           api-key: ${{ secrets.FOSSA_API_KEY }}
-
-  PublishStorybook:
-    if: ${{ github.event_name != 'pull_request' }}
-    needs: Test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3
-        with:
-          node-version-file: '.node-version'
-          cache: 'yarn'
-      - run: yarn install --frozen-lockfile
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.PACKAGE_TOKEN }}
-      - name: Build
-        run: yarn build-storybook
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
-        with:
-          branch: gh-pages
-          folder: storybook-static
-
   Publish:
     if: ${{ github.event_name != 'pull_request' }}
-    needs: Test
     runs-on: ubuntu-latest
+    needs: [ Test, Build ]
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
           node-version-file: '.node-version'
-          cache: 'yarn'
+          cache: yarn
           registry-url: https://registry.npmjs.org/
-      - run: yarn install --frozen-lockfile
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.PACKAGE_TOKEN }}
-      - run: yarn build
-      - run: yarn semantic-release
+      - name: Install modules
+        run: yarn install --frozen-lockfile
+      - name: Build
+        run: yarn build
+      - name: Publish
+        run: yarn semantic-release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+  StorybookPublish:
+    if: ${{ github.event_name != 'pull_request' }}
+    needs: [ Test, Build, StorybookBuild ]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version-file: '.node-version'
+          cache: yarn
+      - run: yarn install --frozen-lockfile
+      - name: Build
+        run: yarn build-storybook
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
