@@ -1,3 +1,10 @@
+## [0.5.5](https://github.com/tanmen/react-actors/compare/v0.5.4...v0.5.5) (2022-05-04)
+
+
+### Bug Fixes
+
+* **config:** inline sourcemap ([30b787d](https://github.com/tanmen/react-actors/commit/30b787da2f47c8eaafe2cbe47a9c897b71a1eb77))
+
 ## [0.5.4](https://github.com/tanmen/react-actors/compare/v0.5.3...v0.5.4) (2022-05-04)
 
 
