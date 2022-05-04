@@ -2,8 +2,8 @@ name: Node.js Package
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+  pull_request: {}
 
 jobs:
   Test:
@@ -38,6 +38,7 @@ jobs:
           api-key: ${{ secrets.FOSSA_API_KEY }}
 
   PublishStorybook:
+    if: ${{ github.event_name != 'pull_request' }}
     needs: Test
     runs-on: ubuntu-latest
     steps:
@@ -58,6 +59,7 @@ jobs:
           folder: storybook-static
 
   Publish:
+    if: ${{ github.event_name != 'pull_request' }}
     needs: Test
     runs-on: ubuntu-latest
     steps:
