@@ -1,3 +1,10 @@
+## [0.5.3](https://github.com/tanmen/react-actors/compare/v0.5.2...v0.5.3) (2022-05-04)
+
+
+### Bug Fixes
+
+* **config:** tsconfig ([b648930](https://github.com/tanmen/react-actors/commit/b648930be8dbb4a9e5e7e9a5af42848127512963))
+
 ## [0.5.2](https://github.com/tanmen/react-actors/compare/v0.5.1...v0.5.2) (2022-05-04)
 
 
