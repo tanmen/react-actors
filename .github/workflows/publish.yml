@@ -3,7 +3,6 @@ on:
   push:
     branches: [ main ]
   pull_request: {}
-env:
 jobs:
   Install:
     runs-on: ubuntu-latest
@@ -69,21 +68,6 @@ jobs:
         uses: codecov/codecov-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-  IntegrationTest:
-    runs-on: ubuntu-latest
-    needs: [ Install ]
-    steps:
-      - uses: actions/checkout@v2
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version-file: '.node-version'
-          cache: yarn
-      - name: Install modules
-        run: yarn install --frozen-lockfile
-      - name: Test
-        id: test
-        run: yarn test:integration
   LisenceScan:
     if: ${{ github.event_name != 'pull_request' }}
     needs: [ Test, Build ]
