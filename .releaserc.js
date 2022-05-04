@@ -11,7 +11,7 @@ module.exports = {
       "assets": ["CHANGELOG.md"],
     }],
     ['@semantic-release/npm', {
-      "pkgRoot": "dist"
+      "pkgRoot": "src"
     }],
   ],
 };

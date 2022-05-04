@@ -8,7 +8,6 @@
       "dom.iterable",
       "esnext"
     ],
-    "outDir": "dist",
     "strict": true,
     "alwaysStrict": true,
     "strictFunctionTypes": true,
@@ -29,7 +28,7 @@
     "esModuleInterop": true,
     "jsx": "react",
     "allowSyntheticDefaultImports": true,
-    "inlineSourceMap": true
+    "sourceMap": true
   },
   "include": ["src"],
   "exclude": ["src/**/*.stories.tsx", "src/**/*.screenshot.tsx", "src/**/__screenshots__"]

@@ -16,7 +16,7 @@
     "prebuild": "node scripts/prebuild.js",
     "build": "tsc",
     "lint": "eslint src --ext .ts,.tsx",
-    "presemantic-release": "yarn build && cp package.json README.md LICENSE dist",
+    "presemantic-release": "yarn build && cp package.json README.md LICENSE src",
     "semantic-release": "semantic-release",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
