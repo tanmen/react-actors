@@ -1,3 +1,10 @@
+## [0.5.2](https://github.com/tanmen/react-actors/compare/v0.5.1...v0.5.2) (2022-05-04)
+
+
+### Bug Fixes
+
+* **workflow:** add permissions ([e69269b](https://github.com/tanmen/react-actors/commit/e69269bc4ea42b4974a4d7621f2da739818a749f))
+
 ## [0.5.1](https://github.com/tanmen/react-actors/compare/v0.5.0...v0.5.1) (2022-05-04)
 
 
