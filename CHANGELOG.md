@@ -1,3 +1,11 @@
+## [0.5.6](https://github.com/tanmen/react-actors/compare/v0.5.5...v0.5.6) (2022-05-04)
+
+
+### Bug Fixes
+
+* **config:** fix source path ([0550dc8](https://github.com/tanmen/react-actors/commit/0550dc85b68ea338aa175e795abddd012ff9f75e))
+* **update:** library ([875c3fb](https://github.com/tanmen/react-actors/commit/875c3fb7524db0616f2ac263f0af47e2fa089e44))
+
 ## [0.5.5](https://github.com/tanmen/react-actors/compare/v0.5.4...v0.5.5) (2022-05-04)
 
 
