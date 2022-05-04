@@ -1,3 +1,10 @@
+# [0.5.0](https://github.com/tanmen/react-actors/compare/v0.4.39...v0.5.0) (2022-05-04)
+
+
+### Features
+
+* update component ([648c3b4](https://github.com/tanmen/react-actors/commit/648c3b4ab1a83e23dfaeed4a878d6a917399a19a))
+
 ## [0.4.39](https://github.com/tanmen/react-actors/compare/v0.4.38...v0.4.39) (2021-08-13)
 
 
