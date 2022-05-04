@@ -10,7 +10,8 @@
 		],
 
 		"baseUrl": "src",
-		"outDir": "lib",
+		"outDir": "dist",
+		"sourceRoot": "src",
 
 		"strict": true,
 		"alwaysStrict": true,
@@ -36,10 +37,7 @@
 		"esModuleInterop": true,
 		"jsx": "react",
 		"allowSyntheticDefaultImports": true,
-		"typeRoots": ["node_modules/@types", "types"],
-		"types": ["@emotion/react", "react", "node"],
 		"sourceMap": true
 	},
-	"include": ["src/**/*", "types/**/*"],
 	"exclude": ["src/**/*.stories.tsx", "src/**/*.screenshot.tsx", "src/**/__screenshots__"]
 }

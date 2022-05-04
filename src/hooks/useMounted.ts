@@ -5,7 +5,7 @@ export const useMounted = () => {
 
   useEffect(() =>
     () => {
-      mounted.current = true;
+      mounted.current = false;
     },
   []);
 

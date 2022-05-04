@@ -1,5 +1,5 @@
 import {css} from "@emotion/react";
-import {SizeStyles} from "../types/SizeStyles";
+import {SizeStyles} from "../types";
 
 export const inputStyles: SizeStyles = {
   normal: css`

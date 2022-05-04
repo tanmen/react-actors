@@ -1,5 +1,5 @@
 module.exports = {
-  branch: 'main',
+  branches: ['main'],
   plugins: [
     '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
@@ -11,7 +11,7 @@ module.exports = {
       "assets": ["CHANGELOG.md"],
     }],
     ['@semantic-release/npm', {
-      "pkgRoot": "lib"
-    }]
+      "pkgRoot": "dist"
+    }],
   ],
 };

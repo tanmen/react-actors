@@ -13,19 +13,11 @@ jobs:
         image: fwouts/chrome-screenshot:1.2.0
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
         with:
-          node-version: 12
-      - name: Cache node modules
-        id: cache
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}
+          node-version-file: '.node-version'
+          cache: 'yarn'
       - run: yarn install --frozen-lockfile
-        if: steps.cache.outputs.cache-hit != 'true'
       - name: Build
         run: yarn build
       - name: Test
@@ -50,19 +42,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
         with:
-          node-version: 12
-      - name: Cache node modules
-        id: cache
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}
+          node-version-file: '.node-version'
+          cache: 'yarn'
       - run: yarn install --frozen-lockfile
-        if: steps.cache.outputs.cache-hit != 'true'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PACKAGE_TOKEN }}
       - name: Build
@@ -78,20 +62,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
         with:
-          node-version: 12
+          node-version-file: '.node-version'
+          cache: 'yarn'
           registry-url: https://registry.npmjs.org/
-      - name: Cache node modules
-        id: cache
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('yarn.lock') }}
       - run: yarn install --frozen-lockfile
-        if: steps.cache.outputs.cache-hit != 'true'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PACKAGE_TOKEN }}
       - run: yarn build
