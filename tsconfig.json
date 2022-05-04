@@ -29,8 +29,7 @@
     "esModuleInterop": true,
     "jsx": "react",
     "allowSyntheticDefaultImports": true,
-    "sourceRoot": "/react-actors/src",
-    "sourceMap": true
+    "inlineSourceMap": true
   },
   "include": ["src"],
   "exclude": ["src/**/*.stories.tsx", "src/**/*.screenshot.tsx", "src/**/__screenshots__"]
