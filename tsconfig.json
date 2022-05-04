@@ -9,9 +9,7 @@
 			"esnext"
 		],
 
-		"baseUrl": "src",
 		"outDir": "dist",
-		"sourceRoot": "src",
 
 		"strict": true,
 		"alwaysStrict": true,
@@ -39,5 +37,6 @@
 		"allowSyntheticDefaultImports": true,
 		"sourceMap": true
 	},
+	"include": ["src"],
 	"exclude": ["src/**/*.stories.tsx", "src/**/*.screenshot.tsx", "src/**/__screenshots__"]
 }
