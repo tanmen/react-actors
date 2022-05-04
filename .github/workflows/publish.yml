@@ -29,7 +29,6 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Build
         run: yarn build
-      - name: Storybook Build
   StorybookBuild:
     runs-on: ubuntu-latest
     needs: [ Install ]
