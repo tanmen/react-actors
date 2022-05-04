@@ -1,3 +1,22 @@
+## [0.5.1](https://github.com/tanmen/react-actors/compare/v0.5.0...v0.5.1) (2022-05-04)
+
+
+### Bug Fixes
+
+* ... ([a67a414](https://github.com/tanmen/react-actors/commit/a67a414bfce24bdf43ea1c60171dbc9043ab4190))
+* add container ([e5b88cf](https://github.com/tanmen/react-actors/commit/e5b88cf6146d57abb9a81adf8a3ecadb066ab329))
+* github workflow ([cdb8208](https://github.com/tanmen/react-actors/commit/cdb8208c28bfff4568c3e08f1b94369c1de47205))
+* license scan ([05b7ee4](https://github.com/tanmen/react-actors/commit/05b7ee4e51829bab89fcfe3d0426cd189ae42412))
+* release action ([4d66b58](https://github.com/tanmen/react-actors/commit/4d66b58ec300730df79e76080f664a7b005e4122))
+* remove flow ([5ecacd7](https://github.com/tanmen/react-actors/commit/5ecacd781ed26e70e5df081dd9ca5aa86c2fb297))
+* **deps:** bump codecov/codecov-action from 1 to 3 ([4ce3cbb](https://github.com/tanmen/react-actors/commit/4ce3cbb74307961bf46afa41aa97ee296fb5060a))
+* sourceMap location ([282b821](https://github.com/tanmen/react-actors/commit/282b821ce5e7e635a23f116fae9666d6b583316c))
+* **deps:** bump follow-redirects from 1.14.0 to 1.15.0 ([08e8e1d](https://github.com/tanmen/react-actors/commit/08e8e1d67b7753fc15d36bb28a31b57710e2df85))
+* **deps:** bump JamesIves/github-pages-deploy-action from 4.1.1 to 4.3.3 ([f4ce746](https://github.com/tanmen/react-actors/commit/f4ce746296b64ba622db18fd84902ff58ac33533))
+* update new format ([1122b63](https://github.com/tanmen/react-actors/commit/1122b635106ec3e4e1b2100304224efbb4f34fc6))
+* **deps:** bump github/codeql-action from 1 to 2 ([277114f](https://github.com/tanmen/react-actors/commit/277114fc5c6b0eb6574b86c0d215c72d76c53530))
+* release flow ([e71dc6e](https://github.com/tanmen/react-actors/commit/e71dc6e6fd461c3ea1264e57824990f1f8d5f5fb))
+
 # [0.5.0](https://github.com/tanmen/react-actors/compare/v0.4.39...v0.5.0) (2022-05-04)
 
 
