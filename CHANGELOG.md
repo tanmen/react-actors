@@ -1,3 +1,10 @@
+## [0.5.8](https://github.com/tanmen/react-actors/compare/v0.5.7...v0.5.8) (2022-05-05)
+
+
+### Bug Fixes
+
+* **deps:** bump codecov/codecov-action from 1 to 3 ([5a4eb5f](https://github.com/tanmen/react-actors/commit/5a4eb5f8b879591c84d0b0a899c95698e0174795))
+
 ## [0.5.7](https://github.com/tanmen/react-actors/compare/v0.5.6...v0.5.7) (2022-05-05)
 
 
