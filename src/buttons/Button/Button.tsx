@@ -1,14 +1,14 @@
 import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import Color from "color-js";
-import React, {FC, MouseEvent, ReactNode, useEffect, useState} from "react";
+import React, {ButtonHTMLAttributes, FC, InputHTMLAttributes, MouseEvent, ReactNode, useEffect, useState} from "react";
 import {useTheme} from "../../hooks";
 import {LineLoading} from "../../loadings";
 import {ThemeProp} from "../../providers";
 import {ColorType, SizeStyles, SizeType} from "../../types";
 import {extractSizeStyle} from "../../utils";
 
-type ButtonProps = {
+type CustomProps = {
   children?: ReactNode,
   type?: 'submit' | 'reset' | 'button';
   disabled?: boolean;
@@ -17,7 +17,9 @@ type ButtonProps = {
   color?: ColorType;
   className?: string;
   onClick?: (event: MouseEvent<HTMLButtonElement>) => Promise<any> | any;
-};
+}
+
+type ButtonProps = Omit<ButtonHTMLAttributes<HTMLButtonElement>, keyof CustomProps> & CustomProps;
 export const Button: FC<ButtonProps> =
   ({
      children,
@@ -27,7 +29,8 @@ export const Button: FC<ButtonProps> =
      disabled,
      type = 'button',
      className,
-     onClick
+     onClick,
+    ...props
    }) => {
     const theme = useTheme(color);
     const [_loading, setLoading] = useState(false);
@@ -47,7 +50,7 @@ export const Button: FC<ButtonProps> =
     }, [loading])
 
     return <Style className={className} theme={theme} sizeType={size} type={type} disabled={disabled}
-                  onClick={handleClick}>
+                  onClick={handleClick} {...props}>
       <Box>
         {_loading && <Loading/>}
         <Content disabled={_loading}>{children}</Content>
