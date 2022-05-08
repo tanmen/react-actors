@@ -1,3 +1,11 @@
+## [0.5.9](https://github.com/tanmen/react-actors/compare/v0.5.8...v0.5.9) (2022-05-08)
+
+
+### Bug Fixes
+
+* **button:** remove unused import ([7932523](https://github.com/tanmen/react-actors/commit/7932523f49ddee7e246572a9b32aa4a51a47e280))
+* **button:** trans original props ([5a65291](https://github.com/tanmen/react-actors/commit/5a6529174e57f0e800129bcddff71e847ef938c8))
+
 ## [0.5.8](https://github.com/tanmen/react-actors/compare/v0.5.7...v0.5.8) (2022-05-05)
 
 
