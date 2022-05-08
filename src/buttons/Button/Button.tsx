@@ -1,7 +1,7 @@
 import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import Color from "color-js";
-import React, {ButtonHTMLAttributes, FC, InputHTMLAttributes, MouseEvent, ReactNode, useEffect, useState} from "react";
+import React, {ButtonHTMLAttributes, FC, MouseEvent, ReactNode, useEffect, useState} from "react";
 import {useTheme} from "../../hooks";
 import {LineLoading} from "../../loadings";
 import {ThemeProp} from "../../providers";
@@ -30,7 +30,7 @@ export const Button: FC<ButtonProps> =
      type = 'button',
      className,
      onClick,
-    ...props
+     ...props
    }) => {
     const theme = useTheme(color);
     const [_loading, setLoading] = useState(false);
@@ -47,7 +47,7 @@ export const Button: FC<ButtonProps> =
 
     useEffect(() => {
       setLoading(loading || false);
-    }, [loading])
+    }, [loading]);
 
     return <Style className={className} theme={theme} sizeType={size} type={type} disabled={disabled}
                   onClick={handleClick} {...props}>
