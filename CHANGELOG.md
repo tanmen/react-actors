@@ -1,3 +1,13 @@
+## [0.5.10](https://github.com/tanmen/react-actors/compare/v0.5.9...v0.5.10) (2022-05-09)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @types/react from 18.0.8 to 18.0.9 ([269fd61](https://github.com/tanmen/react-actors/commit/269fd619552144c884deb0a9f014b1d0eb381cd1))
+* **deps-dev:** bump eslint from 8.14.0 to 8.15.0 ([ec89254](https://github.com/tanmen/react-actors/commit/ec8925414f4b4ceab85176d5c642c7f49c5d8c2b))
+* **deps-dev:** bump eslint-plugin-testing-library from 5.3.1 to 5.4.0 ([7b14eb8](https://github.com/tanmen/react-actors/commit/7b14eb87fb360b0c90f750c3a8ac127ef83783ad))
+* **deps-dev:** bump husky from 7.0.4 to 8.0.0 ([3db6b2d](https://github.com/tanmen/react-actors/commit/3db6b2dee93ba19e3f7c10f6861637cd0f7673f0))
+
 ## [0.5.9](https://github.com/tanmen/react-actors/compare/v0.5.8...v0.5.9) (2022-05-08)
 
 
