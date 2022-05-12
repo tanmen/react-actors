@@ -1,3 +1,10 @@
+## [0.5.14](https://github.com/tanmen/react-actors/compare/v0.5.13...v0.5.14) (2022-05-12)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump eslint-plugin-testing-library from 5.4.0 to 5.5.0 ([09455e7](https://github.com/tanmen/react-actors/commit/09455e755d6cbaf3419660e2a67db49ab6b9f6f0))
+
 ## [0.5.13](https://github.com/tanmen/react-actors/compare/v0.5.12...v0.5.13) (2022-05-11)
 
 
