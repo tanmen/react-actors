@@ -1,3 +1,11 @@
+## [0.5.16](https://github.com/tanmen/react-actors/compare/v0.5.15...v0.5.16) (2022-05-16)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @commitlint/cli from 16.2.4 to 16.3.0 ([3126918](https://github.com/tanmen/react-actors/commit/3126918bcb3f7ffa2dbeb4011d36e7f6109d33de))
+* **deps-dev:** bump eslint-plugin-jest from 26.1.5 to 26.2.2 ([ac3ccec](https://github.com/tanmen/react-actors/commit/ac3ccecff49b8ad6b9e5b2aca02f4d1e1d799ef2))
+
 ## [0.5.15](https://github.com/tanmen/react-actors/compare/v0.5.14...v0.5.15) (2022-05-13)
 
 
