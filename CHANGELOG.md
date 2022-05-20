@@ -1,3 +1,13 @@
+## [0.5.22](https://github.com/tanmen/react-actors/compare/v0.5.21...v0.5.22) (2022-05-20)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @babel/core from 7.17.12 to 7.18.0 ([7a7615e](https://github.com/tanmen/react-actors/commit/7a7615e3d31858bc5a4970a9b3a6bb17df1e70d7))
+* **deps-dev:** bump @storybook/addon-actions from 6.5.0 to 6.5.3 ([f2ea2ba](https://github.com/tanmen/react-actors/commit/f2ea2baa2b6b241f2e87c1572cc92164def48265))
+* **deps-dev:** bump @storybook/addon-essentials from 6.5.0 to 6.5.3 ([a84e9d8](https://github.com/tanmen/react-actors/commit/a84e9d80c0d284e5ab3a56dbbf0292c9b29f5499))
+* **deps-dev:** bump @types/node from 17.0.34 to 17.0.35 ([c34b000](https://github.com/tanmen/react-actors/commit/c34b000bd3f3e97b381e275d3358dff4760bf801))
+
 ## [0.5.21](https://github.com/tanmen/react-actors/compare/v0.5.20...v0.5.21) (2022-05-19)
 
 
