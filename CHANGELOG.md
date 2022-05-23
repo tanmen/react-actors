@@ -1,3 +1,13 @@
+## [0.5.24](https://github.com/tanmen/react-actors/compare/v0.5.23...v0.5.24) (2022-05-23)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @storybook/addon-actions from 6.5.3 to 6.5.4 ([4bec97b](https://github.com/tanmen/react-actors/commit/4bec97b30c8553c4be11626bdcb39b42a7bfd687))
+* **deps-dev:** bump @storybook/addon-links from 6.5.3 to 6.5.4 ([1c0126a](https://github.com/tanmen/react-actors/commit/1c0126aa7aea9c51551c239bba6d06170e9837f3))
+* **deps-dev:** bump eslint from 8.15.0 to 8.16.0 ([2804248](https://github.com/tanmen/react-actors/commit/2804248e7f75aefaa9bb6064c37f9bf30a5852dd))
+* **deps:** bump react-use from 17.3.2 to 17.4.0 ([e26051d](https://github.com/tanmen/react-actors/commit/e26051de546f12faf1aa0e7ffb1c071243c7cf3e))
+
 ## [0.5.23](https://github.com/tanmen/react-actors/compare/v0.5.22...v0.5.23) (2022-05-20)
 
 
