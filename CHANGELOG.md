@@ -1,3 +1,11 @@
+## [0.5.26](https://github.com/tanmen/react-actors/compare/v0.5.25...v0.5.26) (2022-05-24)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @types/react-dom from 18.0.4 to 18.0.5 ([4dbf9b2](https://github.com/tanmen/react-actors/commit/4dbf9b21784ed5098af4bfec1a76da20afec5b87))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([be2a9c8](https://github.com/tanmen/react-actors/commit/be2a9c89b12023b460cac5044775aa7ca6214fae))
+
 ## [0.5.25](https://github.com/tanmen/react-actors/compare/v0.5.24...v0.5.25) (2022-05-23)
 
 
