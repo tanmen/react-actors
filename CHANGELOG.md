@@ -1,3 +1,13 @@
+## [0.5.28](https://github.com/tanmen/react-actors/compare/v0.5.27...v0.5.28) (2022-05-25)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @storybook/addon-essentials from 6.5.4 to 6.5.5 ([66ff853](https://github.com/tanmen/react-actors/commit/66ff853d3858f6477b3001f07962af186b76cfd1))
+* **deps-dev:** bump @storybook/theming from 6.5.4 to 6.5.5 ([26ff95c](https://github.com/tanmen/react-actors/commit/26ff95ce0001cc4cfb5492e7a31c4e32dd1e5301))
+* **deps-dev:** bump lint-staged from 12.4.1 to 12.4.2 ([03732dd](https://github.com/tanmen/react-actors/commit/03732ddd3edfc8a39e417f41578c55d025b1b56a))
+* **deps-dev:** bump typescript from 4.6.4 to 4.7.2 ([fb7cd9f](https://github.com/tanmen/react-actors/commit/fb7cd9fcec1efe22dc653aa9c6dea71a4838d03d))
+
 ## [0.5.27](https://github.com/tanmen/react-actors/compare/v0.5.26...v0.5.27) (2022-05-24)
 
 
