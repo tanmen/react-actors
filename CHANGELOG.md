@@ -1,3 +1,10 @@
+## [0.5.31](https://github.com/tanmen/react-actors/compare/v0.5.30...v0.5.31) (2022-05-26)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @babel/core from 7.18.0 to 7.18.2 ([d828545](https://github.com/tanmen/react-actors/commit/d828545e51fff17340e0d1d1561c842a0ce3f134))
+
 ## [0.5.30](https://github.com/tanmen/react-actors/compare/v0.5.29...v0.5.30) (2022-05-26)
 
 
