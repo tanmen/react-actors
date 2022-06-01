@@ -1,3 +1,13 @@
+## [0.5.37](https://github.com/tanmen/react-actors/compare/v0.5.36...v0.5.37) (2022-06-01)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @commitlint/config-conventional ([976a25d](https://github.com/tanmen/react-actors/commit/976a25d5fbc0a74cd3da1d0316cb2db63ef01b68))
+* **deps-dev:** bump @types/node from 17.0.36 to 17.0.38 ([e1a43b4](https://github.com/tanmen/react-actors/commit/e1a43b4e8b98a992823ed3f35878f0e3c87fa486))
+* **deps-dev:** bump @types/react from 18.0.9 to 18.0.10 ([ffd631c](https://github.com/tanmen/react-actors/commit/ffd631c4cb484b7fdd6693cced3e55649a45ec20))
+* **deps-dev:** bump lint-staged from 12.4.3 to 12.5.0 ([ff25c3e](https://github.com/tanmen/react-actors/commit/ff25c3e1224ff3167ac724ef115ff0cc94ba5546))
+
 ## [0.5.36](https://github.com/tanmen/react-actors/compare/v0.5.35...v0.5.36) (2022-05-31)
 
 
