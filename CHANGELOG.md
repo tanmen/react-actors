@@ -1,3 +1,10 @@
+## [0.5.40](https://github.com/tanmen/react-actors/compare/v0.5.39...v0.5.40) (2022-06-02)
+
+
+### Bug Fixes
+
+* **deps:** bump npm from 8.8.0 to 8.12.0 ([a64d07d](https://github.com/tanmen/react-actors/commit/a64d07d4f5789355b15aec7ad38703f1ebf3dd48))
+
 ## [0.5.39](https://github.com/tanmen/react-actors/compare/v0.5.38...v0.5.39) (2022-06-02)
 
 
