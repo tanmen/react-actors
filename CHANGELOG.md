@@ -1,3 +1,10 @@
+## [0.5.39](https://github.com/tanmen/react-actors/compare/v0.5.38...v0.5.39) (2022-06-02)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump lint-staged from 12.5.0 to 13.0.0 ([f9662c5](https://github.com/tanmen/react-actors/commit/f9662c57a152e37cb8c7221031b22eff537242b7))
+
 ## [0.5.38](https://github.com/tanmen/react-actors/compare/v0.5.37...v0.5.38) (2022-06-01)
 
 
