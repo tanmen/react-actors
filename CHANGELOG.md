@@ -1,3 +1,10 @@
+## [0.5.41](https://github.com/tanmen/react-actors/compare/v0.5.40...v0.5.41) (2022-06-04)
+
+
+### Bug Fixes
+
+* **deps:** bump semver-regex from 3.1.3 to 3.1.4 ([7606ef5](https://github.com/tanmen/react-actors/commit/7606ef5f378c64cb2ee9984e21d8436142d293ca))
+
 ## [0.5.40](https://github.com/tanmen/react-actors/compare/v0.5.39...v0.5.40) (2022-06-02)
 
 
