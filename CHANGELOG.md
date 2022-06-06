@@ -1,3 +1,10 @@
+## [0.5.43](https://github.com/tanmen/react-actors/compare/v0.5.42...v0.5.43) (2022-06-06)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @storybook/addon-links from 6.5.6 to 6.5.7 ([4d11168](https://github.com/tanmen/react-actors/commit/4d111687b4162df57ed71823b13a47ca2c19439d))
+
 ## [0.5.42](https://github.com/tanmen/react-actors/compare/v0.5.41...v0.5.42) (2022-06-06)
 
 
