@@ -1,3 +1,12 @@
+## [0.5.50](https://github.com/tanmen/react-actors/compare/v0.5.49...v0.5.50) (2022-06-13)
+
+
+### Bug Fixes
+
+* **bug:** remove unused import ([1cf37b0](https://github.com/tanmen/react-actors/commit/1cf37b0c3c2f2bfd43ac2a1305e5849a0acd2db0))
+* **key:** class attributes ([087e400](https://github.com/tanmen/react-actors/commit/087e4008337f6de091228a46bfe8a4f9d0c8aed9))
+* **support:** react-hook-form ([38a026d](https://github.com/tanmen/react-actors/commit/38a026d22ba4c93601c3df88e5231f00f06ff260))
+
 ## [0.5.49](https://github.com/tanmen/react-actors/compare/v0.5.48...v0.5.49) (2022-06-13)
 
 
