@@ -2,7 +2,7 @@ import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import classnames from "classnames";
 import Color from "color-js";
-import React, {FC, ForwardedRef, forwardRef, InputHTMLAttributes} from "react";
+import React, {ClassAttributes, FC, ForwardedRef, forwardRef, InputHTMLAttributes} from "react";
 import {useTheme} from "../../hooks";
 import {ThemeProp} from "../../providers";
 import {SizeType} from "../../types";
@@ -10,7 +10,9 @@ import {extractSizeStyle} from "../../utils";
 import {classname} from "../InputGroup";
 import {inputStyles} from "../styles";
 
-export interface SelectProps extends Omit<InputHTMLAttributes<HTMLSelectElement>, 'size'> {
+export type SelectProps = Omit<InputHTMLAttributes<HTMLSelectElement>, 'size'>
+  & Omit<ClassAttributes<HTMLSelectElement>, 'ref'>
+  & {
   ref?: ForwardedRef<HTMLSelectElement>;
   size?: SizeType;
   error?: boolean;

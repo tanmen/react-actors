@@ -1,17 +1,19 @@
 import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import Color from "color-js";
-import React, {FC, ForwardedRef, forwardRef, TextareaHTMLAttributes} from "react";
+import React, {ClassAttributes, FC, ForwardedRef, forwardRef, TextareaHTMLAttributes} from "react";
 import {useTheme} from "../../hooks";
 import {ThemeProp} from "../../providers";
 import {SizeStyles, SizeType} from "../../types";
 import {extractSizeStyle} from "../../utils";
 
-export type TextareaProps = {
+export type TextareaProps = Omit<TextareaHTMLAttributes<HTMLTextAreaElement>, 'size'>
+  & Omit<ClassAttributes<HTMLTextAreaElement>, 'ref'>
+  & {
   ref?: ForwardedRef<HTMLTextAreaElement>;
   size?: SizeType;
   error?: boolean;
-} & Omit<TextareaHTMLAttributes<HTMLTextAreaElement>, 'size'>
+};
 
 export const Textarea: FC<TextareaProps> = forwardRef<HTMLTextAreaElement, TextareaProps>(
   ({rows = 3, size = "normal", error, ...props}, ref) => {
