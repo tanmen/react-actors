@@ -2,7 +2,7 @@ import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import classnames from "classnames";
 import Color from "color-js/color";
-import React, {FC, forwardRef, InputHTMLAttributes} from "react";
+import React, {FC, ForwardedRef, forwardRef, InputHTMLAttributes} from "react";
 import {useTheme} from "../../hooks";
 import {ThemeProp} from "../../providers";
 import {SizeType} from "../../types";
@@ -11,6 +11,7 @@ import {classname} from "../InputGroup";
 import {inputStyles} from "../styles";
 
 export interface InputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size'> {
+  ref?: ForwardedRef<HTMLInputElement>;
   size?: SizeType;
   error?: boolean;
 }
