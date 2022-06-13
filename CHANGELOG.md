@@ -1,3 +1,12 @@
+## [0.5.48](https://github.com/tanmen/react-actors/compare/v0.5.47...v0.5.48) (2022-06-13)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @types/node from 17.0.41 to 17.0.42 ([7412273](https://github.com/tanmen/react-actors/commit/7412273f342bcefb51323633d8e7d4d3dd79f480))
+* **deps:** bump @emotion/react from 11.9.0 to 11.9.3 ([43723d4](https://github.com/tanmen/react-actors/commit/43723d4cae253336023276d09200b629ae8e380d))
+* **deps:** bump @emotion/styled from 11.8.1 to 11.9.3 ([9430f12](https://github.com/tanmen/react-actors/commit/9430f12baf3f461d4312aa8d73b8adbd74222881))
+
 ## [0.5.47](https://github.com/tanmen/react-actors/compare/v0.5.46...v0.5.47) (2022-06-09)
 
 
