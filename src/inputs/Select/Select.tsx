@@ -2,15 +2,7 @@ import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import classnames from "classnames";
 import Color from "color-js";
-import React, {
-  ClassAttributes,
-  DetailedHTMLProps,
-  FC,
-  ForwardedRef,
-  forwardRef,
-  InputHTMLAttributes,
-  SelectHTMLAttributes
-} from "react";
+import React, {DetailedHTMLProps, FC, ForwardedRef, forwardRef, SelectHTMLAttributes} from "react";
 import {useTheme} from "../../hooks";
 import {ThemeProp} from "../../providers";
 import {SizeType} from "../../types";
@@ -18,7 +10,8 @@ import {extractSizeStyle} from "../../utils";
 import {classname} from "../InputGroup";
 import {inputStyles} from "../styles";
 
-export type SelectProps = Omit<DetailedHTMLProps<SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement>, 'size'> & {
+export type SelectProps =
+  Omit<DetailedHTMLProps<SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement>, 'size'> & {
   ref?: ForwardedRef<HTMLSelectElement>;
   size?: SizeType;
   error?: boolean;
