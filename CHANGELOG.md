@@ -1,3 +1,10 @@
+## [0.5.49](https://github.com/tanmen/react-actors/compare/v0.5.48...v0.5.49) (2022-06-13)
+
+
+### Bug Fixes
+
+* **ref:** add ref props ([b23ed75](https://github.com/tanmen/react-actors/commit/b23ed75be7453c36b1a6d1ba3a490dc82d2b8cc3))
+
 ## [0.5.48](https://github.com/tanmen/react-actors/compare/v0.5.47...v0.5.48) (2022-06-13)
 
 
