@@ -1,3 +1,13 @@
+## [0.5.54](https://github.com/tanmen/react-actors/compare/v0.5.53...v0.5.54) (2022-06-15)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @types/node from 17.0.42 to 17.0.43 ([9e5e758](https://github.com/tanmen/react-actors/commit/9e5e758d1b002e00270676eb946ecc81ac835258))
+* **deps-dev:** bump eslint-plugin-react-hooks from 4.5.0 to 4.6.0 ([fb4bc3f](https://github.com/tanmen/react-actors/commit/fb4bc3f776d13deadf6569657d07dcacb0f0ffeb))
+* **deps-dev:** bump react from 18.1.0 to 18.2.0 ([25a5247](https://github.com/tanmen/react-actors/commit/25a5247bdb0c78c2bb57d07c8e02485d161f5dbd))
+* **deps-dev:** bump react-is from 18.1.0 to 18.2.0 ([6fe898e](https://github.com/tanmen/react-actors/commit/6fe898ea2734e729019511fa80d14f4c58cb76a8))
+
 ## [0.5.53](https://github.com/tanmen/react-actors/compare/v0.5.52...v0.5.53) (2022-06-14)
 
 
