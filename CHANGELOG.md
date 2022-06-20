@@ -1,3 +1,12 @@
+## [0.5.57](https://github.com/tanmen/react-actors/compare/v0.5.56...v0.5.57) (2022-06-20)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @testing-library/react-hooks from 8.0.0 to 8.0.1 ([71bdb7f](https://github.com/tanmen/react-actors/commit/71bdb7fa76aaa8f051046fa8f575521154cdfee3))
+* **deps-dev:** bump eslint from 8.17.0 to 8.18.0 ([4814971](https://github.com/tanmen/react-actors/commit/48149715121fedad0f41ce00847f16e92cf26b97))
+* **deps-dev:** bump typescript from 4.7.3 to 4.7.4 ([8336e62](https://github.com/tanmen/react-actors/commit/8336e623d2e63cf0db020bb77bd635732ce6c434))
+
 ## [0.5.56](https://github.com/tanmen/react-actors/compare/v0.5.55...v0.5.56) (2022-06-17)
 
 
