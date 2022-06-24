@@ -1,3 +1,10 @@
+## [0.5.61](https://github.com/tanmen/react-actors/compare/v0.5.60...v0.5.61) (2022-06-24)
+
+
+### Bug Fixes
+
+* **deps:** bump got from 11.8.3 to 11.8.5 ([cbf8a3a](https://github.com/tanmen/react-actors/commit/cbf8a3ad78c36421bba7ab17dcfa1ccbfa80242c))
+
 ## [0.5.60](https://github.com/tanmen/react-actors/compare/v0.5.59...v0.5.60) (2022-06-24)
 
 
