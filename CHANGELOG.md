@@ -1,3 +1,10 @@
+## [0.5.63](https://github.com/tanmen/react-actors/compare/v0.5.62...v0.5.63) (2022-06-25)
+
+
+### Bug Fixes
+
+* **table:** update border color ([a2a4783](https://github.com/tanmen/react-actors/commit/a2a4783d9f4b047d611b6bf4d109a2ce7d813d03))
+
 ## [0.5.62](https://github.com/tanmen/react-actors/compare/v0.5.61...v0.5.62) (2022-06-25)
 
 
