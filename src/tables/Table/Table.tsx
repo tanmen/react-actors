@@ -1,5 +1,7 @@
 import styled from "@emotion/styled";
 import React, {FC} from "react";
+import {useMode} from "../../hooks";
+import {ModeType} from "../../types";
 
 type Data = string | { head: boolean, value: string };
 
@@ -8,32 +10,39 @@ export type TableProps = {
   data: Data[][]
 }
 
-export const Table: FC<TableProps> = ({heads, data}) => <STable>
-  <thead>
+export const Table: FC<TableProps> = ({heads, data}) => {
+  const mode = useMode();
+  return <STable>
+    <thead>
     <tr>
-      {heads.map(head => <Th key={head}>{head}</Th>)}
+      {heads.map(head => <Th key={head} mode={mode}>{head}</Th>)}
     </tr>
-  </thead>
-  <tbody>
+    </thead>
+    <tbody>
     {data.map((row, index) => <tr key={index}>
       {row.map(v => typeof v === 'string'
-        ? <Td key={v}>{v}</Td>
+        ? <Td key={v} mode={mode}>{v}</Td>
         : v.head
-          ? <Th key={v.value}>{v.value}</Th>
-          : <Td key={v.value}>{v.value}</Td>)}
+          ? <Th key={v.value} mode={mode}>{v.value}</Th>
+          : <Td key={v.value} mode={mode}>{v.value}</Td>)}
     </tr>)}
-  </tbody>
-</STable>;
+    </tbody>
+  </STable>;
+};
 
 const STable = styled.table`
   border-collapse: collapse;
 `;
 
-const Td = styled.td`
+const Td = styled.td<{ mode: ModeType }>`
   padding: 0.5rem;
-  border-bottom: 1px solid #dee2e6;
+
+  tbody > tr:not(:last-of-type) > & {
+    border-bottom: 1px solid ${({mode}) => mode === 'light' ? '#dee2e6' : '#373b3e'};
+  }
+
   thead > tr > & {
-    border-bottom: 1px solid #282c34;
+    border-bottom: 1px solid ${({mode}) => mode === 'light' ? '#212529' : '#fff'};
     text-align: left;
   }
 `;
