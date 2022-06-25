@@ -1,3 +1,10 @@
+## [0.5.64](https://github.com/tanmen/react-actors/compare/v0.5.63...v0.5.64) (2022-06-25)
+
+
+### Bug Fixes
+
+* **table:** className ([7341b4a](https://github.com/tanmen/react-actors/commit/7341b4aa2627505b6f16272e0f54c1ac071e89ee))
+
 ## [0.5.63](https://github.com/tanmen/react-actors/compare/v0.5.62...v0.5.63) (2022-06-25)
 
 
