@@ -47,12 +47,12 @@ const SInput = styled.input<{ sizeType: SizeType; theme: ThemeProp; errorTheme: 
       cursor: not-allowed;
     }
 
-    .${classname} > &:not(:first-child) {
+    .${classname} > &:not(:first-of-type) {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
 
-    .${classname} > &:not(:last-child) {
+    .${classname} > &:not(:last-of-type) {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }`, extractSizeStyle(inputStyles));

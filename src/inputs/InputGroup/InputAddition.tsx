@@ -31,13 +31,13 @@ const Style = styled.div<{ sizeType: SizeType, theme: ThemeProp }>(({theme: {fon
   background-color: ${background};
   border: 1px solid ${border};
 
-  .${classname} > &:not(:first-child) {
+  .${classname} > &:not(:first-of-type) {
     margin-left: -1px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
 
-  .${classname} > &:not(:last-child) {
+  .${classname} > &:not(:last-of-type) {
     margin-right: -1px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;

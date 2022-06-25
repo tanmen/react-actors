@@ -57,12 +57,12 @@ const SSelect = styled.select<{ sizeType: SizeType; error?: boolean; theme: Them
       cursor: not-allowed;
     }
 
-    .${classname} > &:not(:first-child) {
+    .${classname} > &:not(:first-of-type) {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
 
-    .${classname} > &:not(:last-child) {
+    .${classname} > &:not(:last-of-type) {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }`, extractSizeStyle(inputStyles), css`padding-right: 1.75rem;`);
