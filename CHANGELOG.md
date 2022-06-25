@@ -1,3 +1,15 @@
+## [0.5.62](https://github.com/tanmen/react-actors/compare/v0.5.61...v0.5.62) (2022-06-25)
+
+
+### Bug Fixes
+
+* **css:** first-child to first-of-type ([abadd3f](https://github.com/tanmen/react-actors/commit/abadd3f20f3ed8753fcc7039c1cf4c3803f1c1fd))
+
+
+### Performance Improvements
+
+* **table:** support theme ([f512334](https://github.com/tanmen/react-actors/commit/f512334fa3c0c3859ec9861e3c8217c2278b9480))
+
 ## [0.5.61](https://github.com/tanmen/react-actors/compare/v0.5.60...v0.5.61) (2022-06-24)
 
 
