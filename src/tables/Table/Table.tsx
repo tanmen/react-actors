@@ -38,7 +38,7 @@ const Td = styled.td<{ mode: ModeType }>`
   padding: 0.5rem;
 
   tbody > tr:not(:last-of-type) > & {
-    border-bottom: 1px solid ${({mode}) => mode === 'light' ? '#dee2e6' : '#373b3e'};
+    border-bottom: 1px solid ${({mode}) => mode === 'light' ? '#dee2e6' : '#464b4f'};
   }
 
   thead > tr > & {
