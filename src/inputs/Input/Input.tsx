@@ -7,7 +7,7 @@ import {useTheme} from "../../hooks";
 import {ThemeProp} from "../../providers";
 import {SizeType} from "../../types";
 import {extractSizeStyle} from "../../utils";
-import {classname} from "../InputGroup";
+import {classnameItem} from "../InputGroup";
 import {inputStyles} from "../styles";
 
 export type InputProps = Omit<DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, 'size'> & {
@@ -20,7 +20,8 @@ export const Input: FC<InputProps> = forwardRef<HTMLInputElement, InputProps>(
   ({className, size = 'normal', error, ...props}, ref) => {
     const theme = useTheme('normal');
     const errorTheme = useTheme('danger');
-    return <SInput {...props} error={error} className={classnames('actors-input', className)} ref={ref} sizeType={size}
+    return <SInput {...props} error={error} className={classnames('actors-input', classnameItem, className)} ref={ref}
+                   sizeType={size}
                    theme={theme} errorTheme={errorTheme}/>;
   });
 
@@ -46,13 +47,4 @@ const SInput = styled.input<{ sizeType: SizeType; theme: ThemeProp; errorTheme: 
       background-color: ${error ? errorTheme.border : border};
       cursor: not-allowed;
     }
-
-    .${classname} > &:not(:first-of-type) {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
-
-    .${classname} > &:not(:last-of-type) {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }`, extractSizeStyle(inputStyles));
+  `, extractSizeStyle(inputStyles));

@@ -6,8 +6,8 @@ import {useTheme} from "../../hooks";
 import {ThemeProp} from "../../providers";
 import {SizeType, StyleProps} from "../../types";
 import {extractSizeStyle} from "../../utils";
-import {classname} from "./InputGroup";
 import {inputStyles} from "../styles";
+import {classnameGroup, classnameItem} from "./InputGroup";
 
 export type InputAdditionProps = {
   size?: SizeType;
@@ -16,7 +16,7 @@ export type InputAdditionProps = {
 
 export const InputAddition: FC<InputAdditionProps> = ({size = 'normal', className, style, children}) => {
   const theme = useTheme('secondary');
-  return <Style sizeType={size} className={classnames('actors-input', className)} style={style}
+  return <Style sizeType={size} className={classnames('actors-input-addition', classnameItem, className)} style={style}
                 theme={theme}>{children}</Style>;
 };
 
@@ -31,13 +31,13 @@ const Style = styled.div<{ sizeType: SizeType, theme: ThemeProp }>(({theme: {fon
   background-color: ${background};
   border: 1px solid ${border};
 
-  .${classname} > &:not(:first-of-type) {
+  .${classnameGroup} > .${classnameItem}:not(:first-of-type) {
     margin-left: -1px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
 
-  .${classname} > &:not(:last-of-type) {
+  .${classnameGroup} > .${classnameItem}:not(:last-of-type) {
     margin-right: -1px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
