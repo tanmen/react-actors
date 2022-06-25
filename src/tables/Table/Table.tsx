@@ -7,12 +7,13 @@ type Data = string | { head: boolean, value: string };
 
 export type TableProps = {
   heads: string[],
-  data: Data[][]
+  data: Data[][],
+  className?: string,
 }
 
-export const Table: FC<TableProps> = ({heads, data}) => {
+export const Table: FC<TableProps> = ({heads, data, className}) => {
   const mode = useMode();
-  return <STable>
+  return <STable className={className}>
     <thead>
     <tr>
       {heads.map(head => <Th key={head} mode={mode}>{head}</Th>)}
