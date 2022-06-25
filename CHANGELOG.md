@@ -1,3 +1,10 @@
+## [0.5.65](https://github.com/tanmen/react-actors/compare/v0.5.64...v0.5.65) (2022-06-25)
+
+
+### Bug Fixes
+
+* **inputs:** back to first-child ([1c36e41](https://github.com/tanmen/react-actors/commit/1c36e4167bde9f40932201d854144661c3230d29))
+
 ## [0.5.64](https://github.com/tanmen/react-actors/compare/v0.5.63...v0.5.64) (2022-06-25)
 
 
