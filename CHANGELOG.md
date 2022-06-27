@@ -1,3 +1,12 @@
+## [0.5.66](https://github.com/tanmen/react-actors/compare/v0.5.65...v0.5.66) (2022-06-27)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @commitlint/config-conventional ([4e8a9bc](https://github.com/tanmen/react-actors/commit/4e8a9bc0839d8f19b430ef9a2d51510260181753))
+* **deps-dev:** bump eslint-plugin-jsx-a11y from 6.5.1 to 6.6.0 ([7b2f044](https://github.com/tanmen/react-actors/commit/7b2f0444f2f687892418cd5056c097314256e628))
+* **deps-dev:** bump lint-staged from 13.0.2 to 13.0.3 ([17fc1a0](https://github.com/tanmen/react-actors/commit/17fc1a040d2847b24629ccae50161e6b51ca75f5))
+
 ## [0.5.65](https://github.com/tanmen/react-actors/compare/v0.5.64...v0.5.65) (2022-06-25)
 
 
