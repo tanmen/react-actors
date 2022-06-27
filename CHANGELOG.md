@@ -1,3 +1,11 @@
+## [0.5.67](https://github.com/tanmen/react-actors/compare/v0.5.66...v0.5.67) (2022-06-27)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @commitlint/cli from 17.0.2 to 17.0.3 ([f397aaf](https://github.com/tanmen/react-actors/commit/f397aafeb5abce13a14c20dbbc817526d957321c))
+* **deps:** bump JamesIves/github-pages-deploy-action from 4.3.3 to 4.3.4 ([ec67beb](https://github.com/tanmen/react-actors/commit/ec67beb07937fe7571ec8d2581db957ab21d2a43))
+
 ## [0.5.66](https://github.com/tanmen/react-actors/compare/v0.5.65...v0.5.66) (2022-06-27)
 
 
