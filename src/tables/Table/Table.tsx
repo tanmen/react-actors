@@ -1,9 +1,10 @@
 import styled from "@emotion/styled";
-import React, {FC} from "react";
+import React, {FC, ReactNode} from "react";
 import {useMode} from "../../hooks";
 import {ModeType} from "../../types";
 
-type Data = string | { head: boolean, value: string };
+type DataModel = { head: boolean, value: ReactNode };
+type Data = ReactNode | DataModel;
 
 export type TableProps = {
   heads: string[],
@@ -21,15 +22,20 @@ export const Table: FC<TableProps> = ({heads, data, className}) => {
     </thead>
     <tbody>
     {data.map((row, index) => <tr key={index}>
-      {row.map(v => typeof v === 'string'
-        ? <Td key={v} mode={mode}>{v}</Td>
-        : v.head
-          ? <Th key={v.value} mode={mode}>{v.value}</Th>
-          : <Td key={v.value} mode={mode}>{v.value}</Td>)}
+      {row.map((v, i) => isDataModel(v)
+        ? v.head
+          ? <Th key={[index, i].join('-')} mode={mode}>{v.value}</Th>
+          : <Td key={[index, i].join('-')} mode={mode}>{v.value}</Td>
+        : <Td key={[index, i].join('-')} mode={mode}>{v}</Td>)}
     </tr>)}
     </tbody>
   </STable>;
 };
+
+const isDataModel = (model: ReactNode | DataModel): model is DataModel => model !== undefined
+  && model !== null
+  && typeof model === 'object'
+  && Object.hasOwn(model, 'head');
 
 const STable = styled.table`
   border-collapse: collapse;
