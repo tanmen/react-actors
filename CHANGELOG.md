@@ -1,3 +1,10 @@
+## [0.5.68](https://github.com/tanmen/react-actors/compare/v0.5.67...v0.5.68) (2022-06-27)
+
+
+### Bug Fixes
+
+* **table:** support other value ([5197bc8](https://github.com/tanmen/react-actors/commit/5197bc836d3d43fee7ed30c99fe0437ebd6da4c2))
+
 ## [0.5.67](https://github.com/tanmen/react-actors/compare/v0.5.66...v0.5.67) (2022-06-27)
 
 
