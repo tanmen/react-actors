@@ -1,3 +1,10 @@
+## [0.5.70](https://github.com/tanmen/react-actors/compare/v0.5.69...v0.5.70) (2022-07-01)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @types/node-sass from 4.11.2 to 4.11.3 ([a4f40bb](https://github.com/tanmen/react-actors/commit/a4f40bbc637b85ff0d318f45b2c9a42bdb7df1e8))
+
 ## [0.5.69](https://github.com/tanmen/react-actors/compare/v0.5.68...v0.5.69) (2022-06-28)
 
 
