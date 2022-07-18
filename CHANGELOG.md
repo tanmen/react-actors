@@ -1,3 +1,10 @@
+## [0.5.81](https://github.com/tanmen/react-actors/compare/v0.5.80...v0.5.81) (2022-07-18)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @types/node from 18.0.4 to 18.0.6 ([10b7470](https://github.com/tanmen/react-actors/commit/10b74702298b9d2c78d13f9a7cfe225d728eda02))
+
 ## [0.5.80](https://github.com/tanmen/react-actors/compare/v0.5.79...v0.5.80) (2022-07-15)
 
 
