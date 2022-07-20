@@ -1,3 +1,11 @@
+## [0.5.84](https://github.com/tanmen/react-actors/compare/v0.5.83...v0.5.84) (2022-07-20)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @types/semantic-release from 17.2.3 to 17.2.4 ([0877242](https://github.com/tanmen/react-actors/commit/0877242715ef43777a6dad5178605d2875b517fb))
+* **deps:** bump terser from 4.8.0 to 4.8.1 ([599735b](https://github.com/tanmen/react-actors/commit/599735b1b3eb5db5a36999f2fa64e051c0ef71f5))
+
 ## [0.5.83](https://github.com/tanmen/react-actors/compare/v0.5.82...v0.5.83) (2022-07-19)
 
 
