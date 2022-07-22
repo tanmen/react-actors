@@ -1,3 +1,10 @@
+## [0.5.85](https://github.com/tanmen/react-actors/compare/v0.5.84...v0.5.85) (2022-07-22)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump eslint-plugin-jsx-a11y from 6.6.0 to 6.6.1 ([4224437](https://github.com/tanmen/react-actors/commit/42244377d8b351d9744455a4ad7092a0be85c16a))
+
 ## [0.5.84](https://github.com/tanmen/react-actors/compare/v0.5.83...v0.5.84) (2022-07-20)
 
 
