@@ -1,3 +1,10 @@
+## [0.5.86](https://github.com/tanmen/react-actors/compare/v0.5.85...v0.5.86) (2022-07-22)
+
+
+### Bug Fixes
+
+* **deps:** bump JamesIves/github-pages-deploy-action from 4.3.4 to 4.4.0 ([a2d64d5](https://github.com/tanmen/react-actors/commit/a2d64d53c90b6c149daf44331bfb762dcc59435b))
+
 ## [0.5.85](https://github.com/tanmen/react-actors/compare/v0.5.84...v0.5.85) (2022-07-22)
 
 
