@@ -1,3 +1,11 @@
+## [0.5.92](https://github.com/tanmen/react-actors/compare/v0.5.91...v0.5.92) (2022-08-01)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @emotion/babel-preset-css-prop ([4c407c7](https://github.com/tanmen/react-actors/commit/4c407c786c4bf03a1b23cd7c465608c03932b640))
+* **deps-dev:** bump eslint-plugin-testing-library from 5.5.1 to 5.6.0 ([9eafca3](https://github.com/tanmen/react-actors/commit/9eafca365a33cd8878a3c538857b8d2ac6ae7582))
+
 ## [0.5.91](https://github.com/tanmen/react-actors/compare/v0.5.90...v0.5.91) (2022-08-01)
 
 
