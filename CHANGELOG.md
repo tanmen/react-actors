@@ -1,3 +1,10 @@
+## [0.5.93](https://github.com/tanmen/react-actors/compare/v0.5.92...v0.5.93) (2022-08-01)
+
+
+### Bug Fixes
+
+* **deps:** bump @emotion/react from 11.9.3 to 11.10.0 ([c63e693](https://github.com/tanmen/react-actors/commit/c63e693bd835b65715ec53f134ebf29195cc91a6))
+
 ## [0.5.92](https://github.com/tanmen/react-actors/compare/v0.5.91...v0.5.92) (2022-08-01)
 
 
