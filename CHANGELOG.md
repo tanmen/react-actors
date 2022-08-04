@@ -1,3 +1,10 @@
+## [0.5.96](https://github.com/tanmen/react-actors/compare/v0.5.95...v0.5.96) (2022-08-04)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @storybook/addon-actions from 6.5.9 to 6.5.10 ([803b043](https://github.com/tanmen/react-actors/commit/803b043632c22df6c9d68a1925a69129f416e66f))
+
 ## [0.5.95](https://github.com/tanmen/react-actors/compare/v0.5.94...v0.5.95) (2022-08-02)
 
 
