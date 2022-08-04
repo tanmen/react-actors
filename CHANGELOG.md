@@ -1,3 +1,10 @@
+## [0.5.97](https://github.com/tanmen/react-actors/compare/v0.5.96...v0.5.97) (2022-08-04)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @storybook/react from 6.5.9 to 6.5.10 ([e5e04b7](https://github.com/tanmen/react-actors/commit/e5e04b7279b4ae0620aa249032143d9b78f67e78))
+
 ## [0.5.96](https://github.com/tanmen/react-actors/compare/v0.5.95...v0.5.96) (2022-08-04)
 
 
