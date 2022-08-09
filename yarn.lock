@@ -3523,10 +3523,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^18.0.16":
-  version "18.0.16"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.16.tgz#8de9bf7feebfa520777e8d30815070b39cb663c0"
-  integrity sha512-3vX1dzVucqc2nhXtzyaParTIIRZeNbisRqLE7QdeLomVybEyeiuAouzZXgz71P+2kbJOqj3dy0fzoATg2I06GQ==
+"@types/react@*", "@types/react@^18.0.17":
+  version "18.0.17"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.17.tgz#4583d9c322d67efe4b39a935d223edcc7050ccf4"
+  integrity sha512-38ETy4tL+rn4uQQi7mB81G7V1g0u2ryquNmsVIOKUAEIDK+3CUjZ6rSRpdvS99dNBnkLFL83qfmtLacGOTIhwQ==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -7120,10 +7120,10 @@ eslint-plugin-jest@^25.3.0:
   dependencies:
     "@typescript-eslint/experimental-utils" "^5.0.0"
 
-eslint-plugin-jest@^26.8.0:
-  version "26.8.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-26.8.0.tgz#32471a6af11dbcb7d0ccf83e8edc83d256fd34a3"
-  integrity sha512-IyGhk+PpDgIA99OBPHo+l2aTtt8yAeB1IgPwXOQZSzi8ag/t1MsLZBN2MKL1sj6ahlkaxbkhlm7ll+NPcMcjaQ==
+eslint-plugin-jest@^26.8.1:
+  version "26.8.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-26.8.1.tgz#f870a9912f6fe65e16e181cbb368229cd5889c65"
+  integrity sha512-0+OSTIPjIIfl9heUxZyuU1gDEMW2sLvoVBGwiCIp+iEqUYt0Yqr5M5BjAyVShJaisICmCALdVv0nd1UDX/QaYw==
   dependencies:
     "@typescript-eslint/utils" "^5.10.0"
 
