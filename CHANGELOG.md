@@ -1,3 +1,10 @@
+## [0.5.103](https://github.com/tanmen/react-actors/compare/v0.5.102...v0.5.103) (2022-08-10)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump eslint-plugin-jest from 26.8.1 to 26.8.2 ([6177f4d](https://github.com/tanmen/react-actors/commit/6177f4d90182f9ef9f2562c48bcfc0ddc2a00155))
+
 ## [0.5.102](https://github.com/tanmen/react-actors/compare/v0.5.101...v0.5.102) (2022-08-09)
 
 
