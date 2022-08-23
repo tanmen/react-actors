@@ -1,3 +1,15 @@
+## [0.5.109](https://github.com/tanmen/react-actors/compare/v0.5.108...v0.5.109) (2022-08-23)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @babel/core from 7.18.10 to 7.18.13 ([b5db444](https://github.com/tanmen/react-actors/commit/b5db444db0ac86bc57aff1271e8edae8bd9d1a96))
+* **deps-dev:** bump @types/node from 18.7.10 to 18.7.11 ([2c95333](https://github.com/tanmen/react-actors/commit/2c95333fb9ea954cffe631d70a78c692a335b2e9))
+* **deps-dev:** bump @types/node from 18.7.9 to 18.7.10 ([56067ba](https://github.com/tanmen/react-actors/commit/56067ba20a9171a7cfda196eb42d159265abc341))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([48128e7](https://github.com/tanmen/react-actors/commit/48128e77b43578ae16d0f60e4bd62e538a6e5d5d))
+* **deps-dev:** bump @typescript-eslint/parser from 5.33.1 to 5.34.0 ([6ccae09](https://github.com/tanmen/react-actors/commit/6ccae0904f6032219d818ebe8ad7ece1b6b12286))
+* **deps-dev:** bump semantic-release from 19.0.3 to 19.0.4 ([fb83cb3](https://github.com/tanmen/react-actors/commit/fb83cb358fb51636bbc51811e54d45ee7146d321))
+
 ## [0.5.108](https://github.com/tanmen/react-actors/compare/v0.5.107...v0.5.108) (2022-08-22)
 
 
