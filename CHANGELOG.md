@@ -1,3 +1,12 @@
+## [0.5.111](https://github.com/tanmen/react-actors/compare/v0.5.110...v0.5.111) (2022-08-25)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @types/node from 18.7.12 to 18.7.13 ([5880bdf](https://github.com/tanmen/react-actors/commit/5880bdf77e89a6259d36d3168db79ac007cd341f))
+* **deps-dev:** bump @typescript-eslint/parser from 5.34.0 to 5.35.1 ([5d513b0](https://github.com/tanmen/react-actors/commit/5d513b02b051c4a88811071bb18c4a5fcc12a383))
+* **deps-dev:** bump eslint-plugin-react from 7.30.1 to 7.31.0 ([36ee114](https://github.com/tanmen/react-actors/commit/36ee114b48b26d50545fd267925a23d93d9ed858))
+
 ## [0.5.110](https://github.com/tanmen/react-actors/compare/v0.5.109...v0.5.110) (2022-08-24)
 
 
