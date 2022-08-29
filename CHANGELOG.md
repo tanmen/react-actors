@@ -1,3 +1,11 @@
+## [0.5.115](https://github.com/tanmen/react-actors/compare/v0.5.114...v0.5.115) (2022-08-29)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @commitlint/config-conventional ([13fd127](https://github.com/tanmen/react-actors/commit/13fd12777dd802b85b3db51eb191f9a736a765db))
+* **deps-dev:** bump eslint-plugin-jest from 26.8.7 to 27.0.1 ([d3b2190](https://github.com/tanmen/react-actors/commit/d3b219058923500e1735c0acb9698f6c8e4c881c))
+
 ## [0.5.114](https://github.com/tanmen/react-actors/compare/v0.5.113...v0.5.114) (2022-08-29)
 
 
