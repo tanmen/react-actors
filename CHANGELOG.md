@@ -1,3 +1,12 @@
+## [0.5.124](https://github.com/tanmen/react-actors/compare/v0.5.123...v0.5.124) (2022-09-09)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump eslint-plugin-jest from 27.0.1 to 27.0.2 ([2319b4a](https://github.com/tanmen/react-actors/commit/2319b4a067baa261fa5c711eb3c806f82b7721f7))
+* **deps-dev:** bump node-sass from 7.0.2 to 7.0.3 ([5ff952a](https://github.com/tanmen/react-actors/commit/5ff952a92a06ebb604ab0ab77f1c0b621fcda926))
+* **deps-dev:** bump typescript from 4.8.2 to 4.8.3 ([a7aaff0](https://github.com/tanmen/react-actors/commit/a7aaff05f189f3e59a398040ddd30241b2e28866))
+
 ## [0.5.123](https://github.com/tanmen/react-actors/compare/v0.5.122...v0.5.123) (2022-09-08)
 
 
