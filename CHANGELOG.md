@@ -1,3 +1,10 @@
+## [0.5.127](https://github.com/tanmen/react-actors/compare/v0.5.126...v0.5.127) (2022-09-13)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @storybook/addon-essentials from 6.5.10 to 6.5.11 ([6dce45e](https://github.com/tanmen/react-actors/commit/6dce45e49cd03bc08b35973cadcdf53ee2ea0262))
+
 ## [0.5.126](https://github.com/tanmen/react-actors/compare/v0.5.125...v0.5.126) (2022-09-13)
 
 
