@@ -1,3 +1,11 @@
+## [0.5.129](https://github.com/tanmen/react-actors/compare/v0.5.128...v0.5.129) (2022-09-14)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @storybook/react from 6.5.11 to 6.5.12 ([96dd58e](https://github.com/tanmen/react-actors/commit/96dd58e765dd9d2face6bdaba1792744f4f4ec87))
+* **deps-dev:** bump eslint-plugin-testing-library from 5.6.3 to 5.6.4 ([35231a1](https://github.com/tanmen/react-actors/commit/35231a19acc10debfe84aef24addbfbec0d8db6b))
+
 ## [0.5.128](https://github.com/tanmen/react-actors/compare/v0.5.127...v0.5.128) (2022-09-13)
 
 
