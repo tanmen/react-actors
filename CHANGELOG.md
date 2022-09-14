@@ -1,3 +1,11 @@
+## [0.5.130](https://github.com/tanmen/react-actors/compare/v0.5.129...v0.5.130) (2022-09-14)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @storybook/addon-actions from 6.5.11 to 6.5.12 ([94818c8](https://github.com/tanmen/react-actors/commit/94818c87fd2cf629c424d61e89ea2a5e7fcf8527))
+* **deps:** bump classnames from 2.3.1 to 2.3.2 ([b273a92](https://github.com/tanmen/react-actors/commit/b273a92639187679ad8f1d2421e98d588ed804ee))
+
 ## [0.5.129](https://github.com/tanmen/react-actors/compare/v0.5.128...v0.5.129) (2022-09-14)
 
 
