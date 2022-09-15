@@ -1,3 +1,12 @@
+## [0.5.132](https://github.com/tanmen/react-actors/compare/v0.5.131...v0.5.132) (2022-09-15)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @babel/core from 7.19.0 to 7.19.1 ([eae3567](https://github.com/tanmen/react-actors/commit/eae3567985b9b7cc57c20881dfbca3b547f4c1a8))
+* **deps-dev:** bump @types/node from 18.7.17 to 18.7.18 ([595dc3a](https://github.com/tanmen/react-actors/commit/595dc3a40d8ffef43dda62e8b07097bbe2d458ef))
+* **deps-dev:** bump @types/react from 18.0.19 to 18.0.20 ([bfc4626](https://github.com/tanmen/react-actors/commit/bfc462692b78bf8221063f7c875c9f5848275e8b))
+
 ## [0.5.131](https://github.com/tanmen/react-actors/compare/v0.5.130...v0.5.131) (2022-09-14)
 
 
