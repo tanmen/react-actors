@@ -1,3 +1,10 @@
+## [0.5.135](https://github.com/tanmen/react-actors/compare/v0.5.134...v0.5.135) (2022-09-23)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @types/react from 18.0.20 to 18.0.21 ([4fe53fb](https://github.com/tanmen/react-actors/commit/4fe53fb1b79a34db7abfac5713d70d70bcf892a9))
+
 ## [0.5.134](https://github.com/tanmen/react-actors/compare/v0.5.133...v0.5.134) (2022-09-20)
 
 
