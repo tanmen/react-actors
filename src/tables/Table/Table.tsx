@@ -6,7 +6,7 @@ import {ModeType} from "../../types";
 type Column<T extends DataModel, K extends keyof T = keyof T> = {
   Header: ReactNode,
   accessor: K
-  Wrapper?: FC<{ data: T[K], children: ReactNode }>
+  Wrapper?: FC<{ data: T, accessor: K, value: T[K], children: ReactNode }>
 }
 type DataModel = { [key: string]: ReactNode };
 export type TableProps<T extends DataModel> = {
@@ -29,7 +29,7 @@ export const Table =
       {data.map((row, index) =>
         <Tr key={index} className={onClick ? 'clickable' : ''} onClick={onClick ? (e) => onClick(row, e) : undefined}>
           {columns.map(({Wrapper,accessor}) => <Td key={[index, accessor].join('-')} mode={mode}>
-            {Wrapper ? <Wrapper data={row[accessor]}>
+            {Wrapper ? <Wrapper data={row} accessor={accessor} value={row[accessor]}>
               {row[accessor]}
             </Wrapper> : <>{row[accessor]}</>}
           </Td>)}
