@@ -1,3 +1,10 @@
+# [0.6.0](https://github.com/tanmen/react-actors/compare/v0.5.138...v0.6.0) (2022-09-27)
+
+
+### Features
+
+* **table:** change interface ([70e8979](https://github.com/tanmen/react-actors/commit/70e897984a570b9b914a8791444a8e5948021400))
+
 ## [0.5.138](https://github.com/tanmen/react-actors/compare/v0.5.137...v0.5.138) (2022-09-27)
 
 
