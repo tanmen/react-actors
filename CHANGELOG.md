@@ -1,3 +1,10 @@
+## [0.6.2](https://github.com/tanmen/react-actors/compare/v0.6.1...v0.6.2) (2022-09-27)
+
+
+### Bug Fixes
+
+* **table:** add wrapper ([c6b6fc0](https://github.com/tanmen/react-actors/commit/c6b6fc0853f597fbf64fda84216346fe0a425edd))
+
 ## [0.6.1](https://github.com/tanmen/react-actors/compare/v0.6.0...v0.6.1) (2022-09-27)
 
 
