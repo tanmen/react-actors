@@ -7,6 +7,7 @@ type Column<T extends DataModel, K extends keyof T = keyof T> = {
   Header: ReactNode,
   accessor: K
   Wrapper?: FC<{ data: T, accessor: K, value: T[K], children: ReactNode }>
+  onClick?: (props: { data: T, accessor: K, value: T[K] }, event: MouseEvent) => Promise<any> | any
 }
 type DataModel = { [key: string]: ReactNode };
 export type TableProps<T extends DataModel> = {
@@ -28,11 +29,13 @@ export const Table =
       <tbody>
       {data.map((row, index) =>
         <Tr key={index} className={onClick ? 'clickable' : ''} onClick={onClick ? (e) => onClick(row, e) : undefined}>
-          {columns.map(({Wrapper,accessor}) => <Td key={[index, accessor].join('-')} mode={mode}>
-            {Wrapper ? <Wrapper data={row} accessor={accessor} value={row[accessor]}>
-              {row[accessor]}
-            </Wrapper> : <>{row[accessor]}</>}
-          </Td>)}
+          {columns.map(({Wrapper, accessor, onClick: onCellClick}) =>
+            <Td key={[index, accessor].join('-')} mode={mode} className={onCellClick ? 'clickable' : ''}
+                onClick={onCellClick ? (e) => onCellClick({data: row, accessor, value: row[accessor]}, e) : undefined}>
+              {Wrapper ? <Wrapper data={row} accessor={accessor} value={row[accessor]}>
+                {row[accessor]}
+              </Wrapper> : <>{row[accessor]}</>}
+            </Td>)}
         </Tr>)}
       </tbody>
     </STable>;
@@ -59,6 +62,11 @@ const Td = styled.td<{ mode: ModeType }>`
   thead > tr > & {
     border-bottom: 1px solid ${({mode}) => mode === 'light' ? '#212529' : '#fff'};
     text-align: left;
+  }
+
+  &.clickable:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .1);
   }
 `;
 

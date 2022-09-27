@@ -35,3 +35,26 @@ Default.args = {
     {id: 3, firstName: 'Larry', lastName: 'the Bard', twitterId: '@twitter'}
   ]
 }
+
+export const CellClick: Story<TableProps<Data>> = (args) => <Table {...args}/>;
+CellClick.args = {
+  columns: [{
+    Header: 'ID',
+    accessor: 'id'
+  }, {
+    Header: 'First Name',
+    accessor: 'firstName'
+  }, {
+    Header: 'Last Name',
+    accessor: 'lastName'
+  }, {
+    Header: 'Twitter ID',
+    accessor: 'twitterId',
+    onClick: ({value}) => console.log(value),
+  }],
+  data: [
+    {id: 1, firstName: 'Mark', lastName: 'Otto', twitterId: '@mdo'},
+    {id: 2, firstName: 'Jacob', lastName: 'Thornton', twitterId: '@fat'},
+    {id: 3, firstName: 'Larry', lastName: 'the Bard', twitterId: '@twitter'}
+  ]
+}
