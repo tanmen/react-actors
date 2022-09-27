@@ -1,3 +1,10 @@
+## [0.6.4](https://github.com/tanmen/react-actors/compare/v0.6.3...v0.6.4) (2022-09-27)
+
+
+### Bug Fixes
+
+* **table:** cell clickable ([f55c4e0](https://github.com/tanmen/react-actors/commit/f55c4e0e0af15f2284abb1aa857fdbd11539108e))
+
 ## [0.6.3](https://github.com/tanmen/react-actors/compare/v0.6.2...v0.6.3) (2022-09-27)
 
 
