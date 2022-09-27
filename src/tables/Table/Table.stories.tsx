@@ -7,12 +7,31 @@ export default {
   component: Table
 };
 
-export const Default: Story<TableProps> = (args) => <Table {...args}/>;
+type Data = {
+  id: number
+  firstName: string
+  lastName: string
+  twitterId: string
+}
+
+export const Default: Story<TableProps<Data>> = (args) => <Table {...args}/>;
 Default.args = {
-  heads: ['#', 'First', 'Last', 'Handle'],
+  columns: [{
+    Header: 'ID',
+    accessor: 'id'
+  }, {
+    Header: 'First Name',
+    accessor: 'firstName'
+  }, {
+    Header: 'Last Name',
+    accessor: 'lastName'
+  }, {
+    Header: 'Twitter ID',
+    accessor: 'twitterId'
+  }],
   data: [
-    [{head: true, value: '1'},	'Mark',	'Otto',	'@mdo'],
-    [{head: true, value: '2'},	'Jacob',	'Thornton',	'@fat'],
-    [{head: true, value: '3'},	'Larry',	'the Bird',	'@twitter'],
+    {id: 1, firstName: 'Mark', lastName: 'Otto', twitterId: '@mdo'},
+    {id: 2, firstName: 'Jacob', lastName: 'Thornton', twitterId: '@fat'},
+    {id: 3, firstName: 'Larry', lastName: 'the Bard', twitterId: '@twitter'}
   ]
 }

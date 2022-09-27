@@ -1,48 +1,52 @@
 import styled from "@emotion/styled";
-import React, {FC, ReactNode} from "react";
+import React, {FC, MouseEvent, ReactNode} from "react";
 import {useMode} from "../../hooks";
 import {ModeType} from "../../types";
 
-type DataModel = { head: boolean, value: ReactNode };
-type Data = ReactNode | DataModel;
-
-export type TableProps = {
-  heads: string[],
-  data: Data[][],
+type Column<T extends DataModel> = {
+  Header: ReactNode,
+  accessor: keyof T
+  Wrapper?: FC<{ children: ReactNode }>
+}
+type DataModel = { [key: string]: ReactNode };
+export type TableProps<T extends DataModel> = {
+  columns: Column<T>[],
+  data: T[],
   className?: string,
+  onClick?: (value: T, event: MouseEvent) => Promise<any> | any
 }
 
-export const Table: FC<TableProps> = ({heads, data, className}) => {
-  const mode = useMode();
-  return <STable className={className}>
-    <thead>
-    <tr>
-      {heads.map(head => <Th key={head} mode={mode}>{head}</Th>)}
-    </tr>
-    </thead>
-    <tbody>
-    {data.map((row, index) => <tr key={index}>
-      {row.map((v, i) => isDataModel(v)
-        ? v.head
-          ? <Th key={[index, i].join('-')} mode={mode}>{v.value}</Th>
-          : <Td key={[index, i].join('-')} mode={mode}>{v.value}</Td>
-        : <Td key={[index, i].join('-')} mode={mode}>{v}</Td>)}
-    </tr>)}
-    </tbody>
-  </STable>;
-};
-
-const isDataModel = (model: ReactNode | DataModel): model is DataModel => model !== undefined
-  && model !== null
-  && typeof model === 'object'
-  && Object.hasOwn(model, 'head');
+export const Table =
+  <T extends DataModel>({columns, data, className, onClick}: TableProps<T>): ReturnType<FC<TableProps<T>>> => {
+    const mode = useMode();
+    return <STable className={className}>
+      <thead>
+      <tr>
+        {columns.map(({Header, accessor}) => <Th key={accessor.toString()} mode={mode}>{Header}</Th>)}
+      </tr>
+      </thead>
+      <tbody>
+      {data.map((row, index) =>
+        <Tr key={index} className={onClick ? 'clickable' : ''} onClick={onClick ? (e) => onClick(row, e) : undefined}>
+          {columns.map(({accessor}) => <Td key={[index, accessor].join('-')} mode={mode}>{row[accessor]}</Td>)}
+        </Tr>)}
+      </tbody>
+    </STable>;
+  };
 
 const STable = styled.table`
   border-collapse: collapse;
 `;
 
+const Tr = styled.tr`
+  &.clickable:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .1);
+  }
+`;
+
 const Td = styled.td<{ mode: ModeType }>`
-  padding: 0.5rem;
+  padding: .5rem;
 
   tbody > tr:not(:last-of-type) > & {
     border-bottom: 1px solid ${({mode}) => mode === 'light' ? '#dee2e6' : '#464b4f'};
