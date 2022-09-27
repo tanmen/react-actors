@@ -3,10 +3,10 @@ import React, {FC, MouseEvent, ReactNode} from "react";
 import {useMode} from "../../hooks";
 import {ModeType} from "../../types";
 
-type Column<T extends DataModel> = {
+type Column<T extends DataModel, K extends keyof T = keyof T> = {
   Header: ReactNode,
-  accessor: keyof T
-  Wrapper?: FC<{ children: ReactNode }>
+  accessor: K
+  Wrapper?: FC<{ data: T[K], children: ReactNode }>
 }
 type DataModel = { [key: string]: ReactNode };
 export type TableProps<T extends DataModel> = {
@@ -28,7 +28,11 @@ export const Table =
       <tbody>
       {data.map((row, index) =>
         <Tr key={index} className={onClick ? 'clickable' : ''} onClick={onClick ? (e) => onClick(row, e) : undefined}>
-          {columns.map(({accessor}) => <Td key={[index, accessor].join('-')} mode={mode}>{row[accessor]}</Td>)}
+          {columns.map(({Wrapper,accessor}) => <Td key={[index, accessor].join('-')} mode={mode}>
+            {Wrapper ? <Wrapper data={row[accessor]}>
+              {row[accessor]}
+            </Wrapper> : <>{row[accessor]}</>}
+          </Td>)}
         </Tr>)}
       </tbody>
     </STable>;
