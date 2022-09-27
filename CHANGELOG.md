@@ -1,3 +1,10 @@
+## [0.6.3](https://github.com/tanmen/react-actors/compare/v0.6.2...v0.6.3) (2022-09-27)
+
+
+### Bug Fixes
+
+* **table:** split value wrapper props ([6816ee8](https://github.com/tanmen/react-actors/commit/6816ee8d628a4191c8b1b8f1be720acb83ae9e28))
+
 ## [0.6.2](https://github.com/tanmen/react-actors/compare/v0.6.1...v0.6.2) (2022-09-27)
 
 
