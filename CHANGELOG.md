@@ -1,3 +1,11 @@
+## [0.6.5](https://github.com/tanmen/react-actors/compare/v0.6.4...v0.6.5) (2022-09-28)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @babel/core from 7.19.1 to 7.19.3 ([55f156d](https://github.com/tanmen/react-actors/commit/55f156d09a6f50bbf58c0855ee3ce858d29eef94))
+* **deps-dev:** bump typescript from 4.8.3 to 4.8.4 ([6321985](https://github.com/tanmen/react-actors/commit/63219850848ee10dc81093e69d9001d40b1727fd))
+
 ## [0.6.4](https://github.com/tanmen/react-actors/compare/v0.6.3...v0.6.4) (2022-09-27)
 
 
