@@ -1,3 +1,10 @@
+## [0.6.11](https://github.com/tanmen/react-actors/compare/v0.6.10...v0.6.11) (2022-10-07)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/checkout from 2 to 3.1.0 ([e47383f](https://github.com/tanmen/react-actors/commit/e47383fd45b3ac5513eaf655b1462634512471cb))
+
 ## [0.6.10](https://github.com/tanmen/react-actors/compare/v0.6.9...v0.6.10) (2022-10-07)
 
 
