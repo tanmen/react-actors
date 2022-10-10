@@ -1,3 +1,10 @@
+## [0.6.12](https://github.com/tanmen/react-actors/compare/v0.6.11...v0.6.12) (2022-10-10)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump eslint-plugin-react from 7.31.8 to 7.31.9 ([dfc8aaa](https://github.com/tanmen/react-actors/commit/dfc8aaae5904d2f90bd52546e4f946d33e9f362a))
+
 ## [0.6.11](https://github.com/tanmen/react-actors/compare/v0.6.10...v0.6.11) (2022-10-07)
 
 
