@@ -1,3 +1,14 @@
+## [0.6.22](https://github.com/tanmen/react-actors/compare/v0.6.21...v0.6.22) (2022-10-25)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @storybook/react from 6.5.12 to 6.5.13 ([1f29622](https://github.com/tanmen/react-actors/commit/1f29622ae06bdb354ce64829c5484cd675aadc5f))
+* **deps-dev:** bump @storybook/theming from 6.5.12 to 6.5.13 ([c947055](https://github.com/tanmen/react-actors/commit/c947055c011249d3644274a8b224223b3e9890e5))
+* **deps-dev:** bump @types/node from 18.11.4 to 18.11.5 ([4a9a240](https://github.com/tanmen/react-actors/commit/4a9a24096d149b52fece320b8140fc50d17ec498))
+* **deps-dev:** bump @types/react from 18.0.21 to 18.0.22 ([35f6889](https://github.com/tanmen/react-actors/commit/35f68898f8bc23c7471539a8afee237c2fd6213a))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([a09ca3e](https://github.com/tanmen/react-actors/commit/a09ca3e8ed7041af1320e5773fd4fd455ba79c75))
+
 ## [0.6.21](https://github.com/tanmen/react-actors/compare/v0.6.20...v0.6.21) (2022-10-24)
 
 
