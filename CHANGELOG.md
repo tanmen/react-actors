@@ -1,3 +1,11 @@
+## [0.6.24](https://github.com/tanmen/react-actors/compare/v0.6.23...v0.6.24) (2022-10-27)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @types/node from 18.11.5 to 18.11.7 ([5912e5a](https://github.com/tanmen/react-actors/commit/5912e5a834292ceef573f089a00e08d519f01cfe))
+* **deps-dev:** bump @types/react-dom from 18.0.6 to 18.0.7 ([bab4c1f](https://github.com/tanmen/react-actors/commit/bab4c1f82a9b1edade741b2535272aad035b6858))
+
 ## [0.6.23](https://github.com/tanmen/react-actors/compare/v0.6.22...v0.6.23) (2022-10-26)
 
 
