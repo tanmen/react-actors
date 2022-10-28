@@ -1,3 +1,13 @@
+## [0.6.26](https://github.com/tanmen/react-actors/compare/v0.6.25...v0.6.26) (2022-10-28)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @types/react-dom from 18.0.7 to 18.0.8 ([e90db80](https://github.com/tanmen/react-actors/commit/e90db8014080268d5b12bf60ab344fff582f430e))
+* **deps-dev:** bump babel-loader from 8.2.5 to 9.0.0 ([264c6c2](https://github.com/tanmen/react-actors/commit/264c6c25f49dec3f33af76b25939633b1c45a78f))
+* **deps:** bump @emotion/react from 11.10.4 to 11.10.5 ([02cfd53](https://github.com/tanmen/react-actors/commit/02cfd53b191017b707bee9d36e4d698874963c77))
+* **deps:** bump @emotion/styled from 11.10.4 to 11.10.5 ([7e5ad63](https://github.com/tanmen/react-actors/commit/7e5ad63377f8da85798a7b46fd748c748c6b0f0a))
+
 ## [0.6.25](https://github.com/tanmen/react-actors/compare/v0.6.24...v0.6.25) (2022-10-28)
 
 
