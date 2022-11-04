@@ -1,3 +1,10 @@
+## [0.6.30](https://github.com/tanmen/react-actors/compare/v0.6.29...v0.6.30) (2022-11-04)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump babel-loader from 9.0.1 to 9.1.0 ([4f077a2](https://github.com/tanmen/react-actors/commit/4f077a276b2e5d07fe5dc41ca40dae3068ba3c01))
+
 ## [0.6.29](https://github.com/tanmen/react-actors/compare/v0.6.28...v0.6.29) (2022-11-02)
 
 
