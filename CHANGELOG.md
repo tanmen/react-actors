@@ -1,3 +1,10 @@
+## [0.6.34](https://github.com/tanmen/react-actors/compare/v0.6.33...v0.6.34) (2022-11-09)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump husky from 8.0.1 to 8.0.2 ([7cb720d](https://github.com/tanmen/react-actors/commit/7cb720d8c7523e7a3a281718ce898937c2325129))
+
 ## [0.6.33](https://github.com/tanmen/react-actors/compare/v0.6.32...v0.6.33) (2022-11-08)
 
 
