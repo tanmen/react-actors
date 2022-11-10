@@ -1,3 +1,10 @@
+## [0.6.35](https://github.com/tanmen/react-actors/compare/v0.6.34...v0.6.35) (2022-11-10)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump node-sass from 7.0.3 to 8.0.0 ([c0ea6a1](https://github.com/tanmen/react-actors/commit/c0ea6a15003923e4a8d4676e860df35b640cc440))
+
 ## [0.6.34](https://github.com/tanmen/react-actors/compare/v0.6.33...v0.6.34) (2022-11-09)
 
 
