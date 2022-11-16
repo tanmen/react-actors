@@ -1,3 +1,10 @@
+## [0.6.40](https://github.com/tanmen/react-actors/compare/v0.6.39...v0.6.40) (2022-11-16)
+
+
+### Bug Fixes
+
+* **deps:** bump loader-utils from 1.4.1 to 1.4.2 ([e1f76be](https://github.com/tanmen/react-actors/commit/e1f76bed6c42e505975185e3d4affeb93d8b0cc9))
+
 ## [0.6.39](https://github.com/tanmen/react-actors/compare/v0.6.38...v0.6.39) (2022-11-16)
 
 
