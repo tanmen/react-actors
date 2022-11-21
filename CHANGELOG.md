@@ -1,3 +1,10 @@
+## [0.6.41](https://github.com/tanmen/react-actors/compare/v0.6.40...v0.6.41) (2022-11-21)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump eslint-plugin-react from 7.31.10 to 7.31.11 ([a040729](https://github.com/tanmen/react-actors/commit/a040729301ecb983994d5b003e60b3c29347bacc))
+
 ## [0.6.40](https://github.com/tanmen/react-actors/compare/v0.6.39...v0.6.40) (2022-11-16)
 
 
