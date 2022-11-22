@@ -1,3 +1,13 @@
+## [0.6.42](https://github.com/tanmen/react-actors/compare/v0.6.41...v0.6.42) (2022-11-22)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @commitlint/cli from 17.2.0 to 17.3.0 ([c6b9026](https://github.com/tanmen/react-actors/commit/c6b9026e3fa01ae3fa7e6a0321b06a00a39a7b73))
+* **deps-dev:** bump @commitlint/config-conventional ([64c1e48](https://github.com/tanmen/react-actors/commit/64c1e483c4dc852fff80fa0568df7678f270ec9c))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([0a0579f](https://github.com/tanmen/react-actors/commit/0a0579fd4d2ac67f22d051c856166bf21bacdb4e))
+* **deps-dev:** bump @typescript-eslint/parser from 5.43.0 to 5.44.0 ([63cc8ed](https://github.com/tanmen/react-actors/commit/63cc8ed90cf9b439d6a14571c55e393e43faeb3e))
+
 ## [0.6.41](https://github.com/tanmen/react-actors/compare/v0.6.40...v0.6.41) (2022-11-21)
 
 
