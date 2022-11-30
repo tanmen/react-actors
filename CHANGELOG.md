@@ -1,3 +1,11 @@
+## [0.6.46](https://github.com/tanmen/react-actors/compare/v0.6.45...v0.6.46) (2022-11-30)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @semantic-release/changelog from 6.0.1 to 6.0.2 ([8cb75fe](https://github.com/tanmen/react-actors/commit/8cb75fe66ec8dc0cd5522f6fb44a7c88ea9e1afa))
+* **deps-dev:** bump fs-extra from 11.0.0 to 11.1.0 ([35aaa07](https://github.com/tanmen/react-actors/commit/35aaa07782cb0c7a4fb350a5dbb3648772d73415))
+
 ## [0.6.45](https://github.com/tanmen/react-actors/compare/v0.6.44...v0.6.45) (2022-11-29)
 
 
