@@ -1,3 +1,14 @@
+## [0.6.48](https://github.com/tanmen/react-actors/compare/v0.6.47...v0.6.48) (2022-12-02)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @storybook/addon-essentials from 6.5.13 to 6.5.14 ([bb9baf1](https://github.com/tanmen/react-actors/commit/bb9baf14aad556933b3e10608d1424fb075d69c6))
+* **deps-dev:** bump @storybook/addon-links from 6.5.13 to 6.5.14 ([7e47da5](https://github.com/tanmen/react-actors/commit/7e47da531284c302e889114f75eb7e18c4667d19))
+* **deps-dev:** bump @storybook/react from 6.5.13 to 6.5.14 ([6938cff](https://github.com/tanmen/react-actors/commit/6938cff8ca27023ac4870f07b59a8939a073370f))
+* **deps-dev:** bump @storybook/theming from 6.5.13 to 6.5.14 ([ec47b0d](https://github.com/tanmen/react-actors/commit/ec47b0dcb61a5a6b6d62ff4afdfc922ea48911dc))
+* **deps:** bump decode-uri-component from 0.2.0 to 0.2.2 ([5cae868](https://github.com/tanmen/react-actors/commit/5cae868d4bed593cca1d78a1e8ff166f6ecfa4c7))
+
 ## [0.6.47](https://github.com/tanmen/react-actors/compare/v0.6.46...v0.6.47) (2022-12-01)
 
 
