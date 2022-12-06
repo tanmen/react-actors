@@ -1,3 +1,10 @@
+## [0.6.51](https://github.com/tanmen/react-actors/compare/v0.6.50...v0.6.51) (2022-12-06)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @typescript-eslint/parser from 5.45.0 to 5.45.1 ([2f19ae2](https://github.com/tanmen/react-actors/commit/2f19ae28e484b02e58cf0f0d58f35fddd1b12b99))
+
 ## [0.6.50](https://github.com/tanmen/react-actors/compare/v0.6.49...v0.6.50) (2022-12-06)
 
 
