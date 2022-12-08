@@ -1,3 +1,10 @@
+## [0.6.52](https://github.com/tanmen/react-actors/compare/v0.6.51...v0.6.52) (2022-12-08)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump typescript from 4.9.3 to 4.9.4 ([3495798](https://github.com/tanmen/react-actors/commit/3495798dd0df66864f775272b7526a434ce5663a))
+
 ## [0.6.51](https://github.com/tanmen/react-actors/compare/v0.6.50...v0.6.51) (2022-12-06)
 
 
