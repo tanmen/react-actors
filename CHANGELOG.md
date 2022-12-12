@@ -1,3 +1,11 @@
+## [0.6.54](https://github.com/tanmen/react-actors/compare/v0.6.53...v0.6.54) (2022-12-12)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @types/node from 18.11.12 to 18.11.13 ([120884a](https://github.com/tanmen/react-actors/commit/120884afe1ccbb0624e12cebad5ba841d197f4f0))
+* **deps-dev:** bump yarn-deduplicate from 6.0.0 to 6.0.1 ([4f000d3](https://github.com/tanmen/react-actors/commit/4f000d3aaf27c11cbc1d9bbb1110db5fc712f3a3))
+
 ## [0.6.53](https://github.com/tanmen/react-actors/compare/v0.6.52...v0.6.53) (2022-12-09)
 
 
