@@ -1,3 +1,12 @@
+## [0.6.55](https://github.com/tanmen/react-actors/compare/v0.6.54...v0.6.55) (2022-12-13)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([bb1bc34](https://github.com/tanmen/react-actors/commit/bb1bc34a0a8c89c0b43a5a92551dbe3b9ba7cdaf))
+* **deps-dev:** bump @typescript-eslint/parser from 5.46.0 to 5.46.1 ([9ff07a6](https://github.com/tanmen/react-actors/commit/9ff07a66e1eea35aa033ab7446e2469e63902d20))
+* **deps:** bump actions/checkout from 3.1.0 to 3.2.0 ([c59195a](https://github.com/tanmen/react-actors/commit/c59195ad32a4848f7c0d0302e1d087eeca83fc2c))
+
 ## [0.6.54](https://github.com/tanmen/react-actors/compare/v0.6.53...v0.6.54) (2022-12-12)
 
 
