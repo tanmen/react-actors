@@ -1,3 +1,10 @@
+## [0.6.61](https://github.com/tanmen/react-actors/compare/v0.6.60...v0.6.61) (2022-12-21)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @storybook/addons from 6.5.14 to 6.5.15 ([836cb7c](https://github.com/tanmen/react-actors/commit/836cb7cd56a8be652e3de33dd885a907f1ba678e))
+
 ## [0.6.60](https://github.com/tanmen/react-actors/compare/v0.6.59...v0.6.60) (2022-12-20)
 
 
