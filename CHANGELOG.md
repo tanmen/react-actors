@@ -1,3 +1,10 @@
+## [0.6.64](https://github.com/tanmen/react-actors/compare/v0.6.63...v0.6.64) (2022-12-23)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @babel/core from 7.20.5 to 7.20.7 ([0872031](https://github.com/tanmen/react-actors/commit/0872031147350e03a506483a7b364a555503fe13))
+
 ## [0.6.63](https://github.com/tanmen/react-actors/compare/v0.6.62...v0.6.63) (2022-12-21)
 
 
