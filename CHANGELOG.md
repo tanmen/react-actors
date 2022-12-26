@@ -1,3 +1,10 @@
+## [0.6.65](https://github.com/tanmen/react-actors/compare/v0.6.64...v0.6.65) (2022-12-26)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @types/react-dom from 18.0.9 to 18.0.10 ([be3f9f4](https://github.com/tanmen/react-actors/commit/be3f9f4a2249b8b75c4c6ca18683f57b264b8bf1))
+
 ## [0.6.64](https://github.com/tanmen/react-actors/compare/v0.6.63...v0.6.64) (2022-12-23)
 
 
