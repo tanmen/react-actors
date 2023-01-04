@@ -1,3 +1,11 @@
+## [0.6.71](https://github.com/tanmen/react-actors/compare/v0.6.70...v0.6.71) (2023-01-04)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump husky from 8.0.2 to 8.0.3 ([643f182](https://github.com/tanmen/react-actors/commit/643f1826d27a95d1aeedc8e352018162bc235096))
+* **deps:** bump json5 from 1.0.1 to 1.0.2 ([e638cb8](https://github.com/tanmen/react-actors/commit/e638cb8ce9407fdabecd2e8f65f8dd9fa6a2ced4))
+
 ## [0.6.70](https://github.com/tanmen/react-actors/compare/v0.6.69...v0.6.70) (2023-01-03)
 
 
