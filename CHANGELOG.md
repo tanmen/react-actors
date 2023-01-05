@@ -1,3 +1,12 @@
+## [0.6.72](https://github.com/tanmen/react-actors/compare/v0.6.71...v0.6.72) (2023-01-05)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @babel/core from 7.20.7 to 7.20.12 ([868b2dd](https://github.com/tanmen/react-actors/commit/868b2dd6b0969378596ffd39e8dd463414afa4fd))
+* **deps-dev:** bump @commitlint/config-conventional ([a0d106a](https://github.com/tanmen/react-actors/commit/a0d106aa6bfcc8cd6302fd6e6345d2d6afed0733))
+* **deps-dev:** bump babel-loader from 9.1.0 to 9.1.2 ([defe003](https://github.com/tanmen/react-actors/commit/defe0037cb1f766305c67f86e3b035045e5ad485))
+
 ## [0.6.71](https://github.com/tanmen/react-actors/compare/v0.6.70...v0.6.71) (2023-01-04)
 
 
