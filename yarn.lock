@@ -3413,10 +3413,10 @@
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
   integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
-"@types/semantic-release@^17.2.4":
-  version "17.2.4"
-  resolved "https://registry.yarnpkg.com/@types/semantic-release/-/semantic-release-17.2.4.tgz#2b82cd645a4e10547737d37248ca581ab799fa33"
-  integrity sha512-Ud2GB2+0WgyBrKB7PbyZA+bud3QD0z3Iv6KPx6FfeMUNDekw3EWgZi3eLKXoeGDPBo+hev74NN1pEPMp0rL2vQ==
+"@types/semantic-release@^20.0.0":
+  version "20.0.0"
+  resolved "https://registry.yarnpkg.com/@types/semantic-release/-/semantic-release-20.0.0.tgz#6cb3a8bdf124f83a969f987556584f8371d89885"
+  integrity sha512-ahOG2wQ0V3LdebXOf9PZwvsZzCEzbnmx5D1pN2nl1Lx2VIhS2X3ud2j4peq8gzRGfs8JbKttJr81sD6LWpCFxQ==
   dependencies:
     "@types/node" "*"
 
@@ -4399,7 +4399,7 @@ array.prototype.flat@^1.2.1, array.prototype.flat@^1.3.1:
     es-abstract "^1.20.4"
     es-shim-unscopables "^1.0.0"
 
-array.prototype.flatmap@^1.2.1, array.prototype.flatmap@^1.3.1:
+array.prototype.flatmap@^1.2.1, array.prototype.flatmap@^1.3.0, array.prototype.flatmap@^1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/array.prototype.flatmap/-/array.prototype.flatmap-1.3.1.tgz#1aae7903c2100433cb8261cd4ed310aab5c4a183"
   integrity sha512-8UGn9O1FDVvMNB0UlLv4voxRMze7+FpHyF5mSMRjWHUMlpoDViniy05870VlxhfgTnLbpuwTzvD76MTtWxB/mQ==
@@ -7082,13 +7082,14 @@ eslint-plugin-flowtype@^8.0.3:
     lodash "^4.17.21"
     string-natural-compare "^3.0.1"
 
-eslint-plugin-import@^2.25.3, eslint-plugin-import@^2.27.0:
-  version "2.27.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.27.0.tgz#29824226ae1c14965af445e4f71769ef1e3fe365"
-  integrity sha512-g+25RejC0uMcimFhm55XGPkbXR5qJMZ8KRN9hEJrQ+9U1VLrt76IjHD3/+QKu/0h1Wm6S2a73DFK8UYZRmfnYg==
+eslint-plugin-import@^2.25.3, eslint-plugin-import@^2.27.4:
+  version "2.27.4"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.27.4.tgz#319c2f6f6580e1678d674a258ee5e981c10cc25b"
+  integrity sha512-Z1jVt1EGKia1X9CnBCkpAOhWy8FgQ7OmJ/IblEkT82yrFU/xJaxwujaTzLWqigewwynRQ9mmHfX9MtAfhxm0sA==
   dependencies:
     array-includes "^3.1.6"
     array.prototype.flat "^1.3.1"
+    array.prototype.flatmap "^1.3.0"
     debug "^3.2.7"
     doctrine "^2.1.0"
     eslint-import-resolver-node "^0.3.7"
@@ -7099,6 +7100,7 @@ eslint-plugin-import@^2.25.3, eslint-plugin-import@^2.27.0:
     minimatch "^3.1.2"
     object.values "^1.1.6"
     resolve "^1.22.1"
+    semver "^6.3.0"
     tsconfig-paths "^3.14.1"
 
 eslint-plugin-jest@^25.3.0:
