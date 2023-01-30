@@ -51,7 +51,7 @@
     "@storybook/addon-essentials": "^6.5.15",
     "@storybook/addon-links": "^6.5.16",
     "@storybook/addons": "^6.5.15",
-    "@storybook/react": "^6.5.15",
+    "@storybook/react": "^6.5.16",
     "@storybook/theming": "^6.5.14",
     "@testing-library/react-hooks": "^8.0.1",
     "@types/babel__core": "^7.20.0",
