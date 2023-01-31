@@ -3428,10 +3428,10 @@
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
   integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
-"@types/semantic-release@^20.0.0":
-  version "20.0.0"
-  resolved "https://registry.yarnpkg.com/@types/semantic-release/-/semantic-release-20.0.0.tgz#6cb3a8bdf124f83a969f987556584f8371d89885"
-  integrity sha512-ahOG2wQ0V3LdebXOf9PZwvsZzCEzbnmx5D1pN2nl1Lx2VIhS2X3ud2j4peq8gzRGfs8JbKttJr81sD6LWpCFxQ==
+"@types/semantic-release@^20.0.1":
+  version "20.0.1"
+  resolved "https://registry.yarnpkg.com/@types/semantic-release/-/semantic-release-20.0.1.tgz#9bb6291194e9f0a8a2175df80b1b746499d14d1d"
+  integrity sha512-rANSSye4mYTnP6szFSFUPl9GEowqxKjfKKnE06/axdgOLIL3pQNB4u3gXelZ2wiL6J6Clzb8PSyX8Bbv/JOPHw==
   dependencies:
     "@types/node" "*"
 
