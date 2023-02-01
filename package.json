@@ -67,7 +67,7 @@
     "@types/react-is": "^17.0.0",
     "@types/semantic-release": "^20.0.1",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
-    "@typescript-eslint/parser": "^5.49.0",
+    "@typescript-eslint/parser": "^5.50.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^9.1.2",
     "cp": "^0.2.0",
