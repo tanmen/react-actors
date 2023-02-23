@@ -65,7 +65,6 @@ const Td = styled.td<{ mode: ModeType, align: Align }>`
 
   thead > tr > & {
     border-bottom: 1px solid ${({mode}) => mode === 'light' ? '#212529' : '#fff'};
-    text-align: left;
   }
 
   &.clickable:hover {
