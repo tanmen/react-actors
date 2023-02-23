@@ -1,3 +1,10 @@
+## [0.6.77](https://github.com/tanmen/react-actors/compare/v0.6.76...v0.6.77) (2023-02-23)
+
+
+### Bug Fixes
+
+* **table:** bug fix align ([9d4fea5](https://github.com/tanmen/react-actors/commit/9d4fea52c7339f7a24d4b6a6a3d35a024250688b))
+
 ## [0.6.76](https://github.com/tanmen/react-actors/compare/v0.6.75...v0.6.76) (2023-02-23)
 
 
