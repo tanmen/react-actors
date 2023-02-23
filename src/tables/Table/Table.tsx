@@ -7,7 +7,8 @@ type Align = 'right' | 'left' | 'center';
 type Column<T extends DataModel, K extends keyof T = keyof T> = {
   Header: ReactNode,
   accessor: K,
-  align: Align
+  headerAlign?: Align
+  align?: Align
   Wrapper?: FC<{ data: T, accessor: K, align: Align, value: T[K], children: ReactNode }>
   onClick?: (props: { data: T, accessor: K, value: T[K] }, event: MouseEvent) => Promise<any> | any
 }
@@ -25,7 +26,7 @@ export const Table =
     return <STable className={className}>
       <thead>
       <tr>
-        {columns.map(({Header, accessor}) => <Th key={accessor.toString()} mode={mode}>{Header}</Th>)}
+        {columns.map(({Header, accessor, headerAlign}) => <Th key={accessor.toString()} align={headerAlign ?? 'left'} mode={mode}>{Header}</Th>)}
       </tr>
       </thead>
       <tbody>
