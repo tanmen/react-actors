@@ -1,3 +1,10 @@
+## [0.6.82](https://github.com/tanmen/react-actors/compare/v0.6.81...v0.6.82) (2023-03-01)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump semantic-release from 20.1.0 to 20.1.1 ([bf0f6ee](https://github.com/tanmen/react-actors/commit/bf0f6ee7ec59a71dce5581c84afc226381dc1774))
+
 ## [0.6.81](https://github.com/tanmen/react-actors/compare/v0.6.80...v0.6.81) (2023-02-28)
 
 
