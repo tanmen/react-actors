@@ -1,3 +1,10 @@
+## [0.6.89](https://github.com/tanmen/react-actors/compare/v0.6.88...v0.6.89) (2023-03-14)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([5dac45a](https://github.com/tanmen/react-actors/commit/5dac45abe2b767937e73126d599f5ceab733680d))
+
 ## [0.6.88](https://github.com/tanmen/react-actors/compare/v0.6.87...v0.6.88) (2023-03-14)
 
 
