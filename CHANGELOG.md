@@ -1,3 +1,10 @@
+## [0.6.94](https://github.com/tanmen/react-actors/compare/v0.6.93...v0.6.94) (2023-03-22)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @semantic-release/npm from 9.0.2 to 10.0.2 ([edb4e90](https://github.com/tanmen/react-actors/commit/edb4e90bc3336328ebc4366514fefa7aee72d353))
+
 ## [0.6.93](https://github.com/tanmen/react-actors/compare/v0.6.92...v0.6.93) (2023-03-21)
 
 
