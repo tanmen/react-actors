@@ -1,3 +1,10 @@
+## [0.6.95](https://github.com/tanmen/react-actors/compare/v0.6.94...v0.6.95) (2023-03-23)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @commitlint/cli from 17.4.4 to 17.5.0 ([419e03b](https://github.com/tanmen/react-actors/commit/419e03b23c1e25cbb79100948a5e522e208bd37c))
+
 ## [0.6.94](https://github.com/tanmen/react-actors/compare/v0.6.93...v0.6.94) (2023-03-22)
 
 
