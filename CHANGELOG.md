@@ -1,3 +1,11 @@
+## [0.6.96](https://github.com/tanmen/react-actors/compare/v0.6.95...v0.6.96) (2023-03-24)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @semantic-release/changelog from 6.0.2 to 6.0.3 ([5d01ffd](https://github.com/tanmen/react-actors/commit/5d01ffd5a7ba798677d7a15656ddbfaf63fb83da))
+* **deps-dev:** bump @types/node from 18.15.5 to 18.15.6 ([39027b6](https://github.com/tanmen/react-actors/commit/39027b68e89c1730f291ebfebd109c705c5a2f78))
+
 ## [0.6.95](https://github.com/tanmen/react-actors/compare/v0.6.94...v0.6.95) (2023-03-23)
 
 
