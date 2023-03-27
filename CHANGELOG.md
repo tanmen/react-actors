@@ -1,3 +1,12 @@
+## [0.6.98](https://github.com/tanmen/react-actors/compare/v0.6.97...v0.6.98) (2023-03-27)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @types/react from 18.0.28 to 18.0.29 ([bc37815](https://github.com/tanmen/react-actors/commit/bc378154f654f457044c7d23f42a233f4a8eb86b))
+* **deps-dev:** bump semantic-release from 20.1.3 to 21.0.0 ([09526c6](https://github.com/tanmen/react-actors/commit/09526c66338816de1cc226211f87213fd2331e1c))
+* **deps:** bump actions/checkout from 3.4.0 to 3.5.0 ([72af3bc](https://github.com/tanmen/react-actors/commit/72af3bc3261627cd2a050bf68966f6afced43087))
+
 ## [0.6.97](https://github.com/tanmen/react-actors/compare/v0.6.96...v0.6.97) (2023-03-27)
 
 
