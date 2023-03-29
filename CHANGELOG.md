@@ -1,3 +1,12 @@
+## [0.6.101](https://github.com/tanmen/react-actors/compare/v0.6.100...v0.6.101) (2023-03-29)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @commitlint/cli from 17.5.0 to 17.5.1 ([6829df1](https://github.com/tanmen/react-actors/commit/6829df1f4008d314705496f39feefbe87a35eb49))
+* **deps-dev:** bump @types/node from 18.15.10 to 18.15.11 ([29a0c08](https://github.com/tanmen/react-actors/commit/29a0c080629558424eb7fee71b67a2b3d294c0e6))
+* **deps-dev:** bump @types/react from 18.0.30 to 18.0.31 ([6adcbdf](https://github.com/tanmen/react-actors/commit/6adcbdf80bca13a54d7acf68bdcc222b8ab9d1d7))
+
 ## [0.6.100](https://github.com/tanmen/react-actors/compare/v0.6.99...v0.6.100) (2023-03-28)
 
 
