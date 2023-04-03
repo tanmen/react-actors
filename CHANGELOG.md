@@ -1,3 +1,12 @@
+## [0.6.102](https://github.com/tanmen/react-actors/compare/v0.6.101...v0.6.102) (2023-04-03)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @babel/core from 7.21.3 to 7.21.4 ([787d012](https://github.com/tanmen/react-actors/commit/787d012bbeff30586c3b3825a4f1f0e6058c7595))
+* **deps-dev:** bump @types/react from 18.0.31 to 18.0.32 ([d028037](https://github.com/tanmen/react-actors/commit/d028037ecd41effedadb33d84b67d06ba7a5d8d2))
+* **deps-dev:** bump semantic-release from 21.0.0 to 21.0.1 ([2f036fe](https://github.com/tanmen/react-actors/commit/2f036fea6a5dfc3b5cc39816acb732f07cb492ae))
+
 ## [0.6.101](https://github.com/tanmen/react-actors/compare/v0.6.100...v0.6.101) (2023-03-29)
 
 
