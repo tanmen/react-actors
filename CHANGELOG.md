@@ -1,3 +1,10 @@
+## [0.6.106](https://github.com/tanmen/react-actors/compare/v0.6.105...v0.6.106) (2023-04-10)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @semantic-release/npm from 10.0.2 to 10.0.3 ([de4355f](https://github.com/tanmen/react-actors/commit/de4355f67b1341f3715fc8c3344b59cb14f4749e))
+
 ## [0.6.105](https://github.com/tanmen/react-actors/compare/v0.6.104...v0.6.105) (2023-04-10)
 
 
