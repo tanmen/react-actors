@@ -1,3 +1,10 @@
+## [0.6.108](https://github.com/tanmen/react-actors/compare/v0.6.107...v0.6.108) (2023-04-12)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @storybook/theming from 7.0.2 to 7.0.3 ([ed4f255](https://github.com/tanmen/react-actors/commit/ed4f255a488f30abf9e5f3e56686806b2a004034))
+
 ## [0.6.107](https://github.com/tanmen/react-actors/compare/v0.6.106...v0.6.107) (2023-04-11)
 
 
