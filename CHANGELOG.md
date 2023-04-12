@@ -1,3 +1,13 @@
+## [0.6.109](https://github.com/tanmen/react-actors/compare/v0.6.108...v0.6.109) (2023-04-12)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @storybook/addon-essentials from 7.0.2 to 7.0.3 ([6f41f50](https://github.com/tanmen/react-actors/commit/6f41f50d37c55151eda8c9ada73cd1a27a162df9))
+* **deps-dev:** bump @storybook/addon-links from 7.0.2 to 7.0.3 ([3c9bce4](https://github.com/tanmen/react-actors/commit/3c9bce4e1b77fcffc9c8bbeb98da78ebc907a478))
+* **deps-dev:** bump @storybook/addons from 7.0.2 to 7.0.3 ([bf4e107](https://github.com/tanmen/react-actors/commit/bf4e1072e0ca9357da987c3c37ff16790da09b7e))
+* **deps-dev:** bump @storybook/builder-webpack5 from 7.0.2 to 7.0.3 ([33769ee](https://github.com/tanmen/react-actors/commit/33769eed9b598efce736bed882b022f6e76884c7))
+
 ## [0.6.108](https://github.com/tanmen/react-actors/compare/v0.6.107...v0.6.108) (2023-04-12)
 
 
