@@ -1,3 +1,14 @@
+## [0.6.111](https://github.com/tanmen/react-actors/compare/v0.6.110...v0.6.111) (2023-04-14)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @commitlint/cli from 17.5.1 to 17.6.0 ([18112a4](https://github.com/tanmen/react-actors/commit/18112a45e07b025c42a8ae7be2a9864de3189fc0))
+* **deps-dev:** bump @commitlint/config-conventional ([f1bede2](https://github.com/tanmen/react-actors/commit/f1bede2047e8275a21be47aef53dbbd4e94bcb88))
+* **deps-dev:** bump @storybook/react from 7.0.2 to 7.0.4 ([aaaed96](https://github.com/tanmen/react-actors/commit/aaaed96176ed627aca3a6641488549df49860fa9))
+* **deps-dev:** bump eslint-plugin-testing-library from 5.10.2 to 5.10.3 ([8f2069f](https://github.com/tanmen/react-actors/commit/8f2069fe9acc3193d005d55072d8b084689ee793))
+* **deps:** bump actions/checkout from 3.5.1 to 3.5.2 ([5195ccc](https://github.com/tanmen/react-actors/commit/5195ccc9f2550c2a9075689f08b0e6ca46eaa84e))
+
 ## [0.6.110](https://github.com/tanmen/react-actors/compare/v0.6.109...v0.6.110) (2023-04-13)
 
 
