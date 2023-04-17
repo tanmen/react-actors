@@ -1,3 +1,11 @@
+## [0.6.112](https://github.com/tanmen/react-actors/compare/v0.6.111...v0.6.112) (2023-04-17)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @commitlint/cli from 17.6.0 to 17.6.1 ([abcc04a](https://github.com/tanmen/react-actors/commit/abcc04aab3847a61a64709d3113fe55b99bb3ebd))
+* **deps-dev:** bump @storybook/builder-webpack5 from 7.0.4 to 7.0.5 ([630f9bb](https://github.com/tanmen/react-actors/commit/630f9bb2e39d9b62345b0547c44f3559d91b7d39))
+
 ## [0.6.111](https://github.com/tanmen/react-actors/compare/v0.6.110...v0.6.111) (2023-04-14)
 
 
