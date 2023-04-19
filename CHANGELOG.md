@@ -1,3 +1,10 @@
+## [0.6.117](https://github.com/tanmen/react-actors/compare/v0.6.116...v0.6.117) (2023-04-19)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @storybook/addon-links from 7.0.5 to 7.0.6 ([e055ff6](https://github.com/tanmen/react-actors/commit/e055ff69e02c9af0a147cfe5e56f8b8e05c8653b))
+
 ## [0.6.116](https://github.com/tanmen/react-actors/compare/v0.6.115...v0.6.116) (2023-04-19)
 
 
