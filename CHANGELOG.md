@@ -1,3 +1,11 @@
+## [0.6.115](https://github.com/tanmen/react-actors/compare/v0.6.114...v0.6.115) (2023-04-19)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @storybook/builder-webpack5 from 7.0.5 to 7.0.6 ([7da1e5f](https://github.com/tanmen/react-actors/commit/7da1e5fe2ac72f989dcbf939a13abc9d5b969f32))
+* **deps-dev:** bump @storybook/react from 7.0.5 to 7.0.6 ([8a52b0c](https://github.com/tanmen/react-actors/commit/8a52b0cb22b6b958a29097e62c509ca6f8adbe9a))
+
 ## [0.6.114](https://github.com/tanmen/react-actors/compare/v0.6.113...v0.6.114) (2023-04-18)
 
 
