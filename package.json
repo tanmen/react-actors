@@ -62,7 +62,7 @@
     "@types/eslint": "^8.4.3",
     "@types/fs-extra": "^11.0.1",
     "@types/jest": "^27.5.0",
-    "@types/node": "^18.15.13",
+    "@types/node": "^18.16.0",
     "@types/node-sass": "^4.11.3",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
