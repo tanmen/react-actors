@@ -1,3 +1,15 @@
+## [0.6.121](https://github.com/tanmen/react-actors/compare/v0.6.120...v0.6.121) (2023-04-25)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @storybook/addon-actions from 7.0.6 to 7.0.7 ([caaea64](https://github.com/tanmen/react-actors/commit/caaea64e4cad8999280bb14197fe47202f405803))
+* **deps-dev:** bump @storybook/addon-essentials from 7.0.6 to 7.0.7 ([f72a0db](https://github.com/tanmen/react-actors/commit/f72a0db49c050c430a7c4ac880788ee4d9e98bb5))
+* **deps-dev:** bump @storybook/addons from 7.0.6 to 7.0.7 ([ad0b635](https://github.com/tanmen/react-actors/commit/ad0b6350dd0d12711f4a0501c962293d82390a1d))
+* **deps-dev:** bump @storybook/builder-webpack5 from 7.0.6 to 7.0.7 ([0448f00](https://github.com/tanmen/react-actors/commit/0448f00eeed32620ba0e0bc80a1ade0f3e827966))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([fdd0232](https://github.com/tanmen/react-actors/commit/fdd0232165775912ab54336008631e7ea3148d6e))
+* **deps-dev:** bump @typescript-eslint/parser from 5.59.0 to 5.59.1 ([22f8ae3](https://github.com/tanmen/react-actors/commit/22f8ae3482b87a7bb90d261e13f673debcc309a0))
+
 ## [0.6.120](https://github.com/tanmen/react-actors/compare/v0.6.119...v0.6.120) (2023-04-24)
 
 
