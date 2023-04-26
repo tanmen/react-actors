@@ -1,3 +1,15 @@
+## [0.6.122](https://github.com/tanmen/react-actors/compare/v0.6.121...v0.6.122) (2023-04-26)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @storybook/addon-links from 7.0.6 to 7.0.7 ([4047a1e](https://github.com/tanmen/react-actors/commit/4047a1ef9f11a7d743b23bb8599e59d29b54f0fb))
+* **deps-dev:** bump @storybook/react from 7.0.6 to 7.0.7 ([d10911e](https://github.com/tanmen/react-actors/commit/d10911e6485889aedf3f8f2c8c11ab69b0b92c9a))
+* **deps-dev:** bump @types/node from 18.16.0 to 18.16.1 ([58700d0](https://github.com/tanmen/react-actors/commit/58700d0c48bfd64e7239d714f2b4133fd0021d3c))
+* **deps-dev:** bump @types/react from 18.0.38 to 18.2.0 ([9e51783](https://github.com/tanmen/react-actors/commit/9e517837e2c13b517b3495ec377ba855bb36881d))
+* **deps-dev:** bump @types/react-dom from 18.0.11 to 18.2.1 ([7eafedf](https://github.com/tanmen/react-actors/commit/7eafedff9977546617aad6685e6dd4b8d275ab64))
+* **deps-dev:** bump @types/react-is from 17.0.3 to 18.2.0 ([b32cedf](https://github.com/tanmen/react-actors/commit/b32cedf7f5e18fdc133fc8a52c18ccca7cc43212))
+
 ## [0.6.121](https://github.com/tanmen/react-actors/compare/v0.6.120...v0.6.121) (2023-04-25)
 
 
