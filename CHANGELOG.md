@@ -1,3 +1,10 @@
+## [0.6.123](https://github.com/tanmen/react-actors/compare/v0.6.122...v0.6.123) (2023-04-27)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump lint-staged from 13.2.1 to 13.2.2 ([cf90e33](https://github.com/tanmen/react-actors/commit/cf90e333dd52648253cb9aa252b994f84b5266cf))
+
 ## [0.6.122](https://github.com/tanmen/react-actors/compare/v0.6.121...v0.6.122) (2023-04-26)
 
 
