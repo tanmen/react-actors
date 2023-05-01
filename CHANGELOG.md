@@ -1,3 +1,15 @@
+## [0.6.125](https://github.com/tanmen/react-actors/compare/v0.6.124...v0.6.125) (2023-05-01)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump @babel/core from 7.21.4 to 7.21.5 ([9a40b4f](https://github.com/tanmen/react-actors/commit/9a40b4f607a34ec7a7407591c2ee1bcef34862b4))
+* **deps-dev:** bump @types/node from 18.16.2 to 18.16.3 ([6467a5b](https://github.com/tanmen/react-actors/commit/6467a5bcd06592a1dbe4ebad3a7f687f87869e0e))
+* **deps-dev:** bump semantic-release from 21.0.1 to 21.0.2 ([d93bf80](https://github.com/tanmen/react-actors/commit/d93bf800bff77b617b5ba9ba4db9aa03f110ea21))
+* **deps-dev:** bump typesync from 0.10.0 to 0.11.0 ([3d9b4d0](https://github.com/tanmen/react-actors/commit/3d9b4d0e23996e1b64bf74ff09b39b3da29a2a6d))
+* **deps:** bump @emotion/react from 11.10.6 to 11.10.8 ([b31f194](https://github.com/tanmen/react-actors/commit/b31f1940f2293086b51fcea46f55876fa361dd92))
+* **deps:** bump @emotion/styled from 11.10.6 to 11.10.8 ([7c9b1bd](https://github.com/tanmen/react-actors/commit/7c9b1bd0e7ba0f2456e5f0f9f13036a8a4751028))
+
 ## [0.6.124](https://github.com/tanmen/react-actors/compare/v0.6.123...v0.6.124) (2023-04-28)
 
 
