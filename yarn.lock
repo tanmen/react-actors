@@ -2573,7 +2573,7 @@
     global "^4.4.0"
     regenerator-runtime "^0.13.7"
 
-"@storybook/addons@7.0.7", "@storybook/addons@^7.0.7":
+"@storybook/addons@7.0.7":
   version "7.0.7"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-7.0.7.tgz#cef9a022bcdd14e79d4fc364fb3eb8e44e94ed18"
   integrity sha512-it8NWXsdm3dhjc237d9jj7dGJf6eHDfuDv12nirV64J1dzWrnW+lONeZMPMgxxdLlgYfxH52fLgjcw/dAC/E+Q==
@@ -2581,6 +2581,15 @@
     "@storybook/manager-api" "7.0.7"
     "@storybook/preview-api" "7.0.7"
     "@storybook/types" "7.0.7"
+
+"@storybook/addons@^7.0.8":
+  version "7.0.8"
+  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-7.0.8.tgz#d650ba5ecd3837010b91acb1c84c71f995489090"
+  integrity sha512-3569KzwD8E2FXC8nxzXjfebZfsHH3OvOzzeza+J0go7xYj4s1/3XkrqYtbG4CDlwATNUZNeXWg/LzeYXgsf0wA==
+  dependencies:
+    "@storybook/manager-api" "7.0.8"
+    "@storybook/preview-api" "7.0.8"
+    "@storybook/types" "7.0.8"
 
 "@storybook/api@6.5.16":
   version "6.5.16"
