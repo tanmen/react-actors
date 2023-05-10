@@ -41,7 +41,7 @@
   "devDependencies": {
     "@babel/core": "^7.21.8",
     "@commitlint/cli": "^17.6.3",
-    "@commitlint/config-conventional": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.3",
     "@emotion/babel-preset-css-prop": "^11.11.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^9.0.2",
@@ -50,7 +50,7 @@
     "@storybook/addon-actions": "^7.0.9",
     "@storybook/addon-essentials": "^7.0.9",
     "@storybook/addon-links": "^7.0.9",
-    "@storybook/addons": "^7.0.8",
+    "@storybook/addons": "^7.0.10",
     "@storybook/builder-webpack5": "^7.0.9",
     "@storybook/manager-webpack5": "^6.5.16",
     "@storybook/react": "^7.0.10",
