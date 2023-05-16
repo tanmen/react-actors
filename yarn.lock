@@ -2540,7 +2540,7 @@
     global "^4.4.0"
     regenerator-runtime "^0.13.7"
 
-"@storybook/addons@7.0.10", "@storybook/addons@^7.0.10":
+"@storybook/addons@7.0.10":
   version "7.0.10"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-7.0.10.tgz#4a2958a992e97ec38ce3a501e637a740b1e4f145"
   integrity sha512-RRtozbB0JovZdLgTgC03kOjNh/5sAN77VHZFC5aK/Y9Hz2A0C6V4w/SqTt0382skSllcGMcrHjB1k06BlxlZ8A==
@@ -2548,6 +2548,15 @@
     "@storybook/manager-api" "7.0.10"
     "@storybook/preview-api" "7.0.10"
     "@storybook/types" "7.0.10"
+
+"@storybook/addons@^7.0.12":
+  version "7.0.12"
+  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-7.0.12.tgz#2997fb59a12b3838a607bf9ae78790cc98bbec1d"
+  integrity sha512-yVADbWCFdb12cSpspeb+/6lfTNarPtZZLql49Bhu6E7PxECw/Q3kfHu0LXBLcSnU7f4QqQvQjp88ultt01ABBQ==
+  dependencies:
+    "@storybook/manager-api" "7.0.12"
+    "@storybook/preview-api" "7.0.12"
+    "@storybook/types" "7.0.12"
 
 "@storybook/api@6.5.16":
   version "6.5.16"
@@ -3496,7 +3505,7 @@
     "@storybook/global" "^5.0.0"
     memoizerific "^1.11.3"
 
-"@storybook/theming@7.0.11", "@storybook/theming@^7.0.3":
+"@storybook/theming@7.0.11":
   version "7.0.11"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-7.0.11.tgz#e84907d1268d91a43c0fe9f5281b3b0350916ced"
   integrity sha512-wJtqHJBtIK1/HXXeanOAeUQEZfKBNn/qonq82BmHKb+Js+IGtnKW9upDQkzYa0oDD5IskBavN+LpQkT6ECjEYQ==
@@ -3506,7 +3515,7 @@
     "@storybook/global" "^5.0.0"
     memoizerific "^1.11.3"
 
-"@storybook/theming@7.0.12":
+"@storybook/theming@7.0.12", "@storybook/theming@^7.0.3":
   version "7.0.12"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-7.0.12.tgz#5583639b391e7bbb710a74bc59c94b8bbc455d88"
   integrity sha512-frBkvH7LF8j23ODaywLK4m4LLscw49oKblkZ+30QZkBAzRf2o3a/QSZW2V1zfBo7ygcXiUJ5bIjh7Y17mMJqbQ==
