@@ -62,7 +62,7 @@
     "@types/eslint": "^8.4.3",
     "@types/fs-extra": "^11.0.1",
     "@types/jest": "^27.5.0",
-    "@types/node": "^20.2.1",
+    "@types/node": "^20.2.3",
     "@types/node-sass": "^4.11.3",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
@@ -96,7 +96,7 @@
     "semantic-release": "^21.0.2",
     "ts-jest": "^26.5.6",
     "typescript": "^4.9.5",
-    "typesync": "^0.11.0",
+    "typesync": "^0.11.1",
     "yarn-deduplicate": "^6.0.2"
   }
 }

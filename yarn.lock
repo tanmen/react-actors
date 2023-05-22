@@ -3579,10 +3579,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node@*", "@types/node@^20.2.1":
-  version "20.2.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.2.1.tgz#de559d4b33be9a808fd43372ccee822c70f39704"
-  integrity sha512-DqJociPbZP1lbZ5SQPk4oag6W7AyaGMO6gSfRwq3PWl4PXTwJpRQJhDq4W0kzrg3w6tJ1SwlvGZ5uKFHY13LIg==
+"@types/node@*", "@types/node@^20.2.3":
+  version "20.2.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.2.3.tgz#b31eb300610c3835ac008d690de6f87e28f9b878"
+  integrity sha512-pg9d0yC4rVNWQzX8U7xb4olIOFuuVL9za3bzMT2pu2SU0SNEi66i2qrvhE2qt0HvkhuCaWJu7pLNOt/Pj8BIrw==
 
 "@types/node@^14.0.10 || ^16.0.0", "@types/node@^16.0.0":
   version "16.18.23"
@@ -13553,10 +13553,17 @@ semver@7.0.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.0.0.tgz#5f3ca35761e47e05b206c6daff2cf814f0316b8e"
   integrity sha512-+GB6zVA9LWh6zovYQLALHwv5rb2PHGlJi3lfiqIHxR0uuwCgefcOJc59v9fv1w8GbStwxuuqqAjI9NMAOOgq1A==
 
-semver@7.5.0, semver@7.x, semver@^7.0.0, semver@^7.1.1, semver@^7.1.2, semver@^7.3.2, semver@^7.3.4, semver@^7.3.5, semver@^7.3.7, semver@^7.3.8, semver@^7.5.0:
+semver@7.5.0:
   version "7.5.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.0.tgz#ed8c5dc8efb6c629c88b23d41dc9bf40c1d96cd0"
   integrity sha512-+XC0AD/R7Q2mPSRuy2Id0+CGTZ98+8f+KvwirxOKIEyid+XSx6HbC63p+O4IndTHuX5Z+JxQ0TghCkO5Cg/2HA==
+  dependencies:
+    lru-cache "^6.0.0"
+
+semver@7.x, semver@^7.0.0, semver@^7.1.1, semver@^7.1.2, semver@^7.3.2, semver@^7.3.4, semver@^7.3.5, semver@^7.3.7, semver@^7.3.8, semver@^7.5.0, semver@^7.5.1:
+  version "7.5.1"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.1.tgz#c90c4d631cf74720e46b21c1d37ea07edfab91ec"
+  integrity sha512-Wvss5ivl8TMRZXXESstBA4uR5iXgEN/VC5/sOcuXdVLzcdkz4HWetIoRfG5gb5X+ij/G9rw9YoGn3QoQ8OCSpw==
   dependencies:
     lru-cache "^6.0.0"
 
@@ -14880,10 +14887,10 @@ typescript@^4.9.5:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.5.tgz#095979f9bcc0d09da324d58d03ce8f8374cbe65a"
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
-typesync@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/typesync/-/typesync-0.11.0.tgz#184d6ebd0aa26d83306865e8276060b42c4f2ea5"
-  integrity sha512-hs/gnQ1XLm6NxXhYT/iRwjSPSUX8nVkXY+OcrD9Tkoyru7B8Pa22261ErYA8BLgRqxVtVjbA2xNf1ApuRdZUGQ==
+typesync@^0.11.1:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/typesync/-/typesync-0.11.1.tgz#8d0492621be3d8a1e85850f47402251af29057ad"
+  integrity sha512-sMoD2oBqrmUZPX1jAmRd75N07qPG8gTSocfJSfe09otfuoVx4rFNcOreOriUW+hp6Fh01dBuh42yD2NCgZD2dA==
   dependencies:
     awilix "^8.0.1"
     chalk "^4.1.2"
@@ -14892,7 +14899,7 @@ typesync@^0.11.0:
     glob "^8.1.0"
     npm-registry-fetch "^14.0.5"
     ora "^5.1.0"
-    semver "^7.5.0"
+    semver "^7.5.1"
 
 uglify-js@^3.1.4:
   version "3.15.4"
