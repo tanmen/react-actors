@@ -48,7 +48,7 @@
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/npm": "^10.0.3",
     "@storybook/addon-actions": "^7.0.15",
-    "@storybook/addon-essentials": "^7.0.13",
+    "@storybook/addon-essentials": "^7.0.15",
     "@storybook/addon-links": "^7.0.13",
     "@storybook/addons": "^7.0.15",
     "@storybook/builder-webpack5": "^7.0.13",
