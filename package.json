@@ -51,7 +51,7 @@
     "@storybook/addon-essentials": "^7.0.17",
     "@storybook/addon-links": "^7.0.13",
     "@storybook/addons": "^7.0.17",
-    "@storybook/builder-webpack5": "^7.0.15",
+    "@storybook/builder-webpack5": "^7.0.17",
     "@storybook/manager-webpack5": "^6.5.16",
     "@storybook/react": "^7.0.12",
     "@storybook/theming": "^7.0.3",
