@@ -1412,10 +1412,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.8.1.tgz#c1ddb040429c6d21d38cc945fe75c818cfb68e17"
   integrity sha512-W2P2c/VRW1/1tLox0mVUalvnWXxavmv/Oum2aPsRcoDJuob75FC3Y8FbpfLwUegRcxINtGUMPq0tFCvYNTBXNA==
 
-"@emotion/react@^11.11.0":
-  version "11.11.0"
-  resolved "https://registry.yarnpkg.com/@emotion/react/-/react-11.11.0.tgz#408196b7ef8729d8ad08fc061b03b046d1460e02"
-  integrity sha512-ZSK3ZJsNkwfjT3JpDAWJZlrGD81Z3ytNDsxw1LKq1o+xkmO5pnWfr6gmCC8gHEFf3nSSX/09YrG67jybNPxSUw==
+"@emotion/react@^11.11.1":
+  version "11.11.1"
+  resolved "https://registry.yarnpkg.com/@emotion/react/-/react-11.11.1.tgz#b2c36afac95b184f73b08da8c214fdf861fa4157"
+  integrity sha512-5mlW1DquU5HaxjLkfkGN1GA/fvVGdyHURRiX/0FHl2cfIfRxSOfmxEH5YS43edp0OldZrZ+dkBKbngxcNCdZvA==
   dependencies:
     "@babel/runtime" "^7.18.3"
     "@emotion/babel-plugin" "^11.11.0"
@@ -2382,7 +2382,7 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@storybook/addon-actions@7.0.18", "@storybook/addon-actions@^7.0.18":
+"@storybook/addon-actions@7.0.18":
   version "7.0.18"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-7.0.18.tgz#003cb5fc7810b5ba9fd2c8249ba82bc4b95a02dc"
   integrity sha512-3M5AU/ZD79YP88vKlFezIJbIoG/II7wCixUBTmwiC3BeQZDuVsqPNl8eiP6MGT70xwyx7a993lSM5f5N5W93vg==
@@ -2395,6 +2395,28 @@
     "@storybook/preview-api" "7.0.18"
     "@storybook/theming" "7.0.18"
     "@storybook/types" "7.0.18"
+    dequal "^2.0.2"
+    lodash "^4.17.21"
+    polished "^4.2.2"
+    prop-types "^15.7.2"
+    react-inspector "^6.0.0"
+    telejson "^7.0.3"
+    ts-dedent "^2.0.0"
+    uuid "^9.0.0"
+
+"@storybook/addon-actions@^7.0.20":
+  version "7.0.20"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-7.0.20.tgz#4298f6acee8e7957db5a88e7448880667954cba5"
+  integrity sha512-otdbuEcHtzb6BzYdCYXyoZ3yNwcMdGSeGKf1aMj0b+C6b23XMnwDa90nzH3JST/sb8PJ1o5MHKWPQJ8UKt72Ug==
+  dependencies:
+    "@storybook/client-logger" "7.0.20"
+    "@storybook/components" "7.0.20"
+    "@storybook/core-events" "7.0.20"
+    "@storybook/global" "^5.0.0"
+    "@storybook/manager-api" "7.0.20"
+    "@storybook/preview-api" "7.0.20"
+    "@storybook/theming" "7.0.20"
+    "@storybook/types" "7.0.20"
     dequal "^2.0.2"
     lodash "^4.17.21"
     polished "^4.2.2"
@@ -2862,6 +2884,20 @@
     "@storybook/global" "^5.0.0"
     "@storybook/theming" "7.0.18"
     "@storybook/types" "7.0.18"
+    memoizerific "^1.11.3"
+    use-resize-observer "^9.1.0"
+    util-deprecate "^1.0.2"
+
+"@storybook/components@7.0.20":
+  version "7.0.20"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-7.0.20.tgz#402626b0290d1e5f6bedd8673e6ca05da96ebdd2"
+  integrity sha512-eoEtby/yVkvUKpXfktibxPOhR5UBsWnKRWQUNSxN0vYTG4iBBh3HdjgxFJYfSXV13J+6OfvpBPLlPC+enXrbrQ==
+  dependencies:
+    "@storybook/client-logger" "7.0.20"
+    "@storybook/csf" "^0.1.0"
+    "@storybook/global" "^5.0.0"
+    "@storybook/theming" "7.0.20"
+    "@storybook/types" "7.0.20"
     memoizerific "^1.11.3"
     use-resize-observer "^9.1.0"
     util-deprecate "^1.0.2"
