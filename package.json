@@ -47,7 +47,7 @@
     "@semantic-release/commit-analyzer": "^10.0.1",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/npm": "^10.0.4",
-    "@storybook/addon-actions": "^7.0.22",
+    "@storybook/addon-actions": "^7.0.25",
     "@storybook/addon-essentials": "^7.0.24",
     "@storybook/addon-links": "^7.0.24",
     "@storybook/addons": "^7.0.24",
