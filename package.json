@@ -50,7 +50,7 @@
     "@storybook/addon-actions": "^7.0.25",
     "@storybook/addon-essentials": "^7.0.25",
     "@storybook/addon-links": "^7.0.25",
-    "@storybook/addons": "^7.0.24",
+    "@storybook/addons": "^7.0.26",
     "@storybook/builder-webpack5": "^7.0.25",
     "@storybook/manager-webpack5": "^6.5.16",
     "@storybook/react": "^7.0.25",
