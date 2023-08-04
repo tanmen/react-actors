@@ -1,3 +1,10 @@
+# [0.7.0](https://github.com/tanmen/react-actors/compare/v0.6.127...v0.7.0) (2023-08-04)
+
+
+### Features
+
+* **reset css:** remove reset css ([9e286c1](https://github.com/tanmen/react-actors/commit/9e286c1c54ff90c90f76187c172c97393210f2e1))
+
 ## [0.6.127](https://github.com/tanmen/react-actors/compare/v0.6.126...v0.6.127) (2023-08-04)
 
 
