@@ -3627,7 +3627,7 @@
     memoizerific "^1.11.3"
     regenerator-runtime "^0.13.7"
 
-"@storybook/theming@7.2.0", "@storybook/theming@^7.1.1":
+"@storybook/theming@7.2.0":
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-7.2.0.tgz#5247229966602aa5d86ce210b08dbe7a9fb34c80"
   integrity sha512-E/nFqZuHnR1HK/jXwlPzLnmbIDxWg4cbSkX3sfTbsDd1h7YhxbouheYSuSPqVDjk+3F87Tv2CP+cZUKDkPd3pQ==
@@ -3637,7 +3637,7 @@
     "@storybook/global" "^5.0.0"
     memoizerific "^1.11.3"
 
-"@storybook/theming@7.2.1":
+"@storybook/theming@7.2.1", "@storybook/theming@^7.2.1":
   version "7.2.1"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-7.2.1.tgz#55a1c27ae3a2c1594126f80853422b9cf4d64bf0"
   integrity sha512-cfnNCLvKmzxjmoYKfLl7Q64gSTouLvd23CtvBAOlWcRYnMJ9v4/7A2tK3xQyVRlJYh9OuXiHFLL8AXbN58Hkzw==
