@@ -18,12 +18,25 @@ or
 npm install react-actors
 ```
 
+
 ## Storybook
 https://tanmen.github.io/react-actors
 
 ## Usage Example
+
 ```typescript jsx
 import React from "react";
+import 'ress/dist/ress.min.css';
+import {ThemeProvider} from "react-actors/providers";
+import {Button} from "react-actors/buttons";
+
+function App() {
+  return (
+    <ThemeProvider mode="dark">
+      <Button>Submit</Button>
+    </ThemeProvider>
+  )
+}
 ```
 
 ## License
