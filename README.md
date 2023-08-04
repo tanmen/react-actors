@@ -33,6 +33,7 @@ import {Button} from "react-actors/buttons";
 function App() {
   return (
     <ThemeProvider mode="dark">
+      <Input/>
       <Button>Submit</Button>
     </ThemeProvider>
   )
