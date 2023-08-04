@@ -1,3 +1,10 @@
+## [0.7.1](https://github.com/tanmen/react-actors/compare/v0.7.0...v0.7.1) (2023-08-04)
+
+
+### Performance Improvements
+
+* **build settings:** fix ([7f07939](https://github.com/tanmen/react-actors/commit/7f0793932efd7f5d23e2b16f7147bf5f5d501e2c))
+
 # [0.7.0](https://github.com/tanmen/react-actors/compare/v0.6.127...v0.7.0) (2023-08-04)
 
 
