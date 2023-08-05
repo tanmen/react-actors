@@ -17,6 +17,11 @@ export const Image: FC<Props> = ({src, alt, empty, width, height, className, sty
 
   useEffect(() => {
     setError(false);
+    setLoad(true);
+    const timeout = setTimeout(() => {setLoad(false)}, 1000);
+    return () => {
+      clearTimeout(timeout);
+    }
   }, [src]);
 
   return <Box width={width} height={height} className={className} style={style}>
