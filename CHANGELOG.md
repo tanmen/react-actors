@@ -1,3 +1,10 @@
+## [0.7.2](https://github.com/tanmen/react-actors/compare/v0.7.1...v0.7.2) (2023-08-05)
+
+
+### Bug Fixes
+
+* **image:** timeout ([a2920f0](https://github.com/tanmen/react-actors/commit/a2920f0422d3ab8ced9805af3a8a7e0b0996da82))
+
 ## [0.7.1](https://github.com/tanmen/react-actors/compare/v0.7.0...v0.7.1) (2023-08-04)
 
 
