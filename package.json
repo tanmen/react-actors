@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
-    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-env": "^7.22.20",
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
     "@commitlint/cli": "^17.6.7",
@@ -65,7 +65,7 @@
     "@storybook/theming": "^7.1.1",
     "@testing-library/react-hooks": "^8.0.1",
     "@types/babel__core": "^7.20.1",
-    "@types/babel__preset-env": "^7.9.2",
+    "@types/babel__preset-env": "^7.9.3",
     "@types/body-scroll-lock": "^3.1.0",
     "@types/classnames": "^2.2.11",
     "@types/eslint": "^8.4.3",
