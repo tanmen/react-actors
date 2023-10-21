@@ -1,3 +1,10 @@
+## [0.8.2](https://github.com/tanmen/react-actors/compare/v0.8.1...v0.8.2) (2023-10-21)
+
+
+### Bug Fixes
+
+* **modal:** remove internal props ([9d59716](https://github.com/tanmen/react-actors/commit/9d59716e9eda1c0309734437272b971ec47f0aba))
+
 ## [0.8.1](https://github.com/tanmen/react-actors/compare/v0.8.0...v0.8.1) (2023-10-21)
 
 
