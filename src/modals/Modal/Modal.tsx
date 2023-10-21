@@ -35,7 +35,7 @@ export const Modal: FC<ModalProps> = ({title, text, actions, onClose}) => {
 const Wrapper = styled.div<{ theme: ThemeProp; }>(({theme: {font, background, border}}) => css`
   color: ${font};
   background-color: ${background};
-  border-color: ${border};
+  border-color: 1px solid ${border};
   font-weight: 700;
   word-break: keep-all;
   border-radius: .25rem;
