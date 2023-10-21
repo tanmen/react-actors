@@ -1,3 +1,10 @@
+# [0.8.0](https://github.com/tanmen/react-actors/compare/v0.7.2...v0.8.0) (2023-10-21)
+
+
+### Features
+
+* **modal:** add modal and some bug fix ([0e2b015](https://github.com/tanmen/react-actors/commit/0e2b0153cb644564aa6bfdd46147be461439b71f))
+
 ## [0.7.2](https://github.com/tanmen/react-actors/compare/v0.7.1...v0.7.2) (2023-08-05)
 
 
