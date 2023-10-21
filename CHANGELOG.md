@@ -1,3 +1,10 @@
+## [0.8.3](https://github.com/tanmen/react-actors/compare/v0.8.2...v0.8.3) (2023-10-21)
+
+
+### Bug Fixes
+
+* **modal:** wait modal action ([80e899e](https://github.com/tanmen/react-actors/commit/80e899ef27f7cb8c24dd1d89ee589a103b58eabe))
+
 ## [0.8.2](https://github.com/tanmen/react-actors/compare/v0.8.1...v0.8.2) (2023-10-21)
 
 
