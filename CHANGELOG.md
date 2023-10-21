@@ -1,3 +1,10 @@
+## [0.8.4](https://github.com/tanmen/react-actors/compare/v0.8.3...v0.8.4) (2023-10-21)
+
+
+### Bug Fixes
+
+* **modal:** add border ([2258375](https://github.com/tanmen/react-actors/commit/2258375ccd055cedd170995d95f92196f19f39b1))
+
 ## [0.8.3](https://github.com/tanmen/react-actors/compare/v0.8.2...v0.8.3) (2023-10-21)
 
 
