@@ -1,11 +1,10 @@
-import type { Preview } from "@storybook/react";
-import React from "react";
-import {ThemeProvider} from "../src";
+import type {Preview} from "@storybook/react";
 import 'ress/dist/ress.min.css';
+import {ThemeProvider} from "../src";
 
 const preview: Preview = {
   parameters: {
-    actions: { argTypesRegex: "^on[A-Z].*" },
+    actions: {argTypesRegex: "^on[A-Z].*"},
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -16,17 +15,17 @@ const preview: Preview = {
   argTypes: {
     mode: {
       control: {
-        type: 'radio',
+        type: 'select',
         options: ['light', 'dark']
       }
     }
   },
   args: {
-    mode: 'light'
+    mode: 'dark'
   },
-  decorators: [(Story, {mode}) => <ThemeProvider mode={mode}>
+  decorators: [(Story, {args: {mode}}) => <ThemeProvider mode={mode}>
     <Story/>
-    </ThemeProvider>]
+  </ThemeProvider>]
 };
 
 export default preview;

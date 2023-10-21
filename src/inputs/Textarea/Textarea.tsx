@@ -1,7 +1,7 @@
 import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import Color from "color-js";
-import React, {DetailedHTMLProps, FC, ForwardedRef, forwardRef, TextareaHTMLAttributes} from "react";
+import {DetailedHTMLProps, FC, ForwardedRef, forwardRef, TextareaHTMLAttributes} from "react";
 import {useTheme} from "../../hooks";
 import {ThemeProp} from "../../providers";
 import {SizeStyles, SizeType} from "../../types";

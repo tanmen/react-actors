@@ -26,7 +26,7 @@
     "declaration": true,
     "pretty": true,
     "esModuleInterop": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "allowSyntheticDefaultImports": true,
     "sourceMap": true
   },

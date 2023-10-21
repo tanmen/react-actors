@@ -1,6 +1,6 @@
 import {keyframes} from "@emotion/react";
 import styled from "@emotion/styled";
-import React, {FC} from "react";
+import {FC} from "react";
 import {useMode} from "../../hooks";
 import {ModeType, StyleProps} from "../../types";
 

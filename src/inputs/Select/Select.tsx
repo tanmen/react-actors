@@ -2,7 +2,7 @@ import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import classnames from "classnames";
 import Color from "color-js";
-import React, {DetailedHTMLProps, FC, ForwardedRef, forwardRef, SelectHTMLAttributes} from "react";
+import {DetailedHTMLProps, FC, ForwardedRef, forwardRef, SelectHTMLAttributes} from "react";
 import {useTheme} from "../../hooks";
 import {ThemeProp} from "../../providers";
 import {SizeType} from "../../types";

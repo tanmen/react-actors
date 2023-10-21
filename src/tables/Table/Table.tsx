@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import React, {FC, MouseEvent, ReactNode} from "react";
+import {FC, MouseEvent, ReactNode} from "react";
 import {useMode} from "../../hooks";
 import {ModeType} from "../../types";
 

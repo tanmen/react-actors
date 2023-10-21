@@ -1,7 +1,7 @@
 import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import classnames from "classnames";
-import React, {FC, ReactNode} from "react";
+import {FC, ReactNode} from "react";
 import {useTheme} from "../../hooks";
 import {ThemeProp} from "../../providers";
 import {SizeType, StyleProps} from "../../types";

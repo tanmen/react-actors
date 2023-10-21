@@ -1,9 +1,9 @@
 import {GlobalProps, ThemeProvider as StyledThemeProvider} from "@emotion/react";
-import React, {FC, ReactNode} from "react";
+import {createContext, FC, ReactNode} from "react";
 import {GlobalCss} from "../../styles";
 import {ColorType, ModeType} from "../../types";
 
-export const ThemeContext = React.createContext<ModeType>('light');
+export const ThemeContext = createContext<ModeType>('light');
 
 export type ThemeProp = {
   font: string;
@@ -56,6 +56,18 @@ export const INITIAL_THEME: Theme = {
       background: '#e9ecef'
     }
   },
+  moderate: {
+    dark: {
+      font: '#f8f9fa',
+      border: '#606060',
+      background: '#404040'
+    },
+    light: {
+      font: '#495057',
+      border: '#D5DADF',
+      background: '#ECEEF1'
+    }
+  },
   success: {
     dark: {
       font: '#fff',
@@ -106,7 +118,12 @@ export const INITIAL_THEME: Theme = {
   }
 };
 
-export const ThemeProvider: FC<{ theme?: Theme; global?: GlobalProps['styles']; mode?: ModeType, children: ReactNode }> =
+export const ThemeProvider: FC<{
+  theme?: Theme;
+  global?: GlobalProps['styles'];
+  mode?: ModeType,
+  children: ReactNode
+}> =
   ({theme = INITIAL_THEME, global, mode = 'light', children}) =>
     <StyledThemeProvider theme={theme}>
       <ThemeContext.Provider value={mode}>
