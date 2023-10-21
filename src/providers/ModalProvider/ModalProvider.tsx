@@ -7,7 +7,7 @@ export const ModalContext = createContext({
 });
 
 export type ModalProviderProps = {
-  modal: FC<ModalProps>
+  modal?: FC<ModalProps>
   children: ReactNode
 }
 

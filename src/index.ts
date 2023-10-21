@@ -3,6 +3,7 @@ export * from './hooks';
 export * from './images';
 export * from './inputs';
 export * from './loadings';
+export * from './modals';
 export * from './providers';
 export * from './styles';
 export * from './tables';
