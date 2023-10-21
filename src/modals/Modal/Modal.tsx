@@ -19,12 +19,15 @@ export const Modal: FC<ModalProps> = ({title, text, actions, onClose}) => {
     <Content>
       {text}
     </Content>
-    {actions && <ActionContent onClick={() => onClose()}>
-      {actions.map(({text, onClick,...props}) => <Button key={text}
-                                                         onClick={e => {
-                                                           e.preventDefault();
-                                                           return onClick?.(e);
-                                                         }} {...props}>{text}</Button>)}
+    {actions && <ActionContent>
+      {actions.map(({text, onClick, ...props}) =>
+        <Button
+          key={text}
+          onClick={async e => {
+            e.preventDefault();
+            await onClick?.(e);
+            onClose();
+          }} {...props}>{text}</Button>)}
     </ActionContent>}
   </Wrapper>;
 };
