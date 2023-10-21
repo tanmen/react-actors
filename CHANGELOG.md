@@ -1,3 +1,10 @@
+## [0.8.1](https://github.com/tanmen/react-actors/compare/v0.8.0...v0.8.1) (2023-10-21)
+
+
+### Bug Fixes
+
+* **modal:** fix provider props ([0b7b740](https://github.com/tanmen/react-actors/commit/0b7b7401f064a98ffb89a1dbdbe2233d84a84568))
+
 # [0.8.0](https://github.com/tanmen/react-actors/compare/v0.7.2...v0.8.0) (2023-10-21)
 
 
