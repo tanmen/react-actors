@@ -3,7 +3,7 @@ import {createContext, FC, ReactNode, useState} from "react";
 import {Modal, ModalProps} from "../../modals";
 
 export const ModalContext = createContext({
-  show: (_props: ModalProps | null) => {},
+  show: (_props: Omit<ModalProps, 'onClose'> | null) => {},
 });
 
 export type ModalProviderProps = {
@@ -12,8 +12,8 @@ export type ModalProviderProps = {
 }
 
 export const ModalProvider: FC<ModalProviderProps> = ({modal: Element = Modal, children}) => {
-  const [props, setProps] = useState<ModalProps | null>(null);
-  return <ModalContext.Provider value={{show: (props: ModalProps | null) => setProps(props)}}>
+  const [props, setProps] = useState<Omit<ModalProps, 'onClose'> | null>(null);
+  return <ModalContext.Provider value={{show: (props: Omit<ModalProps, 'onClose'> | null) => setProps(props)}}>
     {children}
     {props && <div>
       <ModalContent onClick={() => setProps(null)}>
