@@ -26,7 +26,7 @@ export const Modal: FC<ModalProps> = ({title, text, actions, onClose}) => {
           onClick={async e => {
             e.preventDefault();
             await onClick?.(e);
-            onClose();
+            setTimeout(() => { onClose();}, 100)
           }} {...props}>{text}</Button>)}
     </ActionContent>}
   </Wrapper>;
@@ -35,7 +35,7 @@ export const Modal: FC<ModalProps> = ({title, text, actions, onClose}) => {
 const Wrapper = styled.div<{ theme: ThemeProp; }>(({theme: {font, background, border}}) => css`
   color: ${font};
   background-color: ${background};
-  border-color: 1px solid ${border};
+  border: 1px solid ${border};
   font-weight: 700;
   word-break: keep-all;
   border-radius: .25rem;
