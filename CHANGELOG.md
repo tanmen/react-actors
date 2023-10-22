@@ -1,3 +1,10 @@
+## [0.8.5](https://github.com/tanmen/react-actors/compare/v0.8.4...v0.8.5) (2023-10-22)
+
+
+### Bug Fixes
+
+* **modal:** fix border and modal closed ([55db514](https://github.com/tanmen/react-actors/commit/55db5142549965719271496e3897f2ad9713fa85))
+
 ## [0.8.4](https://github.com/tanmen/react-actors/compare/v0.8.3...v0.8.4) (2023-10-21)
 
 
