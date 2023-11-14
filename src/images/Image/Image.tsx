@@ -31,7 +31,6 @@ export const Image: FC<Props> = ({src, alt, empty, width, height, className, sty
       width={width}
       height={height}
       src={!error ? src : empty}
-      onLoadCapture={() => setLoad(true)}
       onLoad={() => setLoad(false)}
       onError={() => {
         setError(true);
