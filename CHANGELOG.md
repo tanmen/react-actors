@@ -1,3 +1,10 @@
+## [0.8.6](https://github.com/tanmen/react-actors/compare/v0.8.5...v0.8.6) (2023-11-14)
+
+
+### Bug Fixes
+
+* **additional:** more porps ([2e20616](https://github.com/tanmen/react-actors/commit/2e20616e9aa8043e1fa1ef3721da7a43716f70d2))
+
 ## [0.8.5](https://github.com/tanmen/react-actors/compare/v0.8.4...v0.8.5) (2023-10-22)
 
 
