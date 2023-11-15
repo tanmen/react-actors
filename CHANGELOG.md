@@ -1,3 +1,10 @@
+## [0.8.8](https://github.com/tanmen/react-actors/compare/v0.8.7...v0.8.8) (2023-11-15)
+
+
+### Bug Fixes
+
+* **image:** fix image classname ([84cf25a](https://github.com/tanmen/react-actors/commit/84cf25a3468a6f8fd6d14b783fea1eb914969135))
+
 ## [0.8.7](https://github.com/tanmen/react-actors/compare/v0.8.6...v0.8.7) (2023-11-15)
 
 
