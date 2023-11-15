@@ -1,3 +1,10 @@
+## [0.8.9](https://github.com/tanmen/react-actors/compare/v0.8.8...v0.8.9) (2023-11-15)
+
+
+### Bug Fixes
+
+* **workflow:** fix ..? ([ea66f65](https://github.com/tanmen/react-actors/commit/ea66f65fc719a5fdac2b44269590a116938e4421))
+
 ## [0.8.8](https://github.com/tanmen/react-actors/compare/v0.8.7...v0.8.8) (2023-11-15)
 
 
