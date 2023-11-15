@@ -26,7 +26,7 @@ export const Image: FC<Props> = ({src, alt, empty, width, height, className, sty
       height: typeof height === 'number' ? `${height}px` : height
     }}/> : null}
     <Img
-      className="img"
+      className="react-actors-img"
       load={load}
       width={width}
       height={height}
