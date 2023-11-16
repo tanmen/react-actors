@@ -1,3 +1,10 @@
+## [0.8.10](https://github.com/tanmen/react-actors/compare/v0.8.9...v0.8.10) (2023-11-16)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/setup-node from 3 to 4 ([2c4d177](https://github.com/tanmen/react-actors/commit/2c4d177e41e334c10409bbe331ecfdb31e1f228b))
+
 ## [0.8.9](https://github.com/tanmen/react-actors/compare/v0.8.8...v0.8.9) (2023-11-15)
 
 
