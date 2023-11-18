@@ -26,8 +26,6 @@
     "postpublish": "pinst --enable"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
     "body-scroll-lock": "^4.0.0-beta.0",
     "classnames": "^2.3.2",
     "color-js": "^1.0.5",
@@ -35,6 +33,8 @@
     "ress": "^5.0.2"
   },
   "peerDependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -46,6 +46,8 @@
     "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.7",
     "@emotion/babel-preset-css-prop": "^11.11.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^10.0.1",
     "@semantic-release/git": "^10.0.1",

@@ -13,9 +13,9 @@ export type InputAdditionProps = {
   size?: SizeType;
 } & StyleProps & Omit<HTMLAttributes<HTMLDivElement>, 'size'>;
 
-export const InputAddition: FC<InputAdditionProps> = ({size = 'normal', className, style, children}) => {
+export const InputAddition: FC<InputAdditionProps> = ({size = 'normal', className, style, children, ...props}) => {
   const theme = useTheme('secondary');
-  return <Style sizeType={size} className={classnames('actors-input-addition', classnameItem, className)} style={style}
+  return <Style {...props} sizeType={size} className={classnames('actors-input-addition', classnameItem, className)} style={style}
                 theme={theme}>{children}</Style>;
 };
 
