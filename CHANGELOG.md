@@ -1,3 +1,10 @@
+## [0.8.12](https://github.com/tanmen/react-actors/compare/v0.8.11...v0.8.12) (2023-11-27)
+
+
+### Bug Fixes
+
+* **image:** fix empty ([a635f2e](https://github.com/tanmen/react-actors/commit/a635f2ef0635f16c8b2748e496f9129f9391181f))
+
 ## [0.8.11](https://github.com/tanmen/react-actors/compare/v0.8.10...v0.8.11) (2023-11-18)
 
 
