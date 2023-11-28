@@ -1,3 +1,10 @@
+## [0.8.13](https://github.com/tanmen/react-actors/compare/v0.8.12...v0.8.13) (2023-11-28)
+
+
+### Bug Fixes
+
+* **table:** add style ([2f2ef56](https://github.com/tanmen/react-actors/commit/2f2ef56e55fef922466265a1233ce46ac83eeeb7))
+
 ## [0.8.12](https://github.com/tanmen/react-actors/compare/v0.8.11...v0.8.12) (2023-11-27)
 
 
