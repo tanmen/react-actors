@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import {FC, MouseEvent, ReactNode} from "react";
+import {CSSProperties, FC, MouseEvent, ReactNode} from "react";
 import {useMode} from "../../hooks";
 import {ModeType} from "../../types";
 
@@ -10,6 +10,7 @@ type Column<T extends DataModel, K extends keyof T = keyof T> = {
   headerAlign?: Align
   align?: Align
   Wrapper?: FC<{ data: T, accessor: K, align: Align, value: T[K], children: ReactNode }>
+  style?: CSSProperties
   onClick?: (props: { data: T, accessor: K, value: T[K] }, event: MouseEvent) => Promise<any> | any
 }
 type DataModel = { [key: string]: ReactNode };
@@ -26,7 +27,7 @@ export const Table =
     return <STable className={className}>
       <thead>
       <tr>
-        {columns.map(({Header, accessor, headerAlign}) => <Th key={accessor.toString()} align={headerAlign ?? 'left'} mode={mode}>{Header}</Th>)}
+        {columns.map(({Header, accessor, headerAlign, style}) => <Th key={accessor.toString()} style={style} align={headerAlign ?? 'left'} mode={mode}>{Header}</Th>)}
       </tr>
       </thead>
       <tbody>
