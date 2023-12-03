@@ -11,7 +11,7 @@ export interface BackgroundImageProps extends StyleProps {
 
 export const BackgroundImage: FC<BackgroundImageProps> = ({src, empty, className, style, children}) => {
   const [error, setError] = useState(false);
-  const [load, setLoad] = useState<boolean>()
+  const [load, setLoad] = useState<boolean>();
   const [_src, setSrc] = useState<string | null>(null);
 
   useEffect(() => {
@@ -20,17 +20,22 @@ export const BackgroundImage: FC<BackgroundImageProps> = ({src, empty, className
   }, [src]);
 
   useEffect(() => {
-    const img = new Image()
-    img.src = src
-    img.onload = () => {
-      setLoad(false);
-      setSrc(src);
-    };
-    img.onerror = () => {
+    if (src) {
+      const img = new Image();
+      img.src = src;
+      img.onload = () => {
+        setLoad(false);
+        setSrc(src);
+      };
+      img.onerror = () => {
+        setError(true);
+        setLoad(false);
+      };
+    } else {
       setError(true);
       setLoad(false);
     }
-  }, [src])
+  }, [src]);
 
   return <Box
     className={className}
