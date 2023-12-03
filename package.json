@@ -12,6 +12,9 @@
     "ui",
     "component"
   ],
+  "exports": {
+    "./buttons": "./dist/buttons"
+  },
   "scripts": {
     "prebuild": "node scripts/prebuild.js",
     "build": "tsc",

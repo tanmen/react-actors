@@ -3,7 +3,7 @@ import {FC, useEffect, useState} from "react";
 import {SkeletonLoading} from "../../loadings";
 import {StyleProps} from "../../types";
 
-export interface Props extends StyleProps {
+export interface ImageProps extends StyleProps {
   src: string;
   width: string | number;
   height: string | number;
@@ -11,7 +11,7 @@ export interface Props extends StyleProps {
   empty?: string;
 }
 
-export const Image: FC<Props> = ({src, alt, empty, width, height, className, style}) => {
+export const Image: FC<ImageProps> = ({src, alt, empty, width, height, className, style}) => {
   const [error, setError] = useState(false);
   const [load, setLoad] = useState(true);
 

@@ -1,12 +1,12 @@
 import {Story} from '@storybook/react';
-import {Image, Props} from "./Image";
+import {Image, ImageProps} from "./Image";
 
 export default {
   title: 'Image/Image',
   component: Image,
 };
 
-const Template: Story<Props> = (args) => <Image {...args}/>;
+const Template: Story<ImageProps> = (args) => <Image {...args}/>;
 
 export const Default = Template.bind({});
 Default.args = {
