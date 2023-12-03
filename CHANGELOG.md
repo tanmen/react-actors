@@ -1,3 +1,11 @@
+## [0.8.15](https://github.com/tanmen/react-actors/compare/v0.8.14...v0.8.15) (2023-12-03)
+
+
+### Bug Fixes
+
+* **images:** add nullable ([895ece9](https://github.com/tanmen/react-actors/commit/895ece91aa03a9d48e8942c8a716f261cd4f25cf))
+* **images:** fix background images ([1e8252f](https://github.com/tanmen/react-actors/commit/1e8252fc346b09b50d84d7cd14b23d2a7596ac3c))
+
 ## [0.8.14](https://github.com/tanmen/react-actors/compare/v0.8.13...v0.8.14) (2023-12-03)
 
 
