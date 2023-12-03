@@ -13,7 +13,17 @@
     "component"
   ],
   "exports": {
-    "./buttons": "./dist/buttons"
+    "./buttons": "./buttons/index.js",
+    "./hooks": "./hooks/index.js",
+    "./images": "./images/index.js",
+    "./inputs": "./inputs/index.js",
+    "./loadings": "./loadings/index.js",
+    "./modals": "./modals/index.js",
+    "./providers": "./providers/index.js",
+    "./styles": "./styles/index.js",
+    "./tables": "./tables/index.js",
+    "./types": "./types/index.js",
+    "./utils": "./utils/index.js"
   },
   "scripts": {
     "prebuild": "node scripts/prebuild.js",
