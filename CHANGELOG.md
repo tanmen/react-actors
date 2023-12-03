@@ -1,3 +1,11 @@
+## [0.8.14](https://github.com/tanmen/react-actors/compare/v0.8.13...v0.8.14) (2023-12-03)
+
+
+### Bug Fixes
+
+* **backgoround-image:** add background image ([6efe3e9](https://github.com/tanmen/react-actors/commit/6efe3e95bdf95cba5134fbdb8ba352fc7714fdd2))
+* **exports:** set export ([259e07c](https://github.com/tanmen/react-actors/commit/259e07cb74480e1b222a7dafb18a9d364870ca6b))
+
 ## [0.8.13](https://github.com/tanmen/react-actors/compare/v0.8.12...v0.8.13) (2023-11-28)
 
 
