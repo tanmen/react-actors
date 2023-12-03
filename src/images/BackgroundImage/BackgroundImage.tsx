@@ -4,7 +4,7 @@ import {SkeletonLoading} from "../../loadings";
 import {StyleProps} from "../../types";
 
 export interface BackgroundImageProps extends StyleProps {
-  src: string;
+  src: string | null;
   empty?: string;
   children?: ReactNode;
 }

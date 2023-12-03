@@ -4,7 +4,7 @@ import {SkeletonLoading} from "../../loadings";
 import {StyleProps} from "../../types";
 
 export interface ImageProps extends StyleProps {
-  src: string;
+  src: string　| null;
   width: string | number;
   height: string | number;
   alt?: string;
