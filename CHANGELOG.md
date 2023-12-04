@@ -1,3 +1,10 @@
+## [0.8.16](https://github.com/tanmen/react-actors/compare/v0.8.15...v0.8.16) (2023-12-04)
+
+
+### Bug Fixes
+
+* **import:** short ([c5ee261](https://github.com/tanmen/react-actors/commit/c5ee26157e380c9c7f78083104d8bbe35e73e9f8))
+
 ## [0.8.15](https://github.com/tanmen/react-actors/compare/v0.8.14...v0.8.15) (2023-12-03)
 
 
