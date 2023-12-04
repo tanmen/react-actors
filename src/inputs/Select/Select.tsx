@@ -3,10 +3,10 @@ import styled from "@emotion/styled";
 import classnames from "classnames";
 import Color from "color-js";
 import {DetailedHTMLProps, FC, ForwardedRef, forwardRef, SelectHTMLAttributes} from "react";
-import {useTheme} from "../../hooks";
-import {ThemeProp} from "../../providers";
+import {useTheme} from "../../hooks/useTheme";
+import {ThemeProp} from "../../providers/ThemeProvider";
 import {SizeType} from "../../types";
-import {extractSizeStyle} from "../../utils";
+import {extractSizeStyle} from "../../utils/extractSizeStyle";
 import {classnameItem} from "../InputGroup";
 import {inputStyles} from "../styles";
 

@@ -2,11 +2,11 @@ import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import Color from "color-js";
 import {ButtonHTMLAttributes, FC, MouseEvent, ReactNode, useEffect, useState} from "react";
-import {useTheme} from "../../hooks";
-import {LineLoading} from "../../loadings";
-import {ThemeProp} from "../../providers";
+import {useTheme} from "../../hooks/useTheme";
+import {LineLoading} from "../../loadings/LineLoading";
+import {ThemeProp} from "../../providers/ThemeProvider";
 import {ColorType, SizeStyles, SizeType} from "../../types";
-import {extractSizeStyle} from "../../utils";
+import {extractSizeStyle} from "../../utils/extractSizeStyle";
 
 type CustomProps = {
   children?: ReactNode,

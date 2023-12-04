@@ -2,10 +2,10 @@ import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import Color from "color-js";
 import {DetailedHTMLProps, FC, ForwardedRef, forwardRef, TextareaHTMLAttributes} from "react";
-import {useTheme} from "../../hooks";
-import {ThemeProp} from "../../providers";
+import {useTheme} from "../../hooks/useTheme";
+import {ThemeProp} from "../../providers/ThemeProvider";
 import {SizeStyles, SizeType} from "../../types";
-import {extractSizeStyle} from "../../utils";
+import {extractSizeStyle} from "../../utils/extractSizeStyle";
 
 export type TextareaProps =
   Omit<DetailedHTMLProps<TextareaHTMLAttributes<HTMLTextAreaElement>, HTMLTextAreaElement>, 'size'> & {

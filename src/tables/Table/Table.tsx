@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import {CSSProperties, FC, MouseEvent, ReactNode} from "react";
-import {useMode} from "../../hooks";
+import {useMode} from "../../hooks/useMode";
 import {ModeType} from "../../types";
 
 type Align = 'right' | 'left' | 'center';

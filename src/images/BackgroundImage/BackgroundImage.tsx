@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import {FC, ReactNode, useEffect, useState} from "react";
-import {SkeletonLoading} from "../../loadings";
+import {SkeletonLoading} from "../../loadings/SkeletonLoading";
 import {StyleProps} from "../../types";
 
 export interface BackgroundImageProps extends StyleProps {

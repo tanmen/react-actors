@@ -2,8 +2,8 @@ import styled from "@emotion/styled";
 import classnames from 'classnames';
 import Color from "color-js/color";
 import {FC, ReactNode} from "react";
-import {useTheme} from "../../hooks";
-import {ThemeProp} from "../../providers";
+import {useTheme} from "../../hooks/useTheme";
+import {ThemeProp} from "../../providers/ThemeProvider";
 import {StyleProps} from "../../types";
 
 export const classnameGroup = 'actors-input-group';

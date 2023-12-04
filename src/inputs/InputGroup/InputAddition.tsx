@@ -2,10 +2,10 @@ import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import classnames from "classnames";
 import {FC, HTMLAttributes} from "react";
-import {useTheme} from "../../hooks";
-import {ThemeProp} from "../../providers";
+import {useTheme} from "../../hooks/useTheme";
+import {ThemeProp} from "../../providers/ThemeProvider";
 import {SizeType, StyleProps} from "../../types";
-import {extractSizeStyle} from "../../utils";
+import {extractSizeStyle} from "../../utils/extractSizeStyle";
 import {inputStyles} from "../styles";
 import {classnameGroup, classnameItem} from "./InputGroup";
 

@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import {createContext, FC, ReactNode, useState} from "react";
-import {Modal, ModalProps} from "../../modals";
+import {Modal, ModalProps} from "../../modals/Modal";
 
 export const ModalContext = createContext({
   show: (_props: Omit<ModalProps, 'onClose'> | null) => {},

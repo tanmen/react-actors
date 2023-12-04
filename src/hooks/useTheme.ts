@@ -1,5 +1,5 @@
 import {useTheme as useEmotionTheme} from '@emotion/react';
-import {Theme, ThemeProp} from "../providers";
+import {Theme, ThemeProp} from "../providers/ThemeProvider";
 import {ColorType} from "../types";
 import {useMode} from "./useMode";
 

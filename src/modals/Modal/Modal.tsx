@@ -1,9 +1,9 @@
 import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import {FC, ReactNode} from "react";
-import {Button, ButtonProps} from "../../buttons";
-import {useTheme} from "../../hooks";
-import {ThemeProp} from "../../providers";
+import {Button, ButtonProps} from "../../buttons/Button";
+import {useTheme} from "../../hooks/useTheme";
+import {ThemeProp} from "../../providers/ThemeProvider";
 
 export type ModalProps = {
   title?: ReactNode;

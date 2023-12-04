@@ -1,7 +1,7 @@
 import {keyframes} from "@emotion/react";
 import styled from "@emotion/styled";
 import {FC} from "react";
-import {useMode} from "../../hooks";
+import {useMode} from "../../hooks/useMode";
 import {ModeType, StyleProps} from "../../types";
 
 export const SkeletonLoading: FC<StyleProps> = (props) => {
