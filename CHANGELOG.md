@@ -1,3 +1,11 @@
+## [0.8.22](https://github.com/tanmen/react-actors/compare/v0.8.21...v0.8.22) (2023-12-10)
+
+
+### Bug Fixes
+
+* **dropdown:** set value ([757c19f](https://github.com/tanmen/react-actors/commit/757c19f339b9d6c2a22cd156731b57dde5b835c0))
+* **dropdown:** z-index ([64ef946](https://github.com/tanmen/react-actors/commit/64ef946995eaa5832cb089ef9bbd5c56fa52963a))
+
 ## [0.8.21](https://github.com/tanmen/react-actors/compare/v0.8.20...v0.8.21) (2023-12-10)
 
 
