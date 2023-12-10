@@ -1,3 +1,10 @@
+## [0.8.19](https://github.com/tanmen/react-actors/compare/v0.8.18...v0.8.19) (2023-12-10)
+
+
+### Bug Fixes
+
+* **dropdown:** export dropdown ([428429d](https://github.com/tanmen/react-actors/commit/428429dc7330d301243a80762491132640eb4fec))
+
 ## [0.8.18](https://github.com/tanmen/react-actors/compare/v0.8.17...v0.8.18) (2023-12-10)
 
 
