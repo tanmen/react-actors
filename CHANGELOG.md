@@ -1,3 +1,10 @@
+## [0.8.18](https://github.com/tanmen/react-actors/compare/v0.8.17...v0.8.18) (2023-12-10)
+
+
+### Bug Fixes
+
+* **dropdown:** add props ([0d1a78a](https://github.com/tanmen/react-actors/commit/0d1a78a18d46fb137115dd4aac24c6211dd366b6))
+
 ## [0.8.17](https://github.com/tanmen/react-actors/compare/v0.8.16...v0.8.17) (2023-12-10)
 
 
