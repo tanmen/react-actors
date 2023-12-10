@@ -1,3 +1,10 @@
+## [0.8.21](https://github.com/tanmen/react-actors/compare/v0.8.20...v0.8.21) (2023-12-10)
+
+
+### Bug Fixes
+
+* **dropdown:** fix search dropdown classname ([25ee403](https://github.com/tanmen/react-actors/commit/25ee4035cc38810a2a11380a946deda5a29c0da3))
+
 ## [0.8.20](https://github.com/tanmen/react-actors/compare/v0.8.19...v0.8.20) (2023-12-10)
 
 
