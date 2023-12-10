@@ -1,6 +1,6 @@
 import {css} from "@emotion/react";
 import styled from "@emotion/styled";
-import {FC, ReactNode} from "react";
+import {FC, MouseEventHandler, ReactNode} from "react";
 import {useTheme} from "../../hooks";
 import {ThemeProp} from "../../providers";
 
@@ -10,17 +10,27 @@ export type DropdownProps = {
   items: ReactNode[];
   className?: string;
   children: ReactNode;
+  onClick?: MouseEventHandler<HTMLUListElement>
 }
 
-export const Dropdown: FC<DropdownProps> = ({open, align = 'right', items, className, children}) => {
-  const theme = useTheme('normal');
-  return <Wrap className={className} tabIndex={0}>
-    {children}
-    {open && <Down className="react-actors-dropdown-down" align={align} theme={theme}>
-      {items.map((item, index) => <Item key={index} tabIndex={index} theme={theme}>{item}</Item>)}
-    </Down>}
-  </Wrap>;
-};
+export const Dropdown: FC<DropdownProps> =
+  ({
+     open,
+     align = 'right',
+     items,
+     onClick = (event) => {event.stopPropagation();},
+     className,
+     children
+   }) => {
+    const theme = useTheme('normal');
+    return <Wrap className={className} tabIndex={0}>
+      {children}
+      <ul onClick={}></ul>
+      {open && <Down className="react-actors-dropdown-down" align={align} theme={theme} onClick={onClick}>
+        {items.map((item, index) => <Item key={index} tabIndex={index} theme={theme}>{item}</Item>)}
+      </Down>}
+    </Wrap>;
+  };
 
 const Wrap = styled.div`
   position: relative;
