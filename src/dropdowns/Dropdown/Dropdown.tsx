@@ -23,11 +23,11 @@ export const Dropdown: FC<DropdownProps> =
      children
    }) => {
     const theme = useTheme('normal');
+    const downTheme = useTheme('secondary');
     return <Wrap className={className} tabIndex={0}>
       {children}
-      <ul onClick={}></ul>
       {open && <Down className="react-actors-dropdown-down" align={align} theme={theme} onClick={onClick}>
-        {items.map((item, index) => <Item key={index} tabIndex={index} theme={theme}>{item}</Item>)}
+        {items.map((item, index) => <Item key={index} tabIndex={index} theme={downTheme}>{item}</Item>)}
       </Down>}
     </Wrap>;
   };
@@ -36,7 +36,7 @@ const Wrap = styled.div`
   position: relative;
 `;
 
-const Down = styled.ul<{ theme: ThemeProp; align: 'right' | 'left' }>(({theme: {font}, align}) => css`
+const Down = styled.ul<{ theme: ThemeProp; align: 'right' | 'left' }>(({theme: {font, background}, align}) => css`
   position: absolute;
   color: ${font};
   top: calc(100% + .25rem);
@@ -46,17 +46,17 @@ const Down = styled.ul<{ theme: ThemeProp; align: 'right' | 'left' }>(({theme: {
   max-height: 13.75rem;
   overflow-y: scroll;
   z-index: 1000;
+  background-color: ${background};
 `);
 
 const Item = styled.li<{ theme: ThemeProp; }>(({theme: {background, border}}) => css`
   padding: .375rem .5rem;
-  background-color: ${background};
 
   & + & {
     border-top: 1px solid ${border};
   }
 
   &:hover, &:focus {
-    background-color: rgba(0, 0, 0, .8);
+    background-color: ${background};
   }
 `);
