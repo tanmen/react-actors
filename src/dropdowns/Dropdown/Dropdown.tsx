@@ -35,6 +35,7 @@ const Down = styled.ul<{ theme: ThemeProp; align: 'right' | 'left' }>(({theme: {
   list-style-type: none;
   max-height: 13.75rem;
   overflow-y: scroll;
+  z-index: 1000;
 `);
 
 const Item = styled.li<{ theme: ThemeProp; }>(({theme: {background, border}}) => css`
