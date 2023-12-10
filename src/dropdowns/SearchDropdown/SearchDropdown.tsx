@@ -17,10 +17,10 @@ export const SearchDropdown: FC<SearchDropdownProps> = forwardRef<HTMLInputEleme
   ({items, onTextChange,className, ...props}, ref) => {
     const [value, setValue] = useState<string>();
     const [open, setOpen] = useState(false);
-    return <Dropdown open={open}
+    return <Dropdown className={className} open={open}
                      items={items.map(({key, body}) => <div key={key} onClick={() => setValue(key)}>{body}</div>)}>
       <input ref={ref} type="hidden" value={value} {...props}/>
-      <Input className={className} onFocus={() => setOpen(true)} onBlur={() => setOpen(false)}
+      <Input className="react-actors-search-dropdown-input" onFocus={() => setOpen(true)} onBlur={() => setOpen(false)}
              onChange={e => onTextChange?.(e.target.value)}/>
     </Dropdown>;
   });
