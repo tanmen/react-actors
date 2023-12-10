@@ -14,6 +14,7 @@
   ],
   "exports": {
     "./buttons": "./buttons/index.js",
+    "./dropdowns": "./dropdowns/index.js",
     "./hooks": "./hooks/index.js",
     "./images": "./images/index.js",
     "./inputs": "./inputs/index.js",
