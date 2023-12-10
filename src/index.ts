@@ -1,4 +1,5 @@
 export * from './buttons';
+export * from './dropdowns';
 export * from './hooks';
 export * from './images';
 export * from './inputs';
