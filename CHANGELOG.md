@@ -1,3 +1,10 @@
+## [0.8.20](https://github.com/tanmen/react-actors/compare/v0.8.19...v0.8.20) (2023-12-10)
+
+
+### Bug Fixes
+
+* **dropdown:** add className ([754ca45](https://github.com/tanmen/react-actors/commit/754ca4508d58bef80b9f0efa9c145567d24027c6))
+
 ## [0.8.19](https://github.com/tanmen/react-actors/compare/v0.8.18...v0.8.19) (2023-12-10)
 
 
