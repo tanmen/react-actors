@@ -8,14 +8,15 @@ export type DropdownProps = {
   open?: boolean;
   align?: 'right' | 'left';
   items: ReactNode[];
+  className?: string;
   children: ReactNode;
 }
 
-export const Dropdown: FC<DropdownProps> = ({open, align = 'right', items, children}) => {
+export const Dropdown: FC<DropdownProps> = ({open, align = 'right', items, className, children}) => {
   const theme = useTheme('normal');
-  return <Wrap tabIndex={0}>
+  return <Wrap className={className} tabIndex={0}>
     {children}
-    {open && <Down align={align} theme={theme}>
+    {open && <Down className="react-actors-dropdown-down" align={align} theme={theme}>
       {items.map((item, index) => <Item key={index} tabIndex={index} theme={theme}>{item}</Item>)}
     </Down>}
   </Wrap>;
