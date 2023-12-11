@@ -1,3 +1,10 @@
+## [0.8.24](https://github.com/tanmen/react-actors/compare/v0.8.23...v0.8.24) (2023-12-11)
+
+
+### Bug Fixes
+
+* **dropdown:** add blur ([bc87d99](https://github.com/tanmen/react-actors/commit/bc87d994ea9f2576214b44fe6d5aed1def936399))
+
 ## [0.8.23](https://github.com/tanmen/react-actors/compare/v0.8.22...v0.8.23) (2023-12-10)
 
 
