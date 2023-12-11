@@ -1,3 +1,11 @@
+## [0.8.23](https://github.com/tanmen/react-actors/compare/v0.8.22...v0.8.23) (2023-12-10)
+
+
+### Bug Fixes
+
+* **dropdown:** fix theme ([d02bbcf](https://github.com/tanmen/react-actors/commit/d02bbcfcf9c5dc3f3105275d13d5d8054e23b4e2))
+* **dropdown:** remove search dropdown and fix dropdown click evetn ([c0cf416](https://github.com/tanmen/react-actors/commit/c0cf416012cfad8d56ef642dcab1b2365f965578))
+
 ## [0.8.22](https://github.com/tanmen/react-actors/compare/v0.8.21...v0.8.22) (2023-12-10)
 
 
