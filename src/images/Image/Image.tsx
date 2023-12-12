@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import {FC, useEffect, useState} from "react";
+import {FC, useEffect, useRef, useState} from "react";
 import {SkeletonLoading} from "../../loadings/SkeletonLoading";
 import {StyleProps} from "../../types";
 
@@ -14,11 +14,16 @@ export interface ImageProps extends StyleProps {
 export const Image: FC<ImageProps> = ({src, alt, empty, width, height, className, style}) => {
   const [error, setError] = useState(false);
   const [load, setLoad] = useState(true);
+  const ref = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
     setError(false);
     setLoad(true);
   }, [src]);
+
+  useEffect(() => {
+    if (ref.current?.complete) setLoad(false)
+  }, [])
 
   return <Box width={width} height={height} className={className} style={style}>
     {load ? <SkeletonLoading style={{
@@ -26,6 +31,7 @@ export const Image: FC<ImageProps> = ({src, alt, empty, width, height, className
       height: typeof height === 'number' ? `${height}px` : height
     }}/> : null}
     <Img
+      ref={ref}
       className="react-actors-img"
       load={load}
       width={width}
