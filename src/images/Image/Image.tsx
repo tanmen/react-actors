@@ -1,3 +1,4 @@
+import {css} from "@emotion/react";
 import styled from "@emotion/styled";
 import {FC, useEffect, useRef, useState} from "react";
 import {SkeletonLoading} from "../../loadings/SkeletonLoading";
@@ -52,7 +53,13 @@ const Box = styled.div<{ width: string | number, height: string | number; }>`
   height: ${({height}) => typeof height === 'number' ? `${height}px` : height};
 `;
 
-const Img = styled.img<{ load: boolean }>`
+const Img = styled.img<{ load: boolean, width: string | number; height: string| number }>`
   display: ${({load}) => load ? 'none' : 'block'};
+  ${({width}) => typeof width === 'string' && css`
+    width: ${width};
+  `};
+  ${({height}) => typeof height === 'string' && css`
+    height: ${height};
+  `};
 `;
 
