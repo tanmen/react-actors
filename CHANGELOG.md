@@ -1,3 +1,10 @@
+## [0.8.26](https://github.com/tanmen/react-actors/compare/v0.8.25...v0.8.26) (2023-12-17)
+
+
+### Bug Fixes
+
+* **images:** set css ([4eb21fc](https://github.com/tanmen/react-actors/commit/4eb21fc04970d4675d34d925fdd190b60ed3957b))
+
 ## [0.8.25](https://github.com/tanmen/react-actors/compare/v0.8.24...v0.8.25) (2023-12-12)
 
 
