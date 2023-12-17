@@ -1,3 +1,10 @@
+## [0.8.25](https://github.com/tanmen/react-actors/compare/v0.8.24...v0.8.25) (2023-12-12)
+
+
+### Bug Fixes
+
+* **image:** fix always loading ([f9c783a](https://github.com/tanmen/react-actors/commit/f9c783a59f88cbc15b2e0290030f78c3753574a2))
+
 ## [0.8.24](https://github.com/tanmen/react-actors/compare/v0.8.23...v0.8.24) (2023-12-11)
 
 
