@@ -3,9 +3,10 @@ import styled from "@emotion/styled";
 import classnames from "classnames";
 import Color from "color-js/color";
 import {DetailedHTMLProps, FC, ForwardedRef, forwardRef, InputHTMLAttributes} from "react";
+import {useMode} from "../../hooks";
 import {useTheme} from "../../hooks/useTheme";
 import {ThemeProp} from "../../providers/ThemeProvider";
-import {SizeType} from "../../types";
+import {ModeType, SizeType} from "../../types";
 import {extractSizeStyle} from "../../utils/extractSizeStyle";
 import {classnameItem} from "../InputGroup";
 import {inputStyles} from "../styles";
@@ -18,20 +19,35 @@ export type InputProps = Omit<DetailedHTMLProps<InputHTMLAttributes<HTMLInputEle
 
 export const Input: FC<InputProps> = forwardRef<HTMLInputElement, InputProps>(
   ({className, size = 'normal', error, ...props}, ref) => {
+    const mode = useMode();
     const theme = useTheme('normal');
     const errorTheme = useTheme('danger');
-    return <SInput {...props} error={error} className={classnames('actors-input', classnameItem, className)} ref={ref}
-                   sizeType={size}
-                   theme={theme} errorTheme={errorTheme}/>;
+    return <SInput
+      {...props}
+      mode={mode}
+      error={error}
+      className={classnames('actors-input', classnameItem, className)}
+      ref={ref}
+      sizeType={size}
+      theme={theme}
+      errorTheme={errorTheme}
+    />;
   });
 
-const SInput = styled.input<{ sizeType: SizeType; theme: ThemeProp; errorTheme: ThemeProp; error?: boolean }>(
-  ({theme: {font, background, border}, errorTheme, error}) => css`
+const SInput = styled.input<{
+  mode: ModeType;
+  sizeType: SizeType;
+  theme: ThemeProp;
+  errorTheme: ThemeProp;
+  error?: boolean
+}>(
+  ({mode, theme: {font, background, border}, errorTheme, error}) => css`
     display: block;
     width: 100%;
     font-weight: 400;
     line-height: 1.5;
     color: ${font};
+    color-scheme: ${mode};
     background-color: ${background};
     background-clip: padding-box;
     border: 1px solid ${error ? errorTheme.border : border};
