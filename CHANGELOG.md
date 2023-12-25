@@ -1,3 +1,10 @@
+## [0.8.27](https://github.com/tanmen/react-actors/compare/v0.8.26...v0.8.27) (2023-12-25)
+
+
+### Bug Fixes
+
+* **input:** add color-schema ([8353ac2](https://github.com/tanmen/react-actors/commit/8353ac270ffe37cf71c5006762f65f2fe495ff07))
+
 ## [0.8.26](https://github.com/tanmen/react-actors/compare/v0.8.25...v0.8.26) (2023-12-17)
 
 
