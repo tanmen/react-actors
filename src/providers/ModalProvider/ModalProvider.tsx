@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
-import {createContext, FC, ReactNode, useState} from "react";
+import {disableBodyScroll, enableBodyScroll} from "body-scroll-lock";
+import {createContext, FC, ReactNode, useEffect, useState} from "react";
 import {Modal, ModalProps} from "../../modals/Modal";
 
 export const ModalContext = createContext({
@@ -13,6 +14,18 @@ export type ModalProviderProps = {
 
 export const ModalProvider: FC<ModalProviderProps> = ({modal: Element = Modal, children}) => {
   const [props, setProps] = useState<Omit<ModalProps, 'onClose'> | null>(null);
+  useEffect(() => {
+    const body = document.querySelector('html');
+    if (props) {
+      body && disableBodyScroll(body);
+    } else {
+      body && enableBodyScroll(body);
+    }
+
+    return () => {
+      body && enableBodyScroll(body);
+    }
+  }, [props]);
   return <ModalContext.Provider value={{show: (props: Omit<ModalProps, 'onClose'> | null) => setProps(props)}}>
     {children}
     {props && <div>
