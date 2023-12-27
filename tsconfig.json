@@ -28,7 +28,8 @@
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "allowSyntheticDefaultImports": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "skipLibCheck": true
   },
   "include": ["src"],
   "exclude": ["src/**/*.stories.tsx", "src/**/*.screenshot.tsx", "src/**/__screenshots__"]
