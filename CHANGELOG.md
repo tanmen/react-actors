@@ -1,3 +1,10 @@
+## [0.8.29](https://github.com/tanmen/react-actors/compare/v0.8.28...v0.8.29) (2023-12-27)
+
+
+### Bug Fixes
+
+* **modal:** fix scroll ([a9ae386](https://github.com/tanmen/react-actors/commit/a9ae38633475cfbd1e7f752aadc23d24cd4da133))
+
 ## [0.8.28](https://github.com/tanmen/react-actors/compare/v0.8.27...v0.8.28) (2023-12-26)
 
 
