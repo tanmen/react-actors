@@ -7,7 +7,7 @@ jobs:
   Install:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.5.3
+      - uses: actions/checkout@v4.2.2
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [Install]
     steps:
-      - uses: actions/checkout@v3.5.3
+      - uses: actions/checkout@v4.2.2
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [ Install ]
     steps:
-      - uses: actions/checkout@v3.5.3
+      - uses: actions/checkout@v4.2.2
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -50,7 +50,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [ Install ]
     steps:
-      - uses: actions/checkout@v3.5.3
+      - uses: actions/checkout@v4.2.2
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -75,7 +75,7 @@ jobs:
     needs: [ Test, Build ]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.5.3
+      - uses: actions/checkout@v4.2.2
       - uses: actions/setup-node@v4
         with:
           node-version-file: '.node-version'
@@ -97,7 +97,7 @@ jobs:
       pull-requests: write
       id-token: write
     steps:
-      - uses: actions/checkout@v3.5.3
+      - uses: actions/checkout@v4.2.2
         with:
           fetch-depth: 0
           persist-credentials: false
@@ -122,7 +122,7 @@ jobs:
     needs: [ Test, Build, StorybookBuild ]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.5.3
+      - uses: actions/checkout@v4.2.2
         with:
           fetch-depth: 0
           persist-credentials: false
